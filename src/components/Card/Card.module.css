@@ -1,0 +1,7 @@
+@value sizes: "../../css-variables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+.card {
+  position: relative;
+  padding: 0 12px;
+}

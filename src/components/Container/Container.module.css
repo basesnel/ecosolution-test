@@ -1,0 +1,11 @@
+@value sizes: "../../css-variables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container.main {
+  padding-top: 222px;
+}

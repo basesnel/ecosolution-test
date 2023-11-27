@@ -1,0 +1,8 @@
+@value sizes: "../../css-variables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+.grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+}
