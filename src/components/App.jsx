@@ -3,6 +3,7 @@ import Main from 'sections/Main';
 import Values from 'sections/Values';
 import Electricity from 'sections/Electricity';
 import Cases from 'sections/Cases';
+import Questions from 'sections/Questions';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Values />
         <Electricity />
         <Cases />
+        <Questions />
       </main>
     </>
   );

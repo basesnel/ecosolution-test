@@ -1,11 +1,13 @@
 import Container from 'components/Container';
+import Text from 'components/Text';
+import Title from 'components/Title';
 
 export default function Cases() {
   return (
     <section>
       <Container>
-        <h2>successful cases of our company</h2>
-        <p>Slider</p>
+        <Title level={2} caption="successful cases of our company" />
+        <Text>Slider</Text>
         <button>Prev</button>
         <button>Next</button>
       </Container>
