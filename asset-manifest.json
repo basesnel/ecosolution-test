@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ecosolution-test/static/css/main.f83059ad.css",
-    "main.js": "/ecosolution-test/static/js/main.af807f7e.js",
+    "main.js": "/ecosolution-test/static/js/main.9b57b94e.js",
     "index.html": "/ecosolution-test/index.html",
     "main.f83059ad.css.map": "/ecosolution-test/static/css/main.f83059ad.css.map",
-    "main.af807f7e.js.map": "/ecosolution-test/static/js/main.af807f7e.js.map"
+    "main.9b57b94e.js.map": "/ecosolution-test/static/js/main.9b57b94e.js.map"
   },
   "entrypoints": [
     "static/css/main.f83059ad.css",
-    "static/js/main.af807f7e.js"
+    "static/js/main.9b57b94e.js"
   ]
 }
