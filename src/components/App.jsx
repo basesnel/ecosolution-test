@@ -7,6 +7,7 @@ import Cases from 'sections/Cases';
 import Questions from 'sections/Questions';
 import Customers from 'sections/Customers';
 import ContactUs from 'sections/ContactUs';
+import Footer from 'sections/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Customers />
         <ContactUs />
       </main>
+      <Footer />
     </>
   );
 }
