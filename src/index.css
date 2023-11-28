@@ -1,29 +1,12 @@
 @import '../node_modules/modern-normalize/modern-normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&display=swap');
 
-:root {
-  --color-background: #e8e8e8;
-
-  --color-dark: #202020;
-  --color-light: #e0e0e0;
-  --color-light-opacity: rgba(224, 224, 224, 0.5);
-
-  --color-logodark: #000;
-  --color-logolight: #fff;
-
-  --color-accent: #0f52ba;
-  --color-accent-bg: rgb(240, 240, 240);
-
-  --color-caption: #404040;
-  --color-text: #808080;
-  --color-text-opacity: rgba(128, 128, 128, 0.68);
-}
-
 body {
   margin: 0;
   font-family: 'Fira Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f5fa;
 }
 
 code {

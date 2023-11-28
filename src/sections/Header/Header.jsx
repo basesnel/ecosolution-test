@@ -1,5 +1,5 @@
 import Container from 'components/Container';
-import Text from 'components/Text';
+import Logo from 'components/Logo';
 
 import css from './Header.module.css';
 
@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className={css.header}>
       <Container>
-        <Text>Ecosolution logo and menu</Text>
+        <Logo />
       </Container>
     </header>
   );
