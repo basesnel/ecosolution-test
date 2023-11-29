@@ -1,8 +1,8 @@
-@value bgcolor from "../../css-variables/colors.css";
+@value bg-color from "../../css-variables/colors.css";
 
 .header {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: bgcolor;
+  background-color: bg-color;
 }

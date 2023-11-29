@@ -32,3 +32,19 @@
   line-height: 24px; /* 150% */
   text-transform: uppercase;
 }
+
+@media tablet {
+  .title-01 {
+    margin-bottom: 0;
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+@media desktop {
+  .title-01 {
+    width: 485px;
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
