@@ -25,7 +25,9 @@
 }
 
 .esSlogan {
+  display: inline;
   width: 60px;
+  margin: 0;
   color: text-color;
   font-family: 'CA Saygon Text';
   font-size: 10px;
@@ -34,7 +36,6 @@
   text-transform: uppercase;
   line-height: 9px;
   letter-spacing: -0.4px;
-  transform: translate(0, 4px);
 }
 
 .decor {
