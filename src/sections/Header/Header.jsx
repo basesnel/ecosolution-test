@@ -9,9 +9,9 @@ import ContactUsLink from 'components/ContactUsLink';
 export default function Header() {
   return (
     <header className={css.header}>
-      <Container>
+      <Container variant="nav-bar">
+        <Logo subLength={5} />
         <MainNav>
-          <Logo subLength={5} />
           <MenuButton />
           <ContactUsLink caption="Get in touch" />
         </MainNav>

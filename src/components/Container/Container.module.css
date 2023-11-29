@@ -5,6 +5,12 @@
   padding: 0 20px;
 }
 
+.container.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .container.main {
   padding-top: 222px;
 }

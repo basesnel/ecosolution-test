@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import css from './MainNav.module.css';
 
 export default function MainNav({ children }) {
-  return <nav className={css['nav-bar']}>{children}</nav>;
+  return <nav className={css['main-nav']}>{children}</nav>;
 }
 
 MainNav.propTypes = {
