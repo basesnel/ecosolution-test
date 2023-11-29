@@ -1,5 +1,4 @@
-@value sizes: "../../css-variables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 
 .card {
   position: relative;

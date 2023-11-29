@@ -1,4 +1,5 @@
-@value mobile, smartphone, tablet, desktop from "../../css-variables/media.module.css";
+@value mobile, smartphone, tablet, desktop, mobile-width, smartphone-width, tablet-width, desktop-width
+  from "../../css-variables/media.css";
 
 .container {
   margin: 0 auto;
@@ -9,28 +10,22 @@
   padding-top: 222px;
 }
 
-@media mobile {
-  .container {
-    max-width: 300px;
-  }
-}
-
 @media smartphone {
   .container {
-    max-width: 420px;
+    max-width: smartphone-width;
   }
 }
 
 @media tablet {
   .container {
-    max-width: 768px;
+    max-width: tablet-width;
     padding: 0 30px;
   }
 }
 
 @media desktop {
   .container {
-    max-width: 1280px;
+    max-width: desktop-width;
     padding: 0 20px;
   }
 }

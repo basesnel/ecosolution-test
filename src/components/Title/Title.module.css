@@ -1,5 +1,5 @@
-@value mobile, smartphone, tablet, desktop from "../../css-variables/media.module.css";
-@value textcolor from "../../css-variables/colors.module.css";
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value text-color from "../../css-variables/colors.css";
 
 .title-01 {
   margin-bottom: 24px;
@@ -9,12 +9,12 @@
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
-  color: textcolor;
+  color: text-color;
 }
 
 .title-02 {
   margin-bottom: 24px;
-  color: textcolor;
+  color: text-color;
   font-family: Oswald, sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -24,37 +24,11 @@
 }
 
 .title-03 {
-  color: textcolor;
+  color: textc-olor;
   font-family: Oswald;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
   text-transform: uppercase;
-}
-
-@media mobile {
-  .container {
-    max-width: 300px;
-  }
-}
-
-@media smartphone {
-  .container {
-    max-width: 420px;
-  }
-}
-
-@media tablet {
-  .container {
-    max-width: 768px;
-    padding: 0 30px;
-  }
-}
-
-@media desktop {
-  .container {
-    max-width: 1280px;
-    padding: 0 20px;
-  }
 }

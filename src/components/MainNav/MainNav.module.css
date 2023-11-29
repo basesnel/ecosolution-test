@@ -1,0 +1,6 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

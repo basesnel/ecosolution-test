@@ -1,0 +1,18 @@
+@value menu-button, ui-color from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: menu-button;
+  transition: ui-transition;
+}
+
+.menuButton:hover {
+  background-color: ui-color;
+}

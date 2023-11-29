@@ -1,4 +1,4 @@
-@value bgcolor from "../../css-variables/colors.module.css";
+@value bgcolor from "../../css-variables/colors.css";
 
 .header {
   position: fixed;
