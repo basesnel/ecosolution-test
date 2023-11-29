@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/ecosolution-test/static/css/main.c89c5d15.css",
-    "main.js": "/ecosolution-test/static/js/main.5791b5d9.js",
+    "main.css": "/ecosolution-test/static/css/main.2a65f996.css",
+    "main.js": "/ecosolution-test/static/js/main.49f1dff7.js",
     "static/media/CASaygonText-Regular.ttf": "/ecosolution-test/static/media/CASaygonText-Regular.a4c917a36633491a9603.ttf",
     "static/media/Fontspring-DEMO-allroundgothic-thick.otf": "/ecosolution-test/static/media/Fontspring-DEMO-allroundgothic-thick.a3cc674d03213c20323d.otf",
     "static/media/logo.svg": "/ecosolution-test/static/media/logo.d2c7893560633929889c84606489842d.svg",
     "index.html": "/ecosolution-test/index.html",
+    "static/media/arrow-down.svg": "/ecosolution-test/static/media/arrow-down.25a8914c3cf8ed99d9889c05e253959e.svg",
     "static/media/menu-icon.svg": "/ecosolution-test/static/media/menu-icon.d08564abfc977d896ed75243f932d459.svg",
-    "main.c89c5d15.css.map": "/ecosolution-test/static/css/main.c89c5d15.css.map",
-    "main.5791b5d9.js.map": "/ecosolution-test/static/js/main.5791b5d9.js.map"
+    "main.2a65f996.css.map": "/ecosolution-test/static/css/main.2a65f996.css.map",
+    "main.49f1dff7.js.map": "/ecosolution-test/static/js/main.49f1dff7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c89c5d15.css",
-    "static/js/main.5791b5d9.js"
+    "static/css/main.2a65f996.css",
+    "static/js/main.49f1dff7.js"
   ]
 }
