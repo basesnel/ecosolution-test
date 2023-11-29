@@ -1,0 +1,37 @@
+@value text-color, ui-color from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
+
+.btn {
+  display: inline-flex;
+  height: 40px;
+  padding: 4px 4px 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 500px;
+  border: 1px solid ui-color;
+  color: text-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.64px;
+  transition: ui-transition;
+}
+
+.btn:hover {
+  border: 1px solid text-color;
+  color: ui-color;
+  background-color: text-color;
+}
+
+.decor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: ui-color;
+}

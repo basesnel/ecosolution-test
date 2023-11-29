@@ -1,6 +1,7 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
+import Button from 'components/Button';
 
 export default function Main() {
   return (
@@ -12,7 +13,15 @@ export default function Main() {
           sources, generating power generation using energy wind, sun, water,
           biomass
         </Text>
-        <button>Learn more</button>
+        <Button caption="Learn more" />
+        <ul>
+          <li>
+            <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
+          </li>
+          <li>
+            <span>office@ecosolution.com</span>
+          </li>
+        </ul>
       </Container>
     </section>
   );
