@@ -1,5 +1,4 @@
-@value mobile, smartphone, tablet, desktop, mobile-width, smartphone-width, tablet-width, desktop-width
-  from "../../css-variables/media.css";
+@value mobile, smartphone, tablet, desktop, mobile-width, smartphone-width, tablet-width, desktop-width from "../../css-variables/media.css";
 
 .container {
   margin: 0 auto;

@@ -4,6 +4,7 @@ import Logo from 'components/Logo';
 import MenuButton from 'components/MenuButton';
 
 import css from './Header.module.css';
+import ContactUsLink from 'components/ContactUsLink';
 
 export default function Header() {
   return (
@@ -12,6 +13,7 @@ export default function Header() {
         <MainNav>
           <Logo subLength={5} />
           <MenuButton />
+          <ContactUsLink caption="Get in touch" />
         </MainNav>
       </Container>
     </header>
