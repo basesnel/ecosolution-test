@@ -1,6 +1,17 @@
 @import '../node_modules/modern-normalize/modern-normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&display=swap');
 
+@font-face {
+  font-family: 'All Round Gothic Thick';
+  src: url('./assets/fonts/Fontspring-DEMO-allroundgothic-thick.otf')
+    format(opentype);
+}
+
+@font-face {
+  font-family: 'CA Saygon Text';
+  src: url('./assets/fonts/CASaygonText-Regular.ttf') format(truetype);
+}
+
 body {
   margin: 0;
   font-family: 'Fira Sans', sans-serif;

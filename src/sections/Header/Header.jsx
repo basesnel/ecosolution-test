@@ -10,7 +10,7 @@ export default function Header() {
     <header className={css.header}>
       <Container>
         <MainNav>
-          <Logo />
+          <Logo subLength={5} />
           <MenuButton />
         </MainNav>
       </Container>

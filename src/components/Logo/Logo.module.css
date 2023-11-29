@@ -1,4 +1,42 @@
+@value text-color, ui-color from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
+
 .logo {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 4px;
   padding: 36px 0;
+  text-decoration: none;
+}
+
+.esName {
+  color: text-color;
+  font-family: 'All Round Gothic Thick';
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.32px;
+  transition: ui-transition;
+}
+
+.logo:hover .esName {
+  color: ui-color;
+}
+
+.esSlogan {
+  width: 60px;
+  color: text-color;
+  font-family: 'CA Saygon Text';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 9px;
+  letter-spacing: -0.4px;
+  transform: translate(0, 4px);
+}
+
+.decor {
+  color: ui-color;
 }
