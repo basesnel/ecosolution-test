@@ -45,6 +45,12 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  .title-03 {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 @media desktop {
@@ -57,5 +63,10 @@
   .title-02 {
     font-size: 48px;
     line-height: 48px;
+  }
+
+  .title-03 {
+    font-size: 32px;
+    line-height: 32px;
   }
 }

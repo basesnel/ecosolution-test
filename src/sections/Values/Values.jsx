@@ -9,7 +9,7 @@ import css from './Values.module.css';
 
 export default function Values() {
   return (
-    <section>
+    <section className={css['values-section']}>
       <Container>
         <div role="presentation" className={css['title-wrap']}>
           <Title level={2} caption="main values of our company" />
