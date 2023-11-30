@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecosolution-test/static/css/main.e9291cc7.css",
-    "main.js": "/ecosolution-test/static/js/main.70b6b7aa.js",
+    "main.css": "/ecosolution-test/static/css/main.bcec0103.css",
+    "main.js": "/ecosolution-test/static/js/main.1602a689.js",
     "static/media/CASaygonText-Regular.ttf": "/ecosolution-test/static/media/CASaygonText-Regular.a4c917a36633491a9603.ttf",
     "static/media/wind-turbine-clean-energy-pressed-mobile-2x.jpg": "/ecosolution-test/static/media/wind-turbine-clean-energy-pressed-mobile-2x.0d5f0d7193b969e2925f.jpg",
     "static/media/Fontspring-DEMO-allroundgothic-thick.otf": "/ecosolution-test/static/media/Fontspring-DEMO-allroundgothic-thick.a3cc674d03213c20323d.otf",
@@ -11,11 +11,11 @@
     "static/media/arrow-down.svg": "/ecosolution-test/static/media/arrow-down.25a8914c3cf8ed99d9889c05e253959e.svg",
     "static/media/arrow-right.svg": "/ecosolution-test/static/media/arrow-right.be3b3adbfa156368f10a4d63b5128945.svg",
     "static/media/menu-icon.svg": "/ecosolution-test/static/media/menu-icon.d08564abfc977d896ed75243f932d459.svg",
-    "main.e9291cc7.css.map": "/ecosolution-test/static/css/main.e9291cc7.css.map",
-    "main.70b6b7aa.js.map": "/ecosolution-test/static/js/main.70b6b7aa.js.map"
+    "main.bcec0103.css.map": "/ecosolution-test/static/css/main.bcec0103.css.map",
+    "main.1602a689.js.map": "/ecosolution-test/static/js/main.1602a689.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9291cc7.css",
-    "static/js/main.70b6b7aa.js"
+    "static/css/main.bcec0103.css",
+    "static/js/main.1602a689.js"
   ]
 }
