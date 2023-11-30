@@ -1,0 +1,22 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value text-color, ui-color from "../../css-variables/colors.css";
+
+@value title-02 from "../../components/Title/Title.module.css";
+
+.electricity .title-02 {
+  width: 286px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media tablet {
+  .electricity .title-02 {
+    width: 368px;
+  }
+}
+
+@media desktop {
+  .electricity .title-02 {
+    width: 491px;
+  }
+}
