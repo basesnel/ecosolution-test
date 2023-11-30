@@ -1,6 +1,7 @@
 import Container from 'components/Container';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
+import CardImage from 'components/CardImage';
 import Text from 'components/Text';
 import Title from 'components/Title';
 
@@ -38,6 +39,12 @@ export default function Values() {
               lives and the lives of future generations
             </Text>
           </Card>
+          <CardImage>
+            <Text>image</Text>
+          </CardImage>
+          <CardImage>
+            <Text>image</Text>
+          </CardImage>
           <Card
             title={<Title level={3} caption="innovation" />}
             icon="cpu-charge"

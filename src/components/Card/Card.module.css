@@ -10,6 +10,23 @@
   background-color: card-color;
 }
 
+.card:nth-child(3),
+.card:nth-child(4) {
+  display: none;
+}
+
+@media tablet {
+  .card:nth-child(3) {
+    display: inherit;
+    grid-column: 3 / 5;
+  }
+
+  .card:nth-child(4) {
+    display: inherit;
+    grid-column: 1 / 3;
+  }
+}
+
 .card-title {
   display: flex;
   align-items: center;

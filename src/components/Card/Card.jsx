@@ -20,5 +20,6 @@ export default function Card({ title, icon, children }) {
 
 Card.propTypes = {
   title: PropTypes.node.isRequired,
+  icon: PropTypes.string.isRequired,
   children: PropTypes.any.isRequired,
 };

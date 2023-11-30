@@ -1,0 +1,10 @@
+/* @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value card-color, ui-color from "../../css-variables/colors.css"; */
+
+/* @value title-03 from "../../components/Title/Title.module.css"; */
+@value card from "../../components/Card/Card.module.css";
+
+.card-image {
+  composes: card;
+  padding: 0;
+}
