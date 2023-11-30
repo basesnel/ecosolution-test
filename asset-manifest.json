@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/ecosolution-test/static/css/main.209ba888.css",
-    "main.js": "/ecosolution-test/static/js/main.91a36e30.js",
+    "main.css": "/ecosolution-test/static/css/main.de8b62bb.css",
+    "main.js": "/ecosolution-test/static/js/main.6ef93055.js",
     "static/media/CASaygonText-Regular.ttf": "/ecosolution-test/static/media/CASaygonText-Regular.a4c917a36633491a9603.ttf",
     "static/media/wind-turbine-clean-energy-pressed-mobile-2x.jpg": "/ecosolution-test/static/media/wind-turbine-clean-energy-pressed-mobile-2x.0d5f0d7193b969e2925f.jpg",
     "static/media/Fontspring-DEMO-allroundgothic-thick.otf": "/ecosolution-test/static/media/Fontspring-DEMO-allroundgothic-thick.a3cc674d03213c20323d.otf",
+    "static/media/icons.svg": "/ecosolution-test/static/media/icons.929aeeb4e4491dc8e2052c2115351092.svg",
     "static/media/logo.svg": "/ecosolution-test/static/media/logo.d2c7893560633929889c84606489842d.svg",
     "index.html": "/ecosolution-test/index.html",
     "static/media/arrow-down.svg": "/ecosolution-test/static/media/arrow-down.25a8914c3cf8ed99d9889c05e253959e.svg",
     "static/media/arrow-right.svg": "/ecosolution-test/static/media/arrow-right.be3b3adbfa156368f10a4d63b5128945.svg",
     "static/media/menu-icon.svg": "/ecosolution-test/static/media/menu-icon.d08564abfc977d896ed75243f932d459.svg",
-    "main.209ba888.css.map": "/ecosolution-test/static/css/main.209ba888.css.map",
-    "main.91a36e30.js.map": "/ecosolution-test/static/js/main.91a36e30.js.map"
+    "main.de8b62bb.css.map": "/ecosolution-test/static/css/main.de8b62bb.css.map",
+    "main.6ef93055.js.map": "/ecosolution-test/static/js/main.6ef93055.js.map"
   },
   "entrypoints": [
-    "static/css/main.209ba888.css",
-    "static/js/main.91a36e30.js"
+    "static/css/main.de8b62bb.css",
+    "static/js/main.6ef93055.js"
   ]
 }
