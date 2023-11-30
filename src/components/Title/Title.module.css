@@ -24,7 +24,7 @@
 }
 
 .title-03 {
-  color: textc-olor;
+  color: text-color;
   font-family: Oswald;
   font-size: 16px;
   font-style: normal;
@@ -39,6 +39,12 @@
     font-size: 48px;
     line-height: 48px;
   }
+
+  .title-02 {
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 @media desktop {
@@ -46,5 +52,10 @@
     width: 485px;
     font-size: 64px;
     line-height: 64px;
+  }
+
+  .title-02 {
+    font-size: 48px;
+    line-height: 48px;
   }
 }
