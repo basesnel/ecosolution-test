@@ -4,6 +4,7 @@
 @value text from "../Text/Text.module.css";
 
 .slide {
+  min-width: 100%;
   background-color: card-color;
 }
 

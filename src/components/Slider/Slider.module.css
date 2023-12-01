@@ -1,0 +1,10 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.list {
+  /* white-space: nowrap; */
+  display: flex;
+  gap: 10px;
+}

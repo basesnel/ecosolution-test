@@ -11,10 +11,11 @@ export default function Slide({
   place,
   enterprise,
   date,
+  itemRef,
   ...delegated
 }) {
   return (
-    <div className={css.slide} {...delegated}>
+    <div className={css.slide} ref={itemRef} {...delegated}>
       <div className={css['slide-thumb']}>
         <img
           className={css['slide-img']}

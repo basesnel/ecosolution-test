@@ -1,0 +1,5 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+
+.section {
+  padding-bottom: 36px;
+}
