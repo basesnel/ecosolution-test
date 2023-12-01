@@ -1,0 +1,26 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value ui-color from "../../css-variables/colors.css";
+
+.counter {
+  color: ui-color;
+  font-family: Oswald;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+@media tablet {
+  .counter {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+@media desktop {
+  .counter {
+    font-size: 164px;
+    line-height: 164px;
+  }
+}

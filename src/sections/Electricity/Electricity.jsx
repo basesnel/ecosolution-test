@@ -1,4 +1,5 @@
 import Container from 'components/Container';
+import Counter from 'components/Counter';
 import Title from 'components/Title';
 
 import css from './Electricity.module.css';
@@ -8,7 +9,7 @@ export default function Electricity() {
     <section className={css.electricity}>
       <Container>
         <Title level={2} caption="electricity we produced for all time" />
-        <span>1</span>
+        <Title level={3} caption={<Counter />} />
       </Container>
     </section>
   );
