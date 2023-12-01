@@ -1,4 +1,4 @@
-@value text-color from "../../css-variables/colors.css";
+@value text-color, text-opacity from "../../css-variables/colors.css";
 
 .control {
   display: flex;
@@ -16,6 +16,11 @@
   font-weight: 300;
   line-height: normal;
   letter-spacing: -1.12px;
+}
+
+.length {
+  composes: position;
+  color: text-opacity;
 }
 
 .switches {
