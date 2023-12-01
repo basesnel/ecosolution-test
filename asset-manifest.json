@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/ecosolution-test/static/css/main.270954c2.css",
-    "main.js": "/ecosolution-test/static/js/main.853d01f2.js",
+    "main.css": "/ecosolution-test/static/css/main.9015f036.css",
+    "main.js": "/ecosolution-test/static/js/main.0d0517be.js",
     "static/media/CASaygonText-Regular.ttf": "/ecosolution-test/static/media/CASaygonText-Regular.a4c917a36633491a9603.ttf",
+    "static/media/slide-02-2x.jpg": "/ecosolution-test/static/media/slide-02-2x.6cca3685a0d21de563f8.jpg",
+    "static/media/slide-03-2x.jpg": "/ecosolution-test/static/media/slide-03-2x.e606de00ab374a7fb458.jpg",
+    "static/media/slide-05-2x.jpg": "/ecosolution-test/static/media/slide-05-2x.e26abdc5081106395733.jpg",
+    "static/media/slide-01-2x.jpg": "/ecosolution-test/static/media/slide-01-2x.a35dc92552694fcf622f.jpg",
+    "static/media/slide-04-2x.jpg": "/ecosolution-test/static/media/slide-04-2x.3342eb2da34a127dcb48.jpg",
     "static/media/wind-turbine-clean-energy-pressed-mobile-2x.jpg": "/ecosolution-test/static/media/wind-turbine-clean-energy-pressed-mobile-2x.0d5f0d7193b969e2925f.jpg",
     "static/media/Fontspring-DEMO-allroundgothic-thick.otf": "/ecosolution-test/static/media/Fontspring-DEMO-allroundgothic-thick.a3cc674d03213c20323d.otf",
     "static/media/icons.svg": "/ecosolution-test/static/media/icons.929aeeb4e4491dc8e2052c2115351092.svg",
@@ -11,11 +16,11 @@
     "static/media/arrow-down.svg": "/ecosolution-test/static/media/arrow-down.25a8914c3cf8ed99d9889c05e253959e.svg",
     "static/media/arrow-right.svg": "/ecosolution-test/static/media/arrow-right.be3b3adbfa156368f10a4d63b5128945.svg",
     "static/media/menu-icon.svg": "/ecosolution-test/static/media/menu-icon.d08564abfc977d896ed75243f932d459.svg",
-    "main.270954c2.css.map": "/ecosolution-test/static/css/main.270954c2.css.map",
-    "main.853d01f2.js.map": "/ecosolution-test/static/js/main.853d01f2.js.map"
+    "main.9015f036.css.map": "/ecosolution-test/static/css/main.9015f036.css.map",
+    "main.0d0517be.js.map": "/ecosolution-test/static/js/main.0d0517be.js.map"
   },
   "entrypoints": [
-    "static/css/main.270954c2.css",
-    "static/js/main.853d01f2.js"
+    "static/css/main.9015f036.css",
+    "static/js/main.0d0517be.js"
   ]
 }
