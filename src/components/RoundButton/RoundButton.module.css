@@ -1,0 +1,53 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value text-color, ui-color from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
+
+@value slide from "../Slide/Slide.module.css";
+
+.round-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  border: 1px solid text-color;
+  border-radius: 50%;
+  background-color: none;
+  transition: ui-transition;
+}
+
+.round-btn.filled {
+  background-color: ui-color;
+  border: none;
+}
+
+.slide:hover .round-btn.filled {
+  background-color: text-color;
+}
+
+.slide:hover .round-btn.filled .right {
+  stroke: ui-color;
+}
+
+.round-btn:hover {
+  border: 1px solid ui-color;
+}
+
+.right {
+  width: 36px;
+  height: 36px;
+  stroke: text-color;
+  transition: ui-transition;
+}
+
+.round-btn:hover .right {
+  stroke: ui-color;
+}
+
+.left {
+  transform: rotate(180deg);
+}
+
+.right-up {
+  transform: rotate(-45deg);
+}

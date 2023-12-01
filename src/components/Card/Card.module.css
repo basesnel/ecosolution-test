@@ -1,5 +1,5 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
-@value card-color, ui-color from "../../css-variables/colors.css";
+@value card-color, text-color, ui-color from "../../css-variables/colors.css";
 
 @value text from "../../components/Text/Text.module.css";
 
@@ -31,6 +31,7 @@
 .icon {
   width: 16px;
   height: 16px;
+  stroke: text-color;
 }
 
 @media tablet {

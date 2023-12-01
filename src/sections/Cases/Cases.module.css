@@ -1,0 +1,24 @@
+@value text-color from "../../css-variables/colors.css";
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.position {
+  color: text-color;
+  text-align: justify;
+  font-family: Fira Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
+
+.switches {
+  display: flex;
+  gap: 12px;
+}

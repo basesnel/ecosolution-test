@@ -1,12 +1,41 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
-@value text-color from "../../css-variables/colors.css";
+@value ui-color, card-color from "../../css-variables/colors.css";
 
-.text {
-  color: text-color;
-  text-align: justify;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
+@value text from "../Text/Text.module.css";
+
+.slide {
+  background-color: card-color;
+}
+
+.slide-thumb {
+  width: 100%;
+}
+
+.slide-img {
+  width: 100%;
+  height: 168px;
+  object-fit: cover;
+}
+
+.slide-content {
+  padding: 12px 24px 12px 12px;
+}
+
+.slide-fitcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 21px;
+  border-bottom: 1px solid ui-color;
+}
+
+.slide-fitcaption .text {
+  width: 175px;
+}
+
+.slide-fitdesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
 }
