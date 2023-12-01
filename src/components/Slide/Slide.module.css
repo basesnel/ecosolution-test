@@ -4,7 +4,8 @@
 @value text from "../Text/Text.module.css";
 
 .slide {
-  min-width: 100%;
+  max-width: 440px;
+  width: 100%;
   background-color: card-color;
 }
 
@@ -39,4 +40,10 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 12px;
+}
+
+@media tablet {
+  .slide {
+    min-width: 342px;
+  }
 }

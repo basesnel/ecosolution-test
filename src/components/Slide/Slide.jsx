@@ -21,7 +21,7 @@ export default function Slide({
           className={css['slide-img']}
           src={require(`../../assets/images/slider/${image}-2x.jpg`)}
           alt={desc}
-          width="320"
+          width="640"
         />
       </div>
       <div className={css['slide-content']}>

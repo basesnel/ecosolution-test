@@ -1,3 +1,5 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+
 .slider {
   width: 100%;
   overflow: hidden;
@@ -7,4 +9,10 @@
   /* white-space: nowrap; */
   display: flex;
   gap: 10px;
+}
+
+@media tablet {
+  .list {
+    gap: 24px;
+  }
 }
