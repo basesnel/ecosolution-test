@@ -13,3 +13,9 @@
     grid-template-rows: 1fr 1fr;
   }
 }
+
+@media tablet {
+  .grid {
+    gap: 48px;
+  }
+}

@@ -11,3 +11,15 @@
   width: 100%;
   object-fit: cover;
 }
+
+@media tablet {
+  .values-image {
+    height: 197px;
+  }
+}
+
+@media desktop {
+  .values-image {
+    height: 339px;
+  }
+}
