@@ -6,3 +6,8 @@
 .text-wrap {
   composes: control;
 }
+
+.values-image {
+  width: 100%;
+  object-fit: cover;
+}

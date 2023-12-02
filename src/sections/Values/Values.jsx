@@ -39,10 +39,20 @@ export default function Values() {
             </Text>
           </Card>
           <CardImage>
-            <Text>image</Text>
+            <img
+              src={require('../../assets/images/values/values-01-2x.jpg')}
+              width="342"
+              alt="wind farms fields"
+              className={css['values-image']}
+            />
           </CardImage>
           <CardImage>
-            <Text>image</Text>
+            <img
+              src={require('../../assets/images/values/values-02-2x.jpg')}
+              width="342"
+              alt="man worker firld by solar panels"
+              className={css['values-image']}
+            />
           </CardImage>
           <Card
             title={<Title level={3} caption="innovation" />}
