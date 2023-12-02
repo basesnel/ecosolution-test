@@ -1,3 +1,4 @@
+import Section from 'components/Section';
 import Container from 'components/Container';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
@@ -9,19 +10,17 @@ import css from './Values.module.css';
 
 export default function Values() {
   return (
-    <section className={css['values-section']}>
+    <Section part="values">
       <Container>
-        <div role="presentation" className={css['title-wrap']}>
-          <Title level={2} caption="main values of our company" />
-          <div role="presentation" className={css['text-wrap']}>
-            <Text>
-              EcoSolution envisions a world where sustainable energy solutions
-              power a brighter and cleaner future for all. We aspire to be at
-              the forefront of the global shift towards renewable energy,
-              leading the way in innovative technologies that harness the power
-              of nature to meet the world's energy needs.
-            </Text>
-          </div>
+        <Title level={2} caption="main values of our company" />
+        <div role="presentation" className={css['text-wrap']}>
+          <Text>
+            EcoSolution envisions a world where sustainable energy solutions
+            power a brighter and cleaner future for all. We aspire to be at the
+            forefront of the global shift towards renewable energy, leading the
+            way in innovative technologies that harness the power of nature to
+            meet the world's energy needs.
+          </Text>
         </div>
         <Grid>
           <Card
@@ -61,6 +60,6 @@ export default function Values() {
           </Card>
         </Grid>
       </Container>
-    </section>
+    </Section>
   );
 }

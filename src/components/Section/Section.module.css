@@ -1,11 +1,112 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
-@value ui-color from "../../css-variables/colors.css";
+@value text-color, ui-color from "../../css-variables/colors.css";
 
-@value title-02 from "../Title/Title.module.css";
+@value title-02 from "../../components/Title/Title.module.css";
+@value title-03 from "../../components/Title/Title.module.css";
 
 .section {
   margin-bottom: 36px;
 }
+
+@media tablet {
+  .section {
+    margin-bottom: 100px;
+  }
+}
+
+@media desktop {
+  .section {
+    margin-bottom: 120px;
+  }
+}
+
+/* Values-section styles */
+
+@media tablet {
+  .section.values {
+    position: relative;
+  }
+
+  .section.values .title-02 {
+    width: 272px;
+    margin-bottom: 143px;
+  }
+}
+
+@media desktop {
+  .section.values .title-02 {
+    width: 365px;
+    margin-bottom: 124px;
+  }
+}
+
+/* Electricity-section styles */
+
+.section.electricity .title-02 {
+  position: relative;
+  width: 286px;
+  padding-bottom: 96px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section.electricity .title-02::after {
+  content: '';
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 48px;
+  background-color: ui-color;
+}
+
+.section.electricity .title-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 36px;
+  /* text-align: center; */
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@media tablet {
+  .section.electricity .title-02 {
+    width: 368px;
+    padding-bottom: 135px;
+  }
+
+  .section.electricity .title-02::after {
+    height: 87px;
+  }
+
+  .section.electricity .title-03 {
+    gap: 24px;
+    margin-bottom: 105px;
+    font-size: 28px;
+    line-height: 48px;
+  }
+}
+
+@media desktop {
+  .section.electricity .title-02 {
+    width: 491px;
+    padding-bottom: 120px;
+  }
+
+  .section.electricity .title-02::after {
+    bottom: 17px;
+  }
+
+  .section.electricity .title-03 {
+    margin-bottom: 120px;
+    font-size: 48px;
+  }
+}
+
+/* Cases-section styles */
 
 .section.cases .title-02 {
   width: 264px;
@@ -19,17 +120,6 @@
   .section.cases .title-02 {
     margin-bottom: 38px;
   }
-
-  .section.cases::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 65px;
-    background-color: ui-color;
-  }
 }
 
 @media desktop {
@@ -39,9 +129,5 @@
 
   .section.cases .title-02 {
     margin-bottom: 120px;
-  }
-
-  .section.cases::after {
-    height: 96px;
   }
 }

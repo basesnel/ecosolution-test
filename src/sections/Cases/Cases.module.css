@@ -8,6 +8,24 @@
   margin-bottom: 24px;
 }
 
+@media tablet {
+  .control::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -11px;
+    width: 1px;
+    height: 100%;
+    background-color: ui-color;
+  }
+}
+
+@media desktop {
+  .control::before {
+    left: -161px;
+  }
+}
+
 .position {
   color: text-color;
   text-align: justify;
