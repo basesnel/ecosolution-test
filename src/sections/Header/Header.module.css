@@ -1,8 +1,15 @@
-@value bg-color from "../../css-variables/colors.css";
+@value bg-color, header-onscroll from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
 
 .header {
   position: fixed;
   z-index: 100;
   width: 100%;
   background-color: bg-color;
+  transition: ui-transition;
+}
+
+.filled {
+  background-color: header-onscroll;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
