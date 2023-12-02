@@ -4,8 +4,8 @@
 @value text from "../Text/Text.module.css";
 
 .slide {
-  max-width: 440px;
-  width: 100%;
+  /* max-width: 440px; */
+  min-width: 100%;
   background-color: card-color;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .slide-content {
-  padding: 12px 24px 12px 12px;
+  padding: 24px 12px 12px 12px;
 }
 
 .slide-fitcaption {
@@ -45,5 +45,39 @@
 @media tablet {
   .slide {
     min-width: 342px;
+  }
+
+  .slide-fitcaption {
+    padding-bottom: 16px;
+  }
+}
+
+@media desktop {
+  .slide {
+    min-width: 596px;
+  }
+
+  .slide-img {
+    height: 296px;
+  }
+
+  .slide-content {
+    padding: 36px 48px;
+  }
+
+  .slide-fitcaption {
+    padding-bottom: 36px;
+  }
+
+  .slide-fitcaption .text {
+    width: 360px;
+  }
+
+  .slide-caption {
+    display: block;
+  }
+
+  .slide-fitdesc {
+    padding-top: 24px;
   }
 }

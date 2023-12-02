@@ -26,7 +26,10 @@ export default function Slide({
       </div>
       <div className={css['slide-content']}>
         <div className={css['slide-fitcaption']}>
-          <Text variant="caption">{`${place} ${enterprise}`}</Text>
+          <Text variant="caption">
+            <span className={css['slide-caption']}>{place}</span>
+            <span className={css['slide-caption']}>{enterprise}</span>
+          </Text>
           {/* <Text variant="caption">{enterprise}</Text> */}
           <RoundButton direction="right-up" filled={true} />
           {/* <button>arrow</button> */}

@@ -9,7 +9,7 @@ export const slides = [
   {
     image: 'slide-02',
     desc: 'Solar Panels for industrial use',
-    place: 'Zhytomyr cityPrivate Enterprise “Bosch”',
+    place: 'Zhytomyr city”',
     enterprise: 'Private Enterprise “Bosch”',
     date: 'November 2023',
   },

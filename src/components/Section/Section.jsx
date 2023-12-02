@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 import css from './Section.module.css';
 
-export default function Section({ children, variant = null }) {
-  const variation = variant ? `${css[variant]}` : '';
+export default function Section({ children, part = null }) {
+  const variation = part ? `${css[part]}` : '';
   return (
     <section className={`${css.section} ${variation}`}>{children}</section>
   );
@@ -11,5 +11,5 @@ export default function Section({ children, variant = null }) {
 
 Section.propTypes = {
   children: PropTypes.node.isRequired,
-  variant: PropTypes.string,
+  part: PropTypes.string,
 };

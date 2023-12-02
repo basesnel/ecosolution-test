@@ -51,3 +51,10 @@
 .right-up {
   transform: rotate(-45deg);
 }
+
+@media desktop {
+  .round-btn:not(.filled) {
+    width: 84px;
+    height: 84px;
+  }
+}

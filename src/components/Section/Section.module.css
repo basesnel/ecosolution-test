@@ -1,5 +1,47 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value ui-color from "../../css-variables/colors.css";
+
+@value title-02 from "../Title/Title.module.css";
 
 .section {
-  padding-bottom: 36px;
+  margin-bottom: 36px;
+}
+
+.section.cases .title-02 {
+  width: 264px;
+}
+
+@media tablet {
+  .section.cases {
+    position: relative;
+  }
+
+  .section.cases .title-02 {
+    margin-bottom: 38px;
+  }
+
+  .section.cases::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 65px;
+    background-color: ui-color;
+  }
+}
+
+@media desktop {
+  .section.cases .title-02 {
+    width: 398px;
+  }
+
+  .section.cases .title-02 {
+    margin-bottom: 120px;
+  }
+
+  .section.cases::after {
+    height: 96px;
+  }
 }

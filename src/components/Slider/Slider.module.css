@@ -16,3 +16,9 @@
     gap: 24px;
   }
 }
+
+@media desktop {
+  .list {
+    gap: 48px;
+  }
+}

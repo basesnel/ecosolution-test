@@ -21,7 +21,7 @@ export default function Cases() {
   };
 
   return (
-    <Section>
+    <Section part="cases">
       <Container>
         <Title level={2} caption="successful cases of our company" />
         <div className={css.control}>
