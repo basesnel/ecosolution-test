@@ -15,6 +15,7 @@
 @media tablet {
   .values-image {
     height: 197px;
+    object-position: bottom;
   }
 }
 

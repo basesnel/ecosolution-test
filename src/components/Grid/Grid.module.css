@@ -14,7 +14,7 @@
   }
 }
 
-@media tablet {
+@media desktop {
   .grid {
     gap: 48px;
   }
