@@ -3,13 +3,12 @@ import Title from 'components/Title';
 import Text from 'components/Text';
 import Button from 'components/Button';
 
-import image2x from 'assets/images/wind-turbine-clean-energy-pressed-mobile-2x.jpg';
-
 import css from './Main.module.css';
+import Section from 'components/Section';
 
 export default function Main() {
   return (
-    <section className={css['main-section']}>
+    <Section part="main">
       <Container>
         <div role="presentation" className={css['main-title']}>
           <Title level={1} caption="renewable energy for any task" />
@@ -33,8 +32,13 @@ export default function Main() {
             <span>ecosolution &copy; 2023</span>
           </li>
         </ul>
-        <img src={image2x} alt="Wind turbine clean energy" />
+        <img
+          src={require('../../assets/images/hero/hero-tablet-2x.jpg')}
+          width="708"
+          alt="Wind turbine clean energy"
+          className={css['main-hero']}
+        />
       </Container>
-    </section>
+    </Section>
   );
 }

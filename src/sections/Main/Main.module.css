@@ -2,10 +2,6 @@
 @value text-color, ui-color from "../../css-variables/colors.css";
 @value text from "../../components/Text/Text.module.css";
 
-.main-section {
-  padding: 222px 0 48px;
-}
-
 .main-title {
   padding-bottom: 24px;
   border-bottom: 1px solid ui-color;
@@ -26,7 +22,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .main-contact {
@@ -39,14 +35,18 @@
   display: none;
 }
 
-@media tablet {
-  .main-section {
-    padding: 240px 0 100px;
-  }
+.main-hero {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
+@media tablet {
   .main-title {
     display: flex;
     gap: 65px;
+    padding-bottom: 26px;
+    margin-bottom: 16px;
   }
 
   .main-description {
@@ -60,20 +60,23 @@
   .main-contacts {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
 
   .main-contact:last-child {
     display: inherit;
   }
+
+  .main-hero {
+    height: 348px;
+  }
 }
 
 @media desktop {
-  .main-section {
-    padding: 264px 0 100px;
-  }
-
   .main-title {
     gap: 296px;
+    padding-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   .main-description {
@@ -84,7 +87,15 @@
     margin-bottom: 20px;
   }
 
+  .main-contacts {
+    margin-bottom: 36px;
+  }
+
   .main-contact:first-child {
     width: 690px;
+  }
+
+  .main-hero {
+    height: 524px;
   }
 }

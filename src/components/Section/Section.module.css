@@ -1,8 +1,7 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 @value text-color, ui-color from "../../css-variables/colors.css";
 
-@value title-02 from "../../components/Title/Title.module.css";
-@value title-03 from "../../components/Title/Title.module.css";
+@value title-02, title-03 from "../../components/Title/Title.module.css";
 
 .section {
   margin-bottom: 36px;
@@ -20,21 +19,39 @@
   }
 }
 
+/* Main-section styles */
+
+.main {
+  padding-top: 222px;
+}
+
+@media tablet {
+  .main {
+    padding-top: 240px;
+  }
+}
+
+@media desktop {
+  .main {
+    padding-top: 264px;
+  }
+}
+
 /* Values-section styles */
 
 @media tablet {
-  .section.values {
+  .values {
     position: relative;
   }
 
-  .section.values .title-02 {
+  .values .title-02 {
     width: 272px;
     margin-bottom: 143px;
   }
 }
 
 @media desktop {
-  .section.values .title-02 {
+  .values .title-02 {
     width: 365px;
     margin-bottom: 124px;
   }
@@ -42,7 +59,7 @@
 
 /* Electricity-section styles */
 
-.section.electricity .title-02 {
+.electricity .title-02 {
   position: relative;
   width: 286px;
   padding-bottom: 96px;
@@ -50,7 +67,7 @@
   text-align: center;
 }
 
-.section.electricity .title-02::after {
+.electricity .title-02::after {
   content: '';
   position: absolute;
   bottom: 24px;
@@ -61,7 +78,7 @@
   background-color: ui-color;
 }
 
-.section.electricity .title-03 {
+.electricity .title-03 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,16 +90,16 @@
 }
 
 @media tablet {
-  .section.electricity .title-02 {
+  .electricity .title-02 {
     width: 368px;
     padding-bottom: 135px;
   }
 
-  .section.electricity .title-02::after {
+  .electricity .title-02::after {
     height: 87px;
   }
 
-  .section.electricity .title-03 {
+  .electricity .title-03 {
     gap: 24px;
     margin-bottom: 105px;
     font-size: 28px;
@@ -91,16 +108,16 @@
 }
 
 @media desktop {
-  .section.electricity .title-02 {
+  .electricity .title-02 {
     width: 491px;
     padding-bottom: 120px;
   }
 
-  .section.electricity .title-02::after {
+  .electricity .title-02::after {
     bottom: 17px;
   }
 
-  .section.electricity .title-03 {
+  .electricity .title-03 {
     margin-bottom: 120px;
     font-size: 48px;
   }
@@ -108,26 +125,26 @@
 
 /* Cases-section styles */
 
-.section.cases .title-02 {
+.cases .title-02 {
   width: 264px;
 }
 
 @media tablet {
-  .section.cases {
+  .cases {
     position: relative;
   }
 
-  .section.cases .title-02 {
+  .cases .title-02 {
     margin-bottom: 38px;
   }
 }
 
 @media desktop {
-  .section.cases .title-02 {
+  .cases .title-02 {
     width: 398px;
   }
 
-  .section.cases .title-02 {
+  .cases .title-02 {
     margin-bottom: 120px;
   }
 }
