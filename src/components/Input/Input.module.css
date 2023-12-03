@@ -1,0 +1,42 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value text-color, ui-color, card-color, placeholder-color from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
+
+.field {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid ui-color;
+}
+
+.field-label::before {
+  content: '* ';
+}
+
+.field-label {
+  color: text-color;
+  text-align: justify;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.field-input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 8px 0;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  color: text-color;
+}
+
+.field-input::placeholder {
+  color: placeholder-color;
+}
+
+@media tablet {
+}
+
+@media desktop {
+}

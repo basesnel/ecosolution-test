@@ -5,7 +5,7 @@ import Electricity from 'sections/Electricity';
 // import Services from 'sections/Services';
 import Cases from 'sections/Cases';
 import Faq from 'sections/Faq';
-import Customers from 'sections/Customers';
+// import Customers from 'sections/Customers';
 import ContactUs from 'sections/ContactUs';
 import Footer from 'sections/Footer';
 
@@ -20,7 +20,7 @@ function App() {
         {/* <Services /> */}
         <Cases />
         <Faq />
-        <Customers />
+        {/* <Customers /> */}
         <ContactUs />
       </main>
       <Footer />

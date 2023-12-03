@@ -1,0 +1,5 @@
+@value field, field-label, field-input from "../Input/Input.module.css";
+
+.no-require::before {
+  content: none;
+}

@@ -177,3 +177,15 @@
     transform: translateX(161px);
   }
 }
+
+/* FAQ-section styles */
+
+.contacts .title-02 {
+  text-align: center;
+}
+
+@media tablet {
+}
+
+@media desktop {
+}

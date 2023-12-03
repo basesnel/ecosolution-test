@@ -1,0 +1,21 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value text-color, ui-color, card-color from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 36px 12px;
+  background-color: card-color;
+}
+
+.fit-submit {
+  text-align: right;
+}
+
+@media tablet {
+}
+
+@media desktop {
+}

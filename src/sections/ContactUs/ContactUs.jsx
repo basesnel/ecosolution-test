@@ -1,9 +1,11 @@
+import Section from 'components/Section';
 import Container from 'components/Container';
 import Title from 'components/Title';
+import Form from 'components/Form';
 
 export default function Customers() {
   return (
-    <section>
+    <Section part="contacts">
       <Container>
         <Title level={2} caption="contact us" />
         <ul>
@@ -32,26 +34,8 @@ export default function Customers() {
             <a href="https://www.instagram.com/">instagram</a>
           </li>
         </ul>
-        <form>
-          <label>
-            <span>Name:</span>
-            <input name="FullName" placeholder="John Rosie" />
-          </label>
-          <label>
-            <span>E-mail:</span>
-            <input name="Email" placeholder="johnrosie@gmail.com" />
-          </label>
-          <label>
-            <span>Phone:</span>
-            <input name="Phone" placeholder="380961234567" />
-          </label>
-          <label>
-            <span>Message:</span>
-            <textarea name="Message" placeholder="Your message" />
-          </label>
-          <button>Send</button>
-        </form>
+        <Form />
       </Container>
-    </section>
+    </Section>
   );
 }
