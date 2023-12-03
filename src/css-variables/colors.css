@@ -4,4 +4,7 @@
 @value ui-color: #97d28b;
 @value card-color: #eaedf1;
 @value text-opacity: rgba(23, 61, 51, 0.25);
-@value header-onscroll: #eaedf1de;
+@value header-onscroll: #eaedf1ed;
+@value back-drop: rgba(23, 61, 51, 0.25);
+@value bg-menu: rgba(23, 61, 51, 0.75);
+@value menu-item-color: #fff;

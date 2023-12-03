@@ -12,6 +12,10 @@
   src: url('./assets/fonts/CASaygonText-Regular.ttf') format(truetype);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Fira Sans', sans-serif;
@@ -73,4 +77,8 @@ a,
 button,
 input[type='checkbox'] {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }

@@ -5,7 +5,9 @@ import css from './Section.module.css';
 export default function Section({ children, part = null }) {
   const variation = part ? `${css[part]}` : '';
   return (
-    <section className={`${css.section} ${variation}`}>{children}</section>
+    <section className={`${css.section} ${variation}`} id={part}>
+      {children}
+    </section>
   );
 }
 
