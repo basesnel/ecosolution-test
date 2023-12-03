@@ -1,0 +1,45 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value text from "../../components/Text/Text.module.css";
+
+.contact-us {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.contact-us .text {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 18px;
+  letter-spacing: -0.72px;
+}
+
+@media tablet {
+  .content-wrap {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    flex-basis: 342px;
+  }
+
+  .contact-us {
+    width: 342px;
+  }
+
+  .contact-us .text {
+    text-align: left;
+  }
+}
+
+@media desktop {
+  .contact-us {
+    width: 596px;
+    text-align: center;
+  }
+
+  .contact-us .text {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+}

@@ -2,6 +2,7 @@
 @value text-color, ui-color from "../../css-variables/colors.css";
 
 @value title-02, title-03 from "../../components/Title/Title.module.css";
+@value contact-btn from "../../components/ContactUsLink/ContactUsLink.module.css";
 
 .section {
   margin-bottom: 36px;
@@ -146,5 +147,33 @@
 
   .cases .title-02 {
     margin-bottom: 120px;
+  }
+}
+
+/* FAQ-section styles */
+
+.faq .contact-btn {
+  display: inline-flex;
+}
+
+@media tablet {
+  .faq {
+    position: relative;
+  }
+
+  .faq .title-02 {
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(12px);
+    width: 342px;
+    margin-bottom: 0;
+  }
+}
+
+@media desktop {
+  .faq .title-02 {
+    width: 398px;
+    transform: translateX(161px);
   }
 }

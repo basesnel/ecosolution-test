@@ -4,6 +4,10 @@
 
 @value text from "../Text/Text.module.css";
 
+.q-list {
+  margin-bottom: 20px;
+}
+
 .q-item {
   border-top: 1px solid ui-color;
   padding: 16px 0;
@@ -58,4 +62,48 @@
 .answer .text {
   font-size: 14px;
   letter-spacing: -0.56px;
+}
+
+@media tablet {
+  .q-list {
+    margin-bottom: 0;
+  }
+
+  .question {
+    gap: 16px;
+  }
+
+  .answer {
+    padding: 16px 0 0 42px;
+  }
+
+  .icon-plus,
+  .icon-minus {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media desktop {
+  .q-item {
+    padding: 24px 0;
+  }
+
+  .question {
+    gap: 24px;
+  }
+
+  .question .text {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
+
+  .answer {
+    padding: 24px 0 0 52px;
+  }
+
+  .answer .text {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
 }

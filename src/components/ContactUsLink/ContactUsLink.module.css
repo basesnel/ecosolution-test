@@ -4,20 +4,20 @@
 
 .contact-btn {
   display: none;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: ui-color;
+  color: text-color;
+  transition: ui-transition;
 }
 
 @media tablet {
   .contact-btn {
     display: inline-flex;
-    padding: 10px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    border-radius: 20px;
-    text-decoration: none;
-    background-color: ui-color;
-    color: text-color;
-    transition: ui-transition;
   }
 }
 
