@@ -1,0 +1,51 @@
+@value text-color, ui-color from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.contact-label {
+  text-transform: capitalize;
+  text-align: justify;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: text-color;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: text-color;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
+.icon {
+  fill: text-color;
+  width: 24px;
+  height: 24px;
+  transition: ui-transition;
+}
+
+.contact-link:hover .icon {
+  fill: ui-color;
+}

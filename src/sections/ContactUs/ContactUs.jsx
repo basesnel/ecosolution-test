@@ -1,6 +1,7 @@
 import Section from 'components/Section';
 import Container from 'components/Container';
 import Title from 'components/Title';
+import Contacts from 'components/Contacts';
 import Form from 'components/Form';
 
 export default function Customers() {
@@ -8,32 +9,7 @@ export default function Customers() {
     <Section part="contacts">
       <Container>
         <Title level={2} caption="contact us" />
-        <ul>
-          <li>
-            <span>phone:</span>
-            <a href="tel:+380981234567">38 (098) 12 34 567</a>
-            <a href="tel:+380981234567">38 (093) 12 34 567</a>
-          </li>
-          <li>
-            <span>e-mail:</span>
-            <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
-          </li>
-          <li>
-            <span>address:</span>
-            <a
-              href="https://maps.app.goo.gl/ch5Zc6Nrzai3HErQ6"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-            </a>
-          </li>
-          <li>
-            <span>social networks:</span>
-            <a href="https://www.facebook.com/">facebook</a>
-            <a href="https://www.instagram.com/">instagram</a>
-          </li>
-        </ul>
+        <Contacts />
         <Form />
       </Container>
     </Section>
