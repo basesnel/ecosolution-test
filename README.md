@@ -9,7 +9,7 @@ The project has developed possibilities:
 - view the entire Ecosolution page
 - jump to sections using menus and links
 - slider of company cases
-- automatic kW counter
+- automatic kWh counter
 - contacts section and feedback form
 
 ## Release
