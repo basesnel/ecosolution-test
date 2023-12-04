@@ -7,6 +7,7 @@ import css from './RoundButton.module.css';
 export default function RoundButton({
   direction = 'right',
   filled = false,
+  part = 'button',
   ...delegated
 }) {
   const variation =
@@ -14,20 +15,44 @@ export default function RoundButton({
       ? `${css[direction]}`
       : `${css.right} ${css[direction]}`;
 
-  return (
-    <button
-      className={
-        filled ? `${css['round-btn']} ${css.filled}` : `${css['round-btn']}`
-      }
-      {...delegated}
-    >
-      <svg className={variation}>
-        <use href={`${icons}#arrow-right`}></use>
-      </svg>
-    </button>
-  );
+  switch (part) {
+    case 'button':
+      return (
+        <button
+          className={
+            filled ? `${css['round-btn']} ${css.filled}` : `${css['round-btn']}`
+          }
+          {...delegated}
+        >
+          <svg className={variation}>
+            <use href={`${icons}#arrow-right`}></use>
+          </svg>
+        </button>
+      );
+
+    case 'link':
+      return (
+        <a
+          className={
+            filled
+              ? `${css['round-btn']} ${css.link} ${css.filled}`
+              : `${css['round-btn']} ${css.link}`
+          }
+          {...delegated}
+        >
+          <svg className={variation}>
+            <use href={`${icons}#arrow-right`}></use>
+          </svg>
+        </a>
+      );
+
+    default:
+      return null;
+  }
 }
 
 RoundButton.propTypes = {
-  caption: PropTypes.string,
+  direction: PropTypes.string,
+  filled: PropTypes.bool,
+  part: PropTypes.string,
 };

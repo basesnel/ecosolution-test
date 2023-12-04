@@ -1,32 +1,22 @@
+import FooterComponent from 'components/FooterComponent';
 import Container from 'components/Container';
-import Text from 'components/Text';
+import FitContent from 'components/FitContent';
+import Logo from 'components/Logo';
+import RoundButton from 'components/RoundButton';
+import Contacts from 'components/Contacts';
+import Copyright from 'components/Copyright';
 
 export default function Footer() {
   return (
-    <footer>
+    <FooterComponent>
       <Container>
-        <Text>Logo</Text>
-        <button>Arrow Up</button>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/">facebook</a>
-            <a href="https://www.instagram.com/">instagram</a>
-          </li>
-          <li>
-            <a
-              href="https://maps.app.goo.gl/ch5Zc6Nrzai3HErQ6"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-            >
-              79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-            </a>
-          </li>
-          <li>
-            <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
-          </li>
-        </ul>
-        <small>ecosolution &copy; 2023</small>
+        <FitContent>
+          <Logo subLength={5} />
+          <RoundButton part="link" direction="up" filled={true} href="#main" />
+          <Contacts />
+          <Copyright caption="ecosolution &copy; 2023" />
+        </FitContent>
       </Container>
-    </footer>
+    </FooterComponent>
   );
 }

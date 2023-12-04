@@ -30,9 +30,7 @@ export default function Slide({
             <span className={css['slide-caption']}>{place}</span>
             <span className={css['slide-caption']}>{enterprise}</span>
           </Text>
-          {/* <Text variant="caption">{enterprise}</Text> */}
           <RoundButton direction="right-up" filled={true} />
-          {/* <button>arrow</button> */}
         </div>
         <div className={css['slide-fitdesc']}>
           <Text variant="small">{desc}</Text>

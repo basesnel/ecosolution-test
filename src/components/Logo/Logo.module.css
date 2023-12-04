@@ -1,6 +1,8 @@
 @value text-color, ui-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
+@value footer from "../FooterComponent/FooterComponent.module.css";
+
 .logo {
   display: flex;
   align-items: center;
@@ -40,4 +42,10 @@
 
 .decor {
   color: ui-color;
+}
+
+/* Styled Logo on footer */
+
+.footer .logo {
+  padding: 24px 0;
 }

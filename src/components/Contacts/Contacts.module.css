@@ -2,10 +2,13 @@
 @value text-color, ui-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
+@value footer from "../FooterComponent/FooterComponent.module.css";
+
 .contact-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
   margin-bottom: 36px;
 }
 
@@ -79,4 +82,37 @@
   .contact-link {
     font-size: 24px;
   }
+}
+
+/* Contacts on footer */
+
+.footer .contact-list {
+  flex-direction: column-reverse;
+  margin-bottom: 24px;
+}
+
+.footer .contact-item {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer .contact-item:first-child {
+  display: none;
+}
+
+.footer .contact-label {
+  display: none;
+}
+
+.footer .contact-item:not(:last-child) .icon {
+  display: none;
+}
+
+.footer .contact-item:last-child .contact-link {
+  padding: 0;
+}
+
+.footer .contact-link {
+  font-size: 16px;
+  letter-spacing: -0.64px;
 }

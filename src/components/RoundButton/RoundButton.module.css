@@ -3,6 +3,7 @@
 @value ui-transition from "../../css-variables/transition.css";
 
 @value slide from "../Slide/Slide.module.css";
+@value footer from "../FooterComponent/FooterComponent.module.css";
 
 .round-btn {
   display: flex;
@@ -21,8 +22,10 @@
   border: none;
 }
 
-.slide:hover .round-btn.filled {
+.slide:hover .round-btn.filled,
+.round-btn.filled:hover {
   background-color: text-color;
+  border: none;
 }
 
 .slide:hover .round-btn.filled .right {
@@ -50,6 +53,27 @@
 
 .right-up {
   transform: rotate(-45deg);
+}
+
+.up {
+  transform: rotate(-90deg);
+}
+
+.link {
+  width: 32px;
+  height: 32px;
+}
+
+.link .right {
+  width: 16px;
+  height: 16px;
+}
+
+.footer .link {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  z-index: 150;
 }
 
 @media desktop {

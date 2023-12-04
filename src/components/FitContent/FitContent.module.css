@@ -1,6 +1,8 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 @value ui-color from "../../css-variables/colors.css";
 
+@value footer from "../FooterComponent/FooterComponent.module.css";
+
 @media tablet {
   .fit-content {
     display: flex;
@@ -14,4 +16,16 @@
     gap: 48px;
     flex-basis: 596px;
   }
+}
+
+/* fit content on footer */
+
+.footer .fit-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  border-top: 1px solid ui-color;
+  padding: 0 0 24px;
 }

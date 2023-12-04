@@ -1,0 +1,11 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value text-color from "../../css-variables/colors.css";
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  color: text-color;
+}
