@@ -31,7 +31,7 @@ export default function Header() {
         <Logo subLength={5} />
         <MainNav>
           <MenuButton />
-          <ContactUsLink caption="Get in touch" />
+          <ContactUsLink caption="Get in touch" href="#contacts" />
         </MainNav>
       </Container>
     </header>

@@ -72,8 +72,14 @@
 .footer .link {
   position: absolute;
   top: 28px;
-  right: 20px;
+  right: 0;
   z-index: 150;
+}
+
+@media tablet {
+  .footer .link {
+    top: 40px;
+  }
 }
 
 @media desktop {

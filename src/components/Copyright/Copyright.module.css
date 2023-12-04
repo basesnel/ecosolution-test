@@ -9,3 +9,9 @@
   letter-spacing: -0.64px;
   color: text-color;
 }
+
+@media tablet {
+  .copyright {
+    text-align: right;
+  }
+}

@@ -4,9 +4,9 @@ import { ReactComponent as ArrowDown } from 'assets/images/arrow-down.svg';
 
 import css from './ContactUsLink.module.css';
 
-export default function ContactUsLink({ caption }) {
+export default function ContactUsLink({ caption, ...delegated }) {
   return (
-    <a href="#contactus" className={css['contact-btn']}>
+    <a className={css['contact-btn']} {...delegated}>
       <span className={css.caption}>{caption}</span>
       <span className={css.decor}>
         <ArrowDown />

@@ -116,3 +116,30 @@
   font-size: 16px;
   letter-spacing: -0.64px;
 }
+
+@media tablet {
+  .footer .contact-list {
+    position: absolute;
+    bottom: 38px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    row-gap: 28px;
+    column-gap: 77px;
+    width: 530px;
+    height: 72px;
+    margin-bottom: 0;
+  }
+
+  .footer .contact-item:last-child,
+  .footer .contact-item:first-child {
+    width: 163px;
+    justify-content: flex-start;
+  }
+}
+
+@media desktop {
+  .footer .contact-list {
+    column-gap: 492px;
+    width: 945px;
+  }
+}

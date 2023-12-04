@@ -21,11 +21,19 @@
 /* fit content on footer */
 
 .footer .fit-content {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 24px;
   border-top: 1px solid ui-color;
-  padding: 0 0 24px;
+  padding: 24px 0;
+}
+
+@media tablet {
+  .footer .fit-content {
+    row-gap: 16px;
+    padding: 40px 0;
+  }
 }
