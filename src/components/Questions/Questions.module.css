@@ -66,6 +66,7 @@
 
 @media tablet {
   .q-list {
+    width: 342px;
     margin-bottom: 0;
   }
 
@@ -85,6 +86,10 @@
 }
 
 @media desktop {
+  .q-list {
+    width: 596px;
+  }
+
   .q-item {
     padding: 24px 0;
   }

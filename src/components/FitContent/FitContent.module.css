@@ -1,0 +1,17 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value ui-color from "../../css-variables/colors.css";
+
+@media tablet {
+  .fit-content {
+    display: flex;
+    gap: 24px;
+    flex-basis: 342px;
+  }
+}
+
+@media desktop {
+  .fit-content {
+    gap: 48px;
+    flex-basis: 596px;
+  }
+}

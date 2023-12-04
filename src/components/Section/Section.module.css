@@ -178,14 +178,20 @@
   }
 }
 
-/* FAQ-section styles */
+/* Contact-Us-section styles */
 
 .contacts .title-02 {
   text-align: center;
 }
 
 @media tablet {
+  .contacts .title-02 {
+    margin-bottom: 40px;
+  }
 }
 
 @media desktop {
+  .contacts .title-02 {
+    margin-bottom: 120px;
+  }
 }

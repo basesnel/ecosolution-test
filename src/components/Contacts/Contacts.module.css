@@ -1,3 +1,4 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 @value text-color, ui-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
@@ -29,6 +30,11 @@
   gap: 12px;
 }
 
+.contact-item:last-child .contact-links {
+  flex-direction: row;
+  gap: 8px;
+}
+
 .contact-link {
   display: flex;
   align-items: center;
@@ -37,6 +43,10 @@
   font-size: 20px;
   line-height: normal;
   letter-spacing: -0.8px;
+}
+
+.contact-item:last-child .contact-link {
+  padding: 12px;
 }
 
 .icon {
@@ -48,4 +58,25 @@
 
 .contact-link:hover .icon {
   fill: ui-color;
+}
+
+@media tablet {
+  .contact-list {
+    width: 342px;
+  }
+}
+
+@media desktop {
+  .contact-list {
+    width: 596px;
+    gap: 32px;
+  }
+
+  .contact-item {
+    gap: 16px;
+  }
+
+  .contact-link {
+    font-size: 24px;
+  }
 }

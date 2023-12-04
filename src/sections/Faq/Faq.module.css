@@ -31,6 +31,10 @@
 }
 
 @media desktop {
+  .content-wrap {
+    gap: 48px;
+  }
+
   .contact-us {
     width: 596px;
     text-align: center;

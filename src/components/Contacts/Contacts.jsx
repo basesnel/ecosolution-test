@@ -38,17 +38,6 @@ export default function Contacts() {
           </div>
         </li>
       ))}
-
-      {/* <li>
-        <span>address:</span>
-        <a
-          href="https://maps.app.goo.gl/ch5Zc6Nrzai3HErQ6"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-        </a>
-      </li> */}
     </ul>
   );
 }

@@ -48,13 +48,13 @@ export const contacts = [
       {
         id: 0,
         src: 'https://www.instagram.com/',
-        txt: 'instagram',
+        txt: '',
         icon: 'menu-facebook',
       },
       {
         id: 1,
         src: 'https://www.facebook.com/',
-        txt: 'facebook',
+        txt: '',
         icon: 'menu-instagram',
       },
     ],
