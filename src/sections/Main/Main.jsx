@@ -18,7 +18,7 @@ export default function Main() {
               sources, generating power generation using energy wind, sun,
               water, biomass
             </Text>
-            <Button caption="Learn more" />
+            <Button caption="Learn more" part="link" href="#cases" />
           </div>
         </div>
         <ul className={css['main-contacts']}>

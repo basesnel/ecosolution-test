@@ -16,7 +16,7 @@ export default function Faq() {
           <Questions />
           <div className={css['contact-us']}>
             <Text>Didn&apos;t find the answer to your question?</Text>
-            <ContactUsLink caption="Contact Us" />
+            <ContactUsLink caption="Contact Us" href="#contacts" />
           </div>
         </div>
       </Container>
