@@ -1,6 +1,7 @@
 # Test task from the company SOFTRIZEN
 
-This app was built with React as test from company SOFTRIZEN.
+This app was built with Create React App (https://create-react-app.dev/) as test
+from company SOFTRIZEN.
 
 ## Available operations for this task
 
