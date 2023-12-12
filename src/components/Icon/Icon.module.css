@@ -4,6 +4,7 @@
 
 @value card from "../../components/Card/Card.module.css";
 @value menu-close, link-socnet from "../../components/Menu/Menu.module.css";
+@value question, open from "../../components/Questions/Questions.module.css";
 
 /* Icon-style for menu-close button */
 
@@ -43,5 +44,35 @@
   .card .icon {
     width: 24px;
     height: 24px;
+  }
+}
+
+/* Icon-style for questions (Faq-section) */
+
+.question .icon {
+  display: block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  stroke: ui-color;
+  transition: ui-transition;
+}
+
+.question:hover .icon {
+  stroke: text-color;
+}
+
+.question.open .icon {
+  stroke: text-color;
+}
+
+.question.open:hover .icon {
+  stroke: ui-color;
+}
+
+@media tablet {
+  .question .icon {
+    width: 28px;
+    height: 28px;
   }
 }

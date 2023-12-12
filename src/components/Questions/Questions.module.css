@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 
-.icon-plus,
+/* .icon-plus,
 .icon-minus {
   display: block;
   flex-shrink: 0;
@@ -43,7 +43,7 @@
 
 .question:hover .icon-minus {
   stroke: ui-color;
-}
+} */
 
 .question .text {
   font-size: 18px;
@@ -78,11 +78,11 @@
     padding: 16px 0 0 42px;
   }
 
-  .icon-plus,
+  /* .icon-plus,
   .icon-minus {
     width: 28px;
     height: 28px;
-  }
+  } */
 }
 
 @media desktop {
