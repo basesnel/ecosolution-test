@@ -1,8 +1,35 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
-@value text-color, ui-color, card-color, placeholder-color from "../../css-variables/colors.css";
+@value menu-item-color, text-color, ui-color, card-color, placeholder-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
 @value card from "../../components/Card/Card.module.css";
+@value menu-close, link-socnet from "../../components/Menu/Menu.module.css";
+
+/* Icon-style for menu-close button */
+
+.menu-close .icon {
+  width: 20px;
+  height: 20px;
+  stroke: menu-item-color;
+  transition: ui-transition;
+}
+
+.menu-close:hover .icon {
+  stroke: ui-color;
+}
+
+/* Icon-style for social-links in menu */
+
+.link-socnet .icon {
+  width: 24px;
+  height: 24px;
+  fill: menu-item-color;
+  transition: ui-transition;
+}
+
+.link-socnet:hover .icon {
+  fill: ui-color;
+}
 
 /* Icon-style for card (Values-section) */
 
