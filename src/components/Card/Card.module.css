@@ -28,12 +28,6 @@
   letter-spacing: -0.56px;
 }
 
-.icon {
-  width: 16px;
-  height: 16px;
-  stroke: text-color;
-}
-
 @media tablet {
   .card:nth-child(3) {
     display: inherit;
@@ -63,10 +57,5 @@
     padding-top: 24px;
     font-size: 16px;
     letter-spacing: -0.64px;
-  }
-
-  .icon {
-    width: 24px;
-    height: 24px;
   }
 }

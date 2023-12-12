@@ -1,0 +1,20 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+@value text-color, ui-color, card-color, placeholder-color from "../../css-variables/colors.css";
+@value ui-transition from "../../css-variables/transition.css";
+
+@value card from "../../components/Card/Card.module.css";
+
+/* Icon-style for card (Values-section) */
+
+.card .icon {
+  width: 16px;
+  height: 16px;
+  stroke: text-color;
+}
+
+@media desktop {
+  .card .icon {
+    width: 24px;
+    height: 24px;
+  }
+}

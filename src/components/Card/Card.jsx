@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import icons from '../../assets/images/icons.svg';
+import Icon from 'components/Icon';
 
 import css from './Card.module.css';
 
@@ -8,9 +8,7 @@ export default function Card({ title, icon, children }) {
   return (
     <div className={css.card}>
       <div className={css['card-title']}>
-        <svg className={css.icon}>
-          <use href={`${icons}#${icon}`}></use>
-        </svg>
+        <Icon icon={icon} />
         {title}
       </div>
       {children}
