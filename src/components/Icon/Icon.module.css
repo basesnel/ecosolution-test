@@ -2,9 +2,9 @@
 @value menu-item-color, text-color, ui-color, card-color, placeholder-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
-@value card from "../../components/Card/Card.module.css";
-@value menu-close, link-socnet from "../../components/Menu/Menu.module.css";
-@value question, open from "../../components/Questions/Questions.module.css";
+@value card from "../Card/Card.module.css";
+@value menu-close, link-socnet from "../Menu/Menu.module.css";
+@value question, open from "../Questions/Questions.module.css";
 
 /* Icon-style for menu-close button */
 

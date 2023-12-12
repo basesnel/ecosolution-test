@@ -1,7 +1,5 @@
 import { useState } from 'react';
 
-// import icons from '../../assets/images/icons.svg';
-
 import Text from 'components/Text';
 
 import { questions } from 'constants';
@@ -22,17 +20,7 @@ export default function Questions() {
             }
             onClick={() => setIndex(id)}
           >
-            {id === index ? (
-              <Icon icon="q-minus" />
-              // <svg className={css['icon-minus']}>
-              //   <use href={`${icons}#q-minus`}></use>
-              // </svg>
-            ) : (
-                <Icon icon="q-plus" />
-              // <svg className={css['icon-plus']}>
-              //   <use href={`${icons}#q-plus`}></use>
-              // </svg>
-            )}
+            {id === index ? <Icon icon="q-minus" /> : <Icon icon="q-plus" />}
             <Text>{question}</Text>
           </div>
           <div className={css.answer}>

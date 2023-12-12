@@ -20,31 +20,6 @@
   cursor: pointer;
 }
 
-/* .icon-plus,
-.icon-minus {
-  display: block;
-  flex-shrink: 0;
-  width: 16px;
-  height: 16px;
-  transition: ui-transition;
-}
-
-.icon-plus {
-  stroke: ui-color;
-}
-
-.question:hover .icon-plus {
-  stroke: text-color;
-}
-
-.icon-minus {
-  stroke: text-color;
-}
-
-.question:hover .icon-minus {
-  stroke: ui-color;
-} */
-
 .question .text {
   font-size: 18px;
   letter-spacing: -0.72px;
@@ -77,12 +52,6 @@
   .answer {
     padding: 16px 0 0 42px;
   }
-
-  /* .icon-plus,
-  .icon-minus {
-    width: 28px;
-    height: 28px;
-  } */
 }
 
 @media desktop {
