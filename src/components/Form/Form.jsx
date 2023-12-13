@@ -42,7 +42,7 @@ export default function Form() {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmitForm} autoComplete="off">
+    <form className={css.form} onSubmit={handleSubmitForm}>
       <Input
         disabled={false}
         type="text"
@@ -51,6 +51,7 @@ export default function Form() {
         label="Full name:"
         placeholder="John Rosie"
         onChange={handleChange}
+        autocomplete="off"
       />
       <Input
         disabled={false}
@@ -60,6 +61,7 @@ export default function Form() {
         label="E-mail:"
         placeholder="johnrosie@gmail.com"
         onChange={handleChange}
+        autocomplete="off"
       />
       <Input
         disabled={false}
@@ -69,6 +71,7 @@ export default function Form() {
         label="Phone:"
         placeholder="380961234567"
         onChange={handleChange}
+        autocomplete="off"
       />
       <TextArea
         disabled={false}

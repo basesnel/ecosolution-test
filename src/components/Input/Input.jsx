@@ -3,7 +3,16 @@ import PropTypes from 'prop-types';
 import css from './Input.module.css';
 
 export default function Input(props) {
-  const { disabled, type, name, value, label, placeholder, onChange } = props;
+  const {
+    disabled,
+    type,
+    name,
+    value,
+    label,
+    placeholder,
+    onChange,
+    autocomplete,
+  } = props;
 
   return (
     <label className={css.field}>
@@ -17,6 +26,7 @@ export default function Input(props) {
           value={value}
           placeholder={placeholder}
           onChange={onChange}
+          autocomplete={autocomplete}
         />
       </div>
     </label>
@@ -31,4 +41,5 @@ Input.propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
   onChange: PropTypes.func,
+  autocomplete: PropTypes.string,
 };
