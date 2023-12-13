@@ -52,17 +52,6 @@
   padding: 12px;
 }
 
-.icon {
-  fill: text-color;
-  width: 24px;
-  height: 24px;
-  transition: ui-transition;
-}
-
-.contact-link:hover .icon {
-  fill: ui-color;
-}
-
 @media tablet {
   .contact-list {
     width: 342px;
@@ -101,10 +90,6 @@
 }
 
 .footer .contact-label {
-  display: none;
-}
-
-.footer .contact-item:not(:last-child) .icon {
   display: none;
 }
 

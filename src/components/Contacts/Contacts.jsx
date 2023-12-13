@@ -1,6 +1,5 @@
+import Icon from 'components/Icon';
 import { contacts } from 'constants';
-
-import icons from '../../assets/images/icons.svg';
 
 import css from './Contacts.module.css';
 
@@ -15,9 +14,7 @@ export default function Contacts() {
             {label.localeCompare('address')
               ? links.map(({ id, src, txt, icon }) => (
                   <a href={src} className={css['contact-link']} key={id}>
-                    <svg className={css.icon}>
-                      <use href={`${icons}#${icon}`}></use>
-                    </svg>
+                    <Icon icon={icon} />
                     {txt}
                   </a>
                 ))
@@ -29,9 +26,7 @@ export default function Contacts() {
                     className={css['contact-link']}
                     key={id}
                   >
-                    <svg className={css.icon}>
-                      <use href={`${icons}#${icon}`}></use>
-                    </svg>
+                    <Icon icon={icon} />
                     {txt}
                   </a>
                 ))}

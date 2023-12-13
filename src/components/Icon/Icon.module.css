@@ -5,6 +5,8 @@
 @value card from "../Card/Card.module.css";
 @value menu-close, link-socnet from "../Menu/Menu.module.css";
 @value question, open from "../Questions/Questions.module.css";
+@value contact-item, contact-link from "../Contacts/Contacts.module.css";
+@value footer from "../FooterComponent/FooterComponent.module.css";
 
 /* Icon-style for menu-close button */
 
@@ -75,4 +77,23 @@
     width: 28px;
     height: 28px;
   }
+}
+
+/* Icon-style for contacts (ContactUs-section) */
+
+.contact-link .icon {
+  fill: text-color;
+  width: 24px;
+  height: 24px;
+  transition: ui-transition;
+}
+
+.contact-link:hover .icon {
+  fill: ui-color;
+}
+
+/* ...and for footer-contacts */
+
+.footer .contact-item:not(:last-child) .icon {
+  display: none;
 }
