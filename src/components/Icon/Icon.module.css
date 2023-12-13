@@ -7,6 +7,8 @@
 @value question, open from "../Questions/Questions.module.css";
 @value contact-item, contact-link from "../Contacts/Contacts.module.css";
 @value footer from "../FooterComponent/FooterComponent.module.css";
+@value round-btn, filled, link from "../RoundButton/RoundButton.module.css";
+@value slide from "../Slide/Slide.module.css";
 
 /* Icon-style for menu-close button */
 
@@ -47,6 +49,40 @@
     width: 24px;
     height: 24px;
   }
+}
+
+/* Icon-style for buttons of slider (Cases-section) */
+
+.round-btn .icon {
+  width: 36px;
+  height: 36px;
+  stroke: text-color;
+  transition: ui-transition;
+}
+
+.round-btn:hover .icon {
+  stroke: ui-color;
+}
+
+.slide:hover .round-btn.filled .icon {
+  stroke: ui-color;
+}
+
+.link .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.left {
+  transform: rotate(180deg);
+}
+
+.right-up {
+  transform: rotate(-45deg);
+}
+
+.up {
+  transform: rotate(-90deg);
 }
 
 /* Icon-style for questions (Faq-section) */

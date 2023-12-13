@@ -4,9 +4,11 @@ import icons from '../../assets/images/icons.svg';
 
 import css from './Icon.module.css';
 
-export default function Icon({ icon }) {
+export default function Icon({ icon, direction = null }) {
+  const variation = direction ? `${css.icon} ${css[direction]}` : `${css.icon}`;
+
   return (
-    <svg className={css.icon}>
+    <svg className={variation}>
       <use href={`${icons}#${icon}`}></use>
     </svg>
   );
@@ -14,4 +16,5 @@ export default function Icon({ icon }) {
 
 Icon.propTypes = {
   icon: PropTypes.string.isRequired,
+  direction: PropTypes.string,
 };

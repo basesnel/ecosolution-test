@@ -1,20 +1,14 @@
+import Icon from 'components/Icon';
 import PropTypes from 'prop-types';
-
-import icons from '../../assets/images/icons.svg';
 
 import css from './RoundButton.module.css';
 
 export default function RoundButton({
-  direction = 'right',
+  direction = null,
   filled = false,
   part = 'button',
   ...delegated
 }) {
-  const variation =
-    direction === 'right'
-      ? `${css[direction]}`
-      : `${css.right} ${css[direction]}`;
-
   switch (part) {
     case 'button':
       return (
@@ -24,9 +18,7 @@ export default function RoundButton({
           }
           {...delegated}
         >
-          <svg className={variation}>
-            <use href={`${icons}#arrow-right`}></use>
-          </svg>
+          <Icon icon="arrow-right" direction={direction} />
         </button>
       );
 
@@ -40,9 +32,7 @@ export default function RoundButton({
           }
           {...delegated}
         >
-          <svg className={variation}>
-            <use href={`${icons}#arrow-right`}></use>
-          </svg>
+          <Icon icon="arrow-right" direction={direction} />
         </a>
       );
 
