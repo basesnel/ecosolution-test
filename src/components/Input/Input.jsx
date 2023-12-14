@@ -26,7 +26,7 @@ export default function Input(props) {
           value={value}
           placeholder={placeholder}
           onChange={onChange}
-          autocomplete={autocomplete}
+          autoComplete={autocomplete}
         />
       </div>
     </label>
