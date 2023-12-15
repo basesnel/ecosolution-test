@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { ReactComponent as ArrowRight } from 'assets/images/arrow-right.svg';
+import Icon from 'components/Icon';
 
 import css from './Button.module.css';
 
@@ -11,7 +11,7 @@ export default function Button({ caption, part = 'button', ...delegated }) {
         <button className={css.btn} {...delegated}>
           {caption}
           <span className={css.decor}>
-            <ArrowRight />
+            <Icon icon="btn-arrow" />
           </span>
         </button>
       );
@@ -21,7 +21,7 @@ export default function Button({ caption, part = 'button', ...delegated }) {
         <a className={css.btn} {...delegated}>
           {caption}
           <span className={css.decor}>
-            <ArrowRight />
+            <Icon icon="btn-arrow" />
           </span>
         </a>
       );

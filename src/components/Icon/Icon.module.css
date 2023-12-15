@@ -9,6 +9,15 @@
 @value footer from "../FooterComponent/FooterComponent.module.css";
 @value round-btn, filled, link from "../RoundButton/RoundButton.module.css";
 @value slide from "../Slide/Slide.module.css";
+@value btn from "../Button/Button.module.css";
+
+/* Icon-style for button */
+
+.btn .icon {
+  width: 16px;
+  height: 17px;
+  stroke: text-color;
+}
 
 /* Icon-style for menu-close button */
 

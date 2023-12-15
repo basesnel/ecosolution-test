@@ -8,7 +8,7 @@ export default function Icon({ icon, direction = null }) {
   const variation = direction ? `${css.icon} ${css[direction]}` : `${css.icon}`;
 
   return (
-    <svg className={variation}>
+    <svg xmlns="http://www.w3.org/2000/svg" className={variation}>
       <use href={`${icons}#${icon}`}></use>
     </svg>
   );
