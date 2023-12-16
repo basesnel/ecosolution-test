@@ -45,5 +45,8 @@
 <symbol id="link-arrow" viewBox="0 0 14 15">
 <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".834"><path d="M9.276 8.31 7 10.333 4.723 8.31M7 4.667v5.61"/></g>
 </symbol>
+<symbol id="menu" viewBox="0 0 16 17">
+<path fill="none" stroke-linecap="round" d="M2 5.167h12M2 8.5h12M2 11.833h12"/>
+</symbol>
 </defs>
 </svg>
