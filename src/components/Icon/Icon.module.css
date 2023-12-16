@@ -10,6 +10,15 @@
 @value round-btn, filled, link from "../RoundButton/RoundButton.module.css";
 @value slide from "../Slide/Slide.module.css";
 @value btn from "../Button/Button.module.css";
+@value contact-btn from "../ContactUsLink/ContactUsLink.module.css";
+
+/* Icon-style for ContactUs-button */
+
+.contact-btn .icon {
+  width: 14px;
+  height: 15px;
+  stroke: text-color;
+}
 
 /* Icon-style for button */
 
