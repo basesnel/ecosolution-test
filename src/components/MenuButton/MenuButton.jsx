@@ -12,7 +12,7 @@ export default function MenuButton() {
   return (
     <>
       <button className={css['menu-btn']} onClick={() => setIsMenuOpen(true)}>
-        <Icon icon="menu" />
+        <Icon icon="menu" width={16} height={17} label="Open menu" />
       </button>
       {isMenuOpen &&
         createPortal(
