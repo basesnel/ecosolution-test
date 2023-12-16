@@ -48,5 +48,8 @@
 <symbol id="menu" viewBox="0 0 16 17">
 <path fill="none" stroke-linecap="round" d="M2 5.167h12M2 8.5h12M2 11.833h12"/>
 </symbol>
+<symbol id="menu-arrow" viewBox="0 0 16 16">
+<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M6.284 4.492h5.723v5.723M3.994 12.506l7.933-7.934"/></g>
+</symbol>
 </defs>
 </svg>

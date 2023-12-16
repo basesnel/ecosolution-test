@@ -19,6 +19,7 @@ export default function Menu({ onClose, onHide }) {
             <li key={id} className={css['menu-item']}>
               <a href={`#${id}`} className={css['menu-link']} onClick={onClose}>
                 {item}
+                <Icon icon="menu-arrow" />
               </a>
             </li>
           ))}
