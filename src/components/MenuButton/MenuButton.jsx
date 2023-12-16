@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 
-import { ReactComponent as MenuIcon } from 'assets/images/menu-icon.svg';
-
 import Menu from 'components/Menu';
+import Icon from 'components/Icon';
 
 import css from './MenuButton.module.css';
 
@@ -12,8 +11,8 @@ export default function MenuButton() {
 
   return (
     <>
-      <button className={css.menuButton} onClick={() => setIsMenuOpen(true)}>
-        <MenuIcon />
+      <button className={css['menu-btn']} onClick={() => setIsMenuOpen(true)}>
+        <Icon icon="menu" />
       </button>
       {isMenuOpen &&
         createPortal(
