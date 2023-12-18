@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution-test/static/css/main.e12413ad.css",
-    "main.js": "/ecosolution-test/static/js/main.636b8403.js",
+    "main.js": "/ecosolution-test/static/js/main.dc7cdf2d.js",
     "static/media/hero-tablet-2x.jpg": "/ecosolution-test/static/media/hero-tablet-2x.5b0455bac383840b6212.jpg",
     "static/media/CASaygonText-Regular.ttf": "/ecosolution-test/static/media/CASaygonText-Regular.a4c917a36633491a9603.ttf",
     "static/media/slide-02-2x.jpg": "/ecosolution-test/static/media/slide-02-2x.6cca3685a0d21de563f8.jpg",
@@ -12,14 +12,14 @@
     "static/media/slide-04-2x.jpg": "/ecosolution-test/static/media/slide-04-2x.3342eb2da34a127dcb48.jpg",
     "static/media/values-02-2x.jpg": "/ecosolution-test/static/media/values-02-2x.7356103a48e415e33735.jpg",
     "static/media/Fontspring-DEMO-allroundgothic-thick.otf": "/ecosolution-test/static/media/Fontspring-DEMO-allroundgothic-thick.a3cc674d03213c20323d.otf",
-    "static/media/icons.svg": "/ecosolution-test/static/media/icons.b145caf10647e45a9828ff1d394bb073.svg",
+    "static/media/icons.svg": "/ecosolution-test/static/media/icons.e72489871563541b99baa75a5d41e3bf.svg",
     "static/media/logo.svg": "/ecosolution-test/static/media/logo.ae29f58093dea618323d018981471c7b.svg",
     "index.html": "/ecosolution-test/index.html",
     "main.e12413ad.css.map": "/ecosolution-test/static/css/main.e12413ad.css.map",
-    "main.636b8403.js.map": "/ecosolution-test/static/js/main.636b8403.js.map"
+    "main.dc7cdf2d.js.map": "/ecosolution-test/static/js/main.dc7cdf2d.js.map"
   },
   "entrypoints": [
     "static/css/main.e12413ad.css",
-    "static/js/main.636b8403.js"
+    "static/js/main.dc7cdf2d.js"
   ]
 }
