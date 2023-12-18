@@ -28,7 +28,6 @@
   width: 16px;
   height: 16px;
   stroke: menu-item-color;
-  /* transform: rotate(-45deg); */
   transition: ui-transition;
 }
 

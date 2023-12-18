@@ -11,7 +11,12 @@ export default function Menu({ onClose, onHide }) {
     <div className={css.backdrop} onClick={onHide}>
       <div className={css.menu}>
         <button className={css['menu-close']} onClick={onClose}>
-          <Icon icon="menu-close" />
+          <Icon
+            icon="menu-close"
+            width={20}
+            height={20}
+            label="Close the menu"
+          />
           Close
         </button>
         <ul className={css['menu-list']}>
@@ -19,7 +24,12 @@ export default function Menu({ onClose, onHide }) {
             <li key={id} className={css['menu-item']}>
               <a href={`#${id}`} className={css['menu-link']} onClick={onClose}>
                 {item}
-                <Icon icon="menu-arrow" />
+                <Icon
+                  icon="menu-arrow"
+                  width={16}
+                  height={16}
+                  label={`Go to section ${item}`}
+                />
               </a>
             </li>
           ))}
