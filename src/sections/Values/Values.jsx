@@ -7,6 +7,7 @@ import Text from 'components/Text';
 import Title from 'components/Title';
 
 import css from './Values.module.css';
+// import ResponsiveImage from 'components/ResponsiveImage';
 
 export default function Values() {
   return (
@@ -39,20 +40,78 @@ export default function Values() {
             </Text>
           </Card>
           <CardImage>
-            <img
+            {/* <img
               src={require('../../assets/images/values/values-01-2x.jpg')}
               width="342"
               alt="wind farms fields"
               className={css['values-image']}
-            />
+            /> */}
+            <picture>
+              <source
+                srcSet={`
+                ${require(`../../assets/images/values/values-01-1x.webp`)}   480w,
+                ${require(`../../assets/images/values/values-01-2x.webp`)}   768w,
+                ${require(`../../assets/images/values/values-01-3x.webp`)} 1280w
+              `}
+                type="image/webp"
+                sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
+              />
+              <img
+                loading="lazy"
+                srcSet={`
+                ${require(`../../assets/images/values/values-01-1x.jpg`)}   480w,
+                ${require(`../../assets/images/values/values-01-2x.jpg`)}   768w,
+                ${require(`../../assets/images/values/values-01-3x.jpg`)} 1280w
+              `}
+                src={require(`../../assets/images/values/values-01-1x.jpg`)}
+                alt="wind farms fields"
+                sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
+                className={css['values-image']}
+              />
+            </picture>
+            {/* <ResponsiveImage
+              image500="values/values-01-1x"
+              image1000="values/values-01-2x"
+              image1500="values/values-01-3x"
+              alt="wind farms fields"
+            /> */}
           </CardImage>
           <CardImage>
-            <img
+            {/* <img
               src={require('../../assets/images/values/values-02-2x.jpg')}
               width="342"
               alt="man worker firld by solar panels"
               className={css['values-image']}
-            />
+            /> */}
+            <picture>
+              <source
+                srcSet={`
+                ${require(`../../assets/images/values/values-02-1x.webp`)}   480w,
+                ${require(`../../assets/images/values/values-02-2x.webp`)}   768w,
+                ${require(`../../assets/images/values/values-02-3x.webp`)} 1280w
+              `}
+                type="image/webp"
+                sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
+              />
+              <img
+                loading="lazy"
+                srcSet={`
+                ${require(`../../assets/images/values/values-02-1x.jpg`)}   480w,
+                ${require(`../../assets/images/values/values-02-2x.jpg`)}   768w,
+                ${require(`../../assets/images/values/values-02-3x.jpg`)} 1280w
+              `}
+                src={require(`../../assets/images/values/values-02-1x.jpg`)}
+                alt="man worker firld by solar panels"
+                sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
+                className={css['values-image']}
+              />
+            </picture>
+            {/* <ResponsiveImage
+              image500="values/values-02-1x"
+              image1000="values/values-02-2x"
+              image1500="values/values-02-3x"
+              alt="man worker firld by solar panels"
+            /> */}
           </CardImage>
           <Card
             title={<Title level={3} caption="innovation" />}
