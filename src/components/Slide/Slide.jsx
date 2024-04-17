@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 
 import Text from 'components/Text';
+import RoundButton from 'components/RoundButton';
+import ResponsiveImage from 'components/ResponsiveImage';
 
 import css from './Slide.module.css';
-import RoundButton from 'components/RoundButton';
 
 export default function Slide({
   image,
@@ -21,34 +22,12 @@ export default function Slide({
   return (
     <div className={css.slide} ref={itemRef} {...delegated}>
       <div className={css['slide-thumb']}>
-        {/* <img
-          className={css['slide-img']}
-          src={require(`../../assets/images/slider/${image}-2x.jpg`)}
+        <ResponsiveImage
+          image500={image500}
+          image1000={image1000}
+          image1500={image1500}
           alt={desc}
-          width="640"
-        /> */}
-        <picture>
-          <source
-            srcSet={`
-                ${require(`../../assets/images/${image500}.webp`)}   480w,
-                ${require(`../../assets/images/${image1000}.webp`)}  768w,
-                ${require(`../../assets/images/${image1500}.webp`)} 1280w
-              `}
-            type="image/webp"
-            sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
-          />
-          <img
-            loading="lazy"
-            srcSet={`
-                ${require(`../../assets/images/${image500}.jpg`)}   480w,
-                ${require(`../../assets/images/${image1000}.jpg`)}  768w,
-                ${require(`../../assets/images/${image1500}.jpg`)} 1280w
-              `}
-            src={require(`../../assets/images/${image500}.jpg`)}
-            alt={desc}
-            sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
-          />
-        </picture>
+        />
       </div>
       <div className={css['slide-content']}>
         <div className={css['slide-fitcaption']}>

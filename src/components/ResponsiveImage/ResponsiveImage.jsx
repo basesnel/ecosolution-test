@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
 
 export default function ResponsiveImage({
-  image480,
-  image768,
-  image1280,
+  image500,
+  image1000,
+  image1500,
   alt,
 }) {
   return (
     <picture>
       <source
         srcSet={`
-                ${require(`../../assets/images/${image480}.webp`)}   480w,
-                ${require(`../../assets/images/${image768}.webp`)}   768w,
-                ${require(`../../assets/images/${image1280}.webp`)} 1280w
+                ${require(`../../assets/images/${image500}.webp`)}   480w,
+                ${require(`../../assets/images/${image1000}.webp`)}   768w,
+                ${require(`../../assets/images/${image1500}.webp`)} 1280w
               `}
         type="image/webp"
         sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
@@ -20,11 +20,11 @@ export default function ResponsiveImage({
       <img
         loading="lazy"
         srcSet={`
-                ${require(`../../assets/images/${image480}.jpg`)}   480w,
-                ${require(`../../assets/images/${image768}.jpg`)}   768w,
-                ${require(`../../assets/images/${image1280}.jpg`)} 1280w
+                ${require(`../../assets/images/${image500}.jpg`)}   480w,
+                ${require(`../../assets/images/${image1000}.jpg`)}   768w,
+                ${require(`../../assets/images/${image1500}.jpg`)} 1280w
               `}
-        src={require(`../../assets/images/${image480}.jpg`)}
+        src={require(`../../assets/images/${image500}.jpg`)}
         alt={alt}
         sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
       />
@@ -33,9 +33,8 @@ export default function ResponsiveImage({
 }
 
 ResponsiveImage.propTypes = {
-  image320: PropTypes.string.isRequired,
-  image640: PropTypes.string.isRequired,
-  image960: PropTypes.string.isRequired,
-  image1280: PropTypes.string.isRequired,
+  image500: PropTypes.string.isRequired,
+  image1000: PropTypes.string.isRequired,
+  image1500: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
 };
