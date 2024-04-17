@@ -27,6 +27,7 @@ export default function Slide({
           image1000={image1000}
           image1500={image1500}
           alt={desc}
+          className=""
         />
       </div>
       <div className={css['slide-content']}>
