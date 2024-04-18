@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/ecosolution-test/static/css/main.e12413ad.css",
-    "main.js": "/ecosolution-test/static/js/main.e894136d.js",
+    "main.js": "/ecosolution-test/static/js/main.3019caf2.js",
     "static/media/hero-desktop-3x.jpg": "/ecosolution-test/static/media/hero-desktop-3x.102b67edf75372e79564.jpg",
+    "static/media/hero-desktop-3x.webp": "/ecosolution-test/static/media/hero-desktop-3x.44e1be442fcbff4f065c.webp",
     "static/media/hero-desktop-2x.jpg": "/ecosolution-test/static/media/hero-desktop-2x.3e3193980032696036cb.jpg",
     "static/media/hero-tablet-3x.jpg": "/ecosolution-test/static/media/hero-tablet-3x.5d4e4948a16f6725f7a3.jpg",
+    "static/media/hero-desktop-2x.webp": "/ecosolution-test/static/media/hero-desktop-2x.24997bb71e06eb0760ab.webp",
+    "static/media/hero-tablet-3x.webp": "/ecosolution-test/static/media/hero-tablet-3x.6231017bf4ba5357ca21.webp",
     "static/media/slide-02-3x.jpg": "/ecosolution-test/static/media/slide-02-3x.8a1b045170a3ba615fee.jpg",
     "static/media/hero-tablet-2x.jpg": "/ecosolution-test/static/media/hero-tablet-2x.5b0455bac383840b6212.jpg",
     "static/media/slide-03-3x.jpg": "/ecosolution-test/static/media/slide-03-3x.9de7e8567bf8a667fda6.jpg",
@@ -14,12 +17,15 @@
     "static/media/slide-01-3x.jpg": "/ecosolution-test/static/media/slide-01-3x.a609e79d1a99b74e8aff.jpg",
     "static/media/slide-05-3x.jpg": "/ecosolution-test/static/media/slide-05-3x.3967b9b99afeb1434f2d.jpg",
     "static/media/hero-mobile-3x.jpg": "/ecosolution-test/static/media/hero-mobile-3x.fc1115bddf8d5806ad6d.jpg",
+    "static/media/hero-tablet-2x.webp": "/ecosolution-test/static/media/hero-tablet-2x.f70f644d84169a07cf32.webp",
     "static/media/slide-03-3x.webp": "/ecosolution-test/static/media/slide-03-3x.8c289ff140727f7ca625.webp",
     "static/media/slide-01-3x.webp": "/ecosolution-test/static/media/slide-01-3x.5118de350c7f3f9bf903.webp",
+    "static/media/hero-desktop-1x.webp": "/ecosolution-test/static/media/hero-desktop-1x.fa5c9bc68ca1ae58b361.webp",
     "static/media/values-01-3x.jpg": "/ecosolution-test/static/media/values-01-3x.31c25753b713c3c3bd4e.jpg",
     "static/media/slide-02-2x.jpg": "/ecosolution-test/static/media/slide-02-2x.6cca3685a0d21de563f8.jpg",
     "static/media/slide-04-3x.jpg": "/ecosolution-test/static/media/slide-04-3x.d13a67d678772561b8d8.jpg",
     "static/media/values-02-3x.jpg": "/ecosolution-test/static/media/values-02-3x.99e79f57fd4ee7228347.jpg",
+    "static/media/hero-mobile-3x.webp": "/ecosolution-test/static/media/hero-mobile-3x.846b2f03bda18abbf9bc.webp",
     "static/media/slide-03-2x.jpg": "/ecosolution-test/static/media/slide-03-2x.e606de00ab374a7fb458.jpg",
     "static/media/slide-05-3x.webp": "/ecosolution-test/static/media/slide-05-3x.e1685618a2675d6cf86c.webp",
     "static/media/slide-02-2x.webp": "/ecosolution-test/static/media/slide-02-2x.94027d5f56c137ce4b7d.webp",
@@ -33,9 +39,11 @@
     "static/media/values-01-2x.jpg": "/ecosolution-test/static/media/values-01-2x.dff78e8cafc8ea4cc23e.jpg",
     "static/media/slide-01-2x.webp": "/ecosolution-test/static/media/slide-01-2x.c90d028f3e0a05a45ba5.webp",
     "static/media/slide-04-2x.jpg": "/ecosolution-test/static/media/slide-04-2x.3342eb2da34a127dcb48.jpg",
+    "static/media/hero-mobile-2x.webp": "/ecosolution-test/static/media/hero-mobile-2x.ef323aa1c3387cc1aaf6.webp",
     "static/media/values-02-2x.jpg": "/ecosolution-test/static/media/values-02-2x.7356103a48e415e33735.jpg",
     "static/media/slide-05-2x.webp": "/ecosolution-test/static/media/slide-05-2x.d490e811c6f5fb973138.webp",
     "static/media/values-02-3x.webp": "/ecosolution-test/static/media/values-02-3x.bf74595ce7574b2a19f8.webp",
+    "static/media/hero-tablet-1x.webp": "/ecosolution-test/static/media/hero-tablet-1x.ec55dc8b3a9bbfce3eff.webp",
     "static/media/values-01-2x.webp": "/ecosolution-test/static/media/values-01-2x.1d20c117aec32bce60f4.webp",
     "static/media/slide-02-1x.jpg": "/ecosolution-test/static/media/slide-02-1x.d0ad72d547f892bdff60.jpg",
     "static/media/slide-03-1x.jpg": "/ecosolution-test/static/media/slide-03-1x.79422c98e56d18f99525.jpg",
@@ -51,6 +59,7 @@
     "static/media/slide-01-1x.webp": "/ecosolution-test/static/media/slide-01-1x.d995e9e083ea730da90b.webp",
     "static/media/slide-04-1x.jpg": "/ecosolution-test/static/media/slide-04-1x.5ef142d75dccf8613dd1.jpg",
     "static/media/slide-05-1x.webp": "/ecosolution-test/static/media/slide-05-1x.66cc5d3bc3b88db9f0e7.webp",
+    "static/media/hero-mobile-1x.webp": "/ecosolution-test/static/media/hero-mobile-1x.3562fb83def59c3fd54e.webp",
     "static/media/values-02-1x.jpg": "/ecosolution-test/static/media/values-02-1x.17edf6e18c24bab1b55f.jpg",
     "static/media/values-01-1x.webp": "/ecosolution-test/static/media/values-01-1x.ddc5120fc23ae9424cce.webp",
     "static/media/icons.svg": "/ecosolution-test/static/media/icons.4e6c5f9fbd8eafb98e13866f2e7eeaf6.svg",
@@ -59,10 +68,10 @@
     "static/media/logo.svg": "/ecosolution-test/static/media/logo.ae29f58093dea618323d018981471c7b.svg",
     "index.html": "/ecosolution-test/index.html",
     "main.e12413ad.css.map": "/ecosolution-test/static/css/main.e12413ad.css.map",
-    "main.e894136d.js.map": "/ecosolution-test/static/js/main.e894136d.js.map"
+    "main.3019caf2.js.map": "/ecosolution-test/static/js/main.3019caf2.js.map"
   },
   "entrypoints": [
     "static/css/main.e12413ad.css",
-    "static/js/main.e894136d.js"
+    "static/js/main.3019caf2.js"
   ]
 }
