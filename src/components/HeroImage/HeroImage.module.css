@@ -1,0 +1,19 @@
+@value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
+
+.hero-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media tablet {
+  .hero-image {
+    height: 348px;
+  }
+}
+
+@media desktop {
+  .hero-image {
+    height: 524px;
+  }
+}

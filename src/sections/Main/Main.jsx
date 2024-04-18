@@ -1,10 +1,11 @@
+import Section from 'components/Section';
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
 import Button from 'components/Button';
+import HeroImage from 'components/HeroImage';
 
 import css from './Main.module.css';
-import Section from 'components/Section';
 
 export default function Main() {
   return (
@@ -32,13 +33,8 @@ export default function Main() {
             <span>ecosolution &copy; 2023</span>
           </li>
         </ul>
-        {/* <img
-          src={require('../../assets/images/hero/hero-tablet-2x.jpg')}
-          width="708"
-          alt="Wind turbine clean energy"
-          className={css['main-hero']}
-        /> */}
-        <picture>
+        <HeroImage />
+        {/* <picture>
           <source
             srcSet={`
                 ${require(`../../assets/images/hero/hero-desktop-1x.webp`)} 1x,
@@ -105,7 +101,7 @@ export default function Main() {
             sizes="100vw"
             className={css['main-hero']}
           />
-        </picture>
+        </picture> */}
       </Container>
     </Section>
   );

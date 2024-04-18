@@ -27,7 +27,7 @@ export default function ResponsiveImage({
               `}
         src={require(`../../assets/images/${image500}.jpg`)}
         alt={alt}
-        sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
+        sizes="(min-width: 768px) 50vw, 100vw"
         className={cssName}
       />
     </picture>
