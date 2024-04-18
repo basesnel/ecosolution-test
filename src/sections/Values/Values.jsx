@@ -51,7 +51,7 @@ export default function Values() {
               image1000="values/values-01-2x"
               image1500="values/values-01-3x"
               alt="wind farms fields"
-              className={css['values-image']}
+              cssName={css['values-image']}
             />
           </CardImage>
           <CardImage>
@@ -66,7 +66,7 @@ export default function Values() {
               image1000="values/values-02-2x"
               image1500="values/values-02-3x"
               alt="man worker firld by solar panels"
-              className={css['values-image']}
+              cssName={css['values-image']}
             />
           </CardImage>
           <Card

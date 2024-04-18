@@ -5,7 +5,7 @@ export default function ResponsiveImage({
   image1000,
   image1500,
   alt,
-  className,
+  cssName,
 }) {
   return (
     <picture>
@@ -28,7 +28,7 @@ export default function ResponsiveImage({
         src={require(`../../assets/images/${image500}.jpg`)}
         alt={alt}
         sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
-        className={`${className}`}
+        className={cssName}
       />
     </picture>
   );
@@ -39,5 +39,9 @@ ResponsiveImage.propTypes = {
   image1000: PropTypes.string.isRequired,
   image1500: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  cssName: PropTypes.string,
+};
+
+ResponsiveImage.defaultProps = {
+  cssName: null,
 };
