@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export default function ResponsiveImage({
+  isLazy,
   image500,
   image1000,
   image1500,
@@ -16,10 +17,10 @@ export default function ResponsiveImage({
                 ${require(`../../assets/images/${image1500}.webp`)} 1280w
               `}
         type="image/webp"
-        sizes="(min-width: 1280px) 50vw, (min-width: 768px) 50vw, 100vw"
+        sizes="(min-width: 768px) 50vw, 100vw"
       />
       <img
-        loading="lazy"
+        loading={isLazy}
         srcSet={`
                 ${require(`../../assets/images/${image500}.jpg`)}   480w,
                 ${require(`../../assets/images/${image1000}.jpg`)}   768w,
@@ -35,6 +36,7 @@ export default function ResponsiveImage({
 }
 
 ResponsiveImage.propTypes = {
+  isLazy: PropTypes.oneOf(['lazy']),
   image500: PropTypes.string.isRequired,
   image1000: PropTypes.string.isRequired,
   image1500: PropTypes.string.isRequired,
@@ -43,5 +45,6 @@ ResponsiveImage.propTypes = {
 };
 
 ResponsiveImage.defaultProps = {
+  isLazy: null,
   cssName: null,
 };

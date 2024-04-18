@@ -23,6 +23,7 @@ export default function Slide({
     <div className={css.slide} ref={itemRef} {...delegated}>
       <div className={css['slide-thumb']}>
         <ResponsiveImage
+          isLazy="lazy"
           image500={image500}
           image1000={image1000}
           image1500={image1500}

@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
+
 import css from './HeroImage.module.css';
 
-export default function HeroImage() {
+export default function HeroImage({ isLazy }) {
   return (
     <picture>
       <source
@@ -58,7 +60,7 @@ export default function HeroImage() {
         media="(max-width: 480px)"
       />
       <img
-        loading="lazy"
+        loading={isLazy}
         srcSet={`
                 ${require(`../../assets/images/hero/hero-mobile-2x.jpg`)}  480w,
                 ${require(`../../assets/images/hero/hero-tablet-2x.jpg`)}  768w,
@@ -72,3 +74,11 @@ export default function HeroImage() {
     </picture>
   );
 }
+
+HeroImage.propTypes = {
+  isLazy: PropTypes.oneOf(['lazy']),
+};
+
+HeroImage.defaultProps = {
+  isLazy: null,
+};

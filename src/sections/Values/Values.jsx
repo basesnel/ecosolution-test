@@ -47,6 +47,7 @@ export default function Values() {
               className={css['values-image']}
             /> */}
             <ResponsiveImage
+              isLazy="lazy"
               image500="values/values-01-1x"
               image1000="values/values-01-2x"
               image1500="values/values-01-3x"
@@ -62,6 +63,7 @@ export default function Values() {
               className={css['values-image']}
             /> */}
             <ResponsiveImage
+              isLazy="lazy"
               image500="values/values-02-1x"
               image1000="values/values-02-2x"
               image1500="values/values-02-3x"
