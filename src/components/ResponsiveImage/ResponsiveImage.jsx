@@ -5,6 +5,7 @@ export default function ResponsiveImage({
   image500,
   image1000,
   image1500,
+  sizes,
   alt,
   cssName,
 }) {
@@ -17,7 +18,8 @@ export default function ResponsiveImage({
                 ${require(`../../assets/images/${image1500}.webp`)} 1280w
               `}
         type="image/webp"
-        sizes="(min-width: 768px) 50vw, 100vw"
+        sizes={sizes}
+        // sizes="(min-width: 768px) 50vw, 100vw"
       />
       <img
         loading={isLazy}
@@ -28,7 +30,8 @@ export default function ResponsiveImage({
               `}
         src={require(`../../assets/images/${image500}.jpg`)}
         alt={alt}
-        sizes="(min-width: 768px) 50vw, 100vw"
+        sizes={sizes}
+        // sizes="(min-width: 768px) 50vw, 100vw"
         className={cssName}
       />
     </picture>
@@ -40,6 +43,7 @@ ResponsiveImage.propTypes = {
   image500: PropTypes.string.isRequired,
   image1000: PropTypes.string.isRequired,
   image1500: PropTypes.string.isRequired,
+  sizes: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   cssName: PropTypes.string,
 };

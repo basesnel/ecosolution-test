@@ -45,7 +45,7 @@ export default function Cases() {
                 selectedRef.current.scrollIntoView({
                   behavior: 'smooth',
                   block: 'nearest',
-                  inline: 'center',
+                  inline: 'end',
                 });
               }}
             />
@@ -61,7 +61,7 @@ export default function Cases() {
                 selectedRef.current.scrollIntoView({
                   behavior: 'smooth',
                   block: 'nearest',
-                  inline: 'center',
+                  inline: 'start',
                 });
               }}
             />

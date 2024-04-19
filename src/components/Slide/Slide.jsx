@@ -27,6 +27,7 @@ export default function Slide({
           image500={image500}
           image1000={image1000}
           image1500={image1500}
+          sizes="(min-width: 768px) 50vw, 100vw"
           alt={desc}
           cssName={css['slide-img']}
         />

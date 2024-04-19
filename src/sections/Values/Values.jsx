@@ -40,33 +40,23 @@ export default function Values() {
             </Text>
           </Card>
           <CardImage>
-            {/* <img
-              src={require('../../assets/images/values/values-01-2x.jpg')}
-              width="342"
-              alt="wind farms fields"
-              className={css['values-image']}
-            /> */}
             <ResponsiveImage
               isLazy="lazy"
               image500="values/values-01-1x"
               image1000="values/values-01-2x"
               image1500="values/values-01-3x"
+              sizes="(min-width: 768px) 50vw, 100vw"
               alt="wind farms fields"
               cssName={css['values-image']}
             />
           </CardImage>
           <CardImage>
-            {/* <img
-              src={require('../../assets/images/values/values-02-2x.jpg')}
-              width="342"
-              alt="man worker firld by solar panels"
-              className={css['values-image']}
-            /> */}
             <ResponsiveImage
               isLazy="lazy"
               image500="values/values-02-1x"
               image1000="values/values-02-2x"
               image1500="values/values-02-3x"
+              sizes="(min-width: 768px) 50vw, 100vw"
               alt="man worker firld by solar panels"
               cssName={css['values-image']}
             />
