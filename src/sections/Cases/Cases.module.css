@@ -1,11 +1,46 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 @value text-color, ui-color, text-opacity from "../../css-variables/colors.css";
 
+@value text from "../../components/Text/Text.module.css";
+
 .control {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 24px;
+}
+
+.case-thumb {
+  width: 100%;
+}
+
+.case-img {
+  width: 100%;
+  height: 168px;
+  object-fit: cover;
+}
+
+.case-content {
+  padding: 24px 12px 12px 12px;
+}
+
+.case-fitcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 21px;
+  border-bottom: 1px solid ui-color;
+}
+
+.case-fitcaption .text {
+  width: 200px;
+}
+
+.case-fitdesc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
 }
 
 @media tablet {
@@ -17,6 +52,10 @@
     width: 1px;
     height: 100%;
     background-color: ui-color;
+  }
+
+  .case-fitcaption {
+    padding-bottom: 16px;
   }
 }
 
@@ -63,5 +102,29 @@
     transform: translateX(161px);
     width: 459px;
     margin-bottom: 0;
+  }
+
+  .case-img {
+    height: 296px;
+  }
+
+  .case-content {
+    padding: 36px 48px;
+  }
+
+  .case-fitcaption {
+    padding-bottom: 36px;
+  }
+
+  .case-fitcaption .text {
+    width: 360px;
+  }
+
+  .case-caption {
+    display: block;
+  }
+
+  .case-fitdesc {
+    padding-top: 24px;
   }
 }

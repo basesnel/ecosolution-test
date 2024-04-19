@@ -7,6 +7,8 @@ import RoundButton from 'components/RoundButton';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
 import Title from 'components/Title';
+import Text from 'components/Text';
+import ResponsiveImage from 'components/ResponsiveImage';
 
 import { slides } from 'constants';
 
@@ -69,15 +71,32 @@ export default function Cases() {
         </div>
         <Slider>
           {slides.map(({ image, desc, place, enterprise, date }, i) => (
-            <Slide
-              key={image}
-              itemRef={index === i ? selectedRef : null}
-              image={image}
-              desc={desc}
-              place={place}
-              enterprise={enterprise}
-              date={date}
-            />
+            <Slide key={image} itemRef={index === i ? selectedRef : null}>
+              <div className={css['case-thumb']}>
+                <ResponsiveImage
+                  isLazy="lazy"
+                  image500={`slider/${image}-1x`}
+                  image1000={`slider/${image}-2x`}
+                  image1500={`slider/${image}-3x`}
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  alt={desc}
+                  cssName={css['case-img']}
+                />
+              </div>
+              <div className={css['case-content']}>
+                <div className={css['case-fitcaption']}>
+                  <Text variant="caption">
+                    <span className={css['case-caption']}>{place}</span>
+                    <span className={css['case-caption']}>{enterprise}</span>
+                  </Text>
+                  <RoundButton direction="right-up" filled={true} />
+                </div>
+                <div className={css['case-fitdesc']}>
+                  <Text variant="small">{desc}</Text>
+                  <Text variant="small">{date}</Text>
+                </div>
+              </div>
+            </Slide>
           ))}
         </Slider>
       </Container>
