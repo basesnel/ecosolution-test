@@ -19,7 +19,7 @@ export default function Cases() {
   const selectedRef = useRef(null);
 
   const formattedNum = num => {
-    return num > 9 ? num : `0${num}`;
+    return num.toString().padStart(2, '0');
   };
 
   return (
