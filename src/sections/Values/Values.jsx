@@ -5,9 +5,11 @@ import Card from 'components/Card';
 import CardImage from 'components/CardImage';
 import Text from 'components/Text';
 import Title from 'components/Title';
+import ResponsiveImage from 'components/ResponsiveImage';
+
+import { imageSizes } from 'constants';
 
 import css from './Values.module.css';
-import ResponsiveImage from 'components/ResponsiveImage';
 
 export default function Values() {
   return (
@@ -45,7 +47,7 @@ export default function Values() {
               image500="values/values-01-1x"
               image1000="values/values-01-2x"
               image1500="values/values-01-3x"
-              sizes="(min-width: 768px) 50vw, 100vw"
+              sizes={imageSizes[1]}
               alt="wind farms fields"
               cssName={css['values-image']}
             />
@@ -56,7 +58,7 @@ export default function Values() {
               image500="values/values-02-1x"
               image1000="values/values-02-2x"
               image1500="values/values-02-3x"
-              sizes="(min-width: 768px) 50vw, 100vw"
+              sizes={imageSizes[1]}
               alt="man worker firld by solar panels"
               cssName={css['values-image']}
             />

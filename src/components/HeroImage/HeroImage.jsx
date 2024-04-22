@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import { imageSizes } from 'constants';
+
 import css from './HeroImage.module.css';
 
 export default function HeroImage({ isLazy }) {
@@ -68,7 +70,7 @@ export default function HeroImage({ isLazy }) {
               `}
         src={require(`../../assets/images/hero/hero-tablet-2x.jpg`)}
         alt="Wind turbine clean energy"
-        sizes="100vw"
+        sizes={imageSizes[0]}
         className={css['hero-image']}
       />
     </picture>

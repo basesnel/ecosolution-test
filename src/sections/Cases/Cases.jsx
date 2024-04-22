@@ -11,6 +11,7 @@ import Text from 'components/Text';
 import ResponsiveImage from 'components/ResponsiveImage';
 
 import { slides } from 'constants';
+import { imageSizes } from 'constants';
 
 import css from './Cases.module.css';
 
@@ -78,7 +79,7 @@ export default function Cases() {
                   image500={`slider/${image}-1x`}
                   image1000={`slider/${image}-2x`}
                   image1500={`slider/${image}-3x`}
-                  sizes="(min-width: 768px) 50vw, 100vw"
+                  sizes={imageSizes[1]}
                   alt={desc}
                   cssName={css['case-img']}
                 />
