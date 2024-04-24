@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
-import Text from 'components/Text';
-
 import { questions } from 'constants';
 
-import css from './Questions.module.css';
+import Text from 'components/Text';
 import Icon from 'components/Icon';
+
+import css from './Questions.module.css';
 
 export default function Questions() {
   const [index, setIndex] = useState(0);

@@ -19,7 +19,6 @@ export default function ResponsiveImage({
               `}
         type="image/webp"
         sizes={sizes}
-        // sizes="(min-width: 768px) 50vw, 100vw"
       />
       <img
         loading={isLazy}
@@ -31,7 +30,6 @@ export default function ResponsiveImage({
         src={require(`../../assets/images/${image500}.jpg`)}
         alt={alt}
         sizes={sizes}
-        // sizes="(min-width: 768px) 50vw, 100vw"
         className={cssName}
       />
     </picture>

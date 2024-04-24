@@ -1,5 +1,3 @@
-// import PropTypes from 'prop-types';
-
 import { useEffect, useState } from 'react';
 
 import css from './Counter.module.css';
@@ -27,7 +25,3 @@ export default function Counter() {
     </>
   );
 }
-
-// Counter.propTypes = {
-//   count: PropTypes.number.isRequired,
-// };

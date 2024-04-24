@@ -1,5 +1,6 @@
-import Icon from 'components/Icon';
 import { contacts } from 'constants';
+
+import Icon from 'components/Icon';
 
 import css from './Contacts.module.css';
 

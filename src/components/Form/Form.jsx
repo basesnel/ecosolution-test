@@ -1,11 +1,10 @@
 import { useState } from 'react';
 
-// import PropTypes from 'prop-types';
-
 import Input from 'components/Input';
-import css from './Form.module.css';
 import TextArea from 'components/TextArea';
 import Button from 'components/Button';
+
+import css from './Form.module.css';
 
 export default function Form() {
   const [name, setName] = useState('');
