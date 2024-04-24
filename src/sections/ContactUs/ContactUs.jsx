@@ -1,9 +1,9 @@
 import Section from 'components/Section';
 import Container from 'components/Container';
 import Title from 'components/Title';
+import FitContent from 'components/FitContent';
 import Contacts from 'components/Contacts';
 import Form from 'components/Form';
-import FitContent from 'components/FitContent';
 
 export default function Customers() {
   return (

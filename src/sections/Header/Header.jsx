@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
 import Container from 'components/Container';
-import MainNav from 'components/MainNav';
 import Logo from 'components/Logo';
+import MainNav from 'components/MainNav';
 import MenuButton from 'components/MenuButton';
+import ContactUsLink from 'components/ContactUsLink';
 
 import css from './Header.module.css';
-import ContactUsLink from 'components/ContactUsLink';
 
 export default function Header() {
   const [header, setHeader] = useState(`${css.header}`);

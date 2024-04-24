@@ -1,7 +1,7 @@
 import Section from 'components/Section';
 import Container from 'components/Container';
-import Counter from 'components/Counter';
 import Title from 'components/Title';
+import Counter from 'components/Counter';
 
 export default function Electricity() {
   return (

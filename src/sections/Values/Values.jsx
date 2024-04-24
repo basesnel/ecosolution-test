@@ -1,13 +1,13 @@
+import { imageSizes } from 'constants';
+
 import Section from 'components/Section';
 import Container from 'components/Container';
+import Title from 'components/Title';
+import Text from 'components/Text';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 import CardImage from 'components/CardImage';
-import Text from 'components/Text';
-import Title from 'components/Title';
 import ResponsiveImage from 'components/ResponsiveImage';
-
-import { imageSizes } from 'constants';
 
 import css from './Values.module.css';
 

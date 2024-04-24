@@ -1,8 +1,8 @@
+import Section from 'components/Section';
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
-import Section from 'components/Section';
 import Questions from 'components/Questions';
+import Text from 'components/Text';
 import ContactUsLink from 'components/ContactUsLink';
 
 import css from './Faq.module.css';

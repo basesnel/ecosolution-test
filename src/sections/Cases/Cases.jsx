@@ -1,17 +1,17 @@
 import { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
 
+import { slides } from 'constants';
+import { imageSizes } from 'constants';
+
 import Section from 'components/Section';
 import Container from 'components/Container';
+import Title from 'components/Title';
 import RoundButton from 'components/RoundButton';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
-import Title from 'components/Title';
-import Text from 'components/Text';
 import ResponsiveImage from 'components/ResponsiveImage';
-
-import { slides } from 'constants';
-import { imageSizes } from 'constants';
+import Text from 'components/Text';
 
 import css from './Cases.module.css';
 
