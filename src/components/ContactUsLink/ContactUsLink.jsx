@@ -1,20 +1,29 @@
 import PropTypes from 'prop-types';
-
 import Icon from 'components/Icon';
 
 import css from './ContactUsLink.module.css';
 
-export default function ContactUsLink({ caption, ...delegated }) {
+const ContactUsLink = props => {
+  const { caption, ...delegated } = props;
+  const { contactBtn, contactCaption, contactDecor } = css;
+
   return (
-    <a className={css['contact-btn']} {...delegated}>
-      <span className={css.caption}>{caption}</span>
-      <span className={css.decor}>
+    <a className={contactBtn} {...delegated}>
+      <span className={contactCaption}>{caption}</span>
+      <span className={contactDecor}>
         <Icon icon="link-arrow" />
       </span>
     </a>
   );
-}
+};
 
 ContactUsLink.propTypes = {
   caption: PropTypes.string.isRequired,
+  delegated: PropTypes.any,
 };
+
+ContactUsLink.defaultProps = {
+  delegated: null,
+};
+
+export default ContactUsLink;

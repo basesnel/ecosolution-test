@@ -2,7 +2,9 @@ import { useEffect, useState } from 'react';
 
 import css from './Counter.module.css';
 
-export default function Counter() {
+const Counter = () => {
+  const { counter } = css;
+
   const [count, setCount] = useState(999990);
 
   useEffect(() => {
@@ -20,8 +22,10 @@ export default function Counter() {
 
   return (
     <>
-      <span className={css.counter}>{countWithSeparator(count)}</span>
+      <span className={counter}>{countWithSeparator(count)}</span>
       {'kWh'}
     </>
   );
-}
+};
+
+export default Counter;
