@@ -4,7 +4,7 @@
 
 @value footer from "../FooterComponent/FooterComponent.module.css";
 
-.contact-list {
+.contactList {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -12,7 +12,7 @@
   margin-bottom: 36px;
 }
 
-.contact-label {
+.contactLabel {
   text-transform: capitalize;
   text-align: justify;
   font-size: 16px;
@@ -20,25 +20,25 @@
   letter-spacing: -0.64px;
 }
 
-.contact-item {
+.contactItem {
   display: flex;
   flex-direction: column;
   gap: 8px;
   color: text-color;
 }
 
-.contact-links {
+.contactLinks {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.contact-item:last-child .contact-links {
+.contactItem:last-child .contactLinks {
   flex-direction: row;
   gap: 8px;
 }
 
-.contact-link {
+.contactLink {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -48,62 +48,62 @@
   letter-spacing: -0.8px;
 }
 
-.contact-item:last-child .contact-link {
+.contactItem:last-child .contactLink {
   padding: 12px;
 }
 
 @media tablet {
-  .contact-list {
+  .contactList {
     width: 342px;
   }
 }
 
 @media desktop {
-  .contact-list {
+  .contactList {
     width: 596px;
     gap: 32px;
   }
 
-  .contact-item {
+  .contactItem {
     gap: 16px;
   }
 
-  .contact-link {
+  .contactLink {
     font-size: 24px;
   }
 }
 
 /* Contacts on footer */
 
-.footer .contact-list {
+.footer .contactList {
   flex-direction: column-reverse;
   margin-bottom: 24px;
 }
 
-.footer .contact-item {
+.footer .contactItem {
   flex-direction: row;
   justify-content: space-around;
 }
 
-.footer .contact-item:first-child {
+.footer .contactItem:first-child {
   display: none;
 }
 
-.footer .contact-label {
+.footer .contactLabel {
   display: none;
 }
 
-.footer .contact-item:last-child .contact-link {
+.footer .contactItem:last-child .contactLink {
   padding: 0;
 }
 
-.footer .contact-link {
+.footer .contactLink {
   font-size: 16px;
   letter-spacing: -0.64px;
 }
 
 @media tablet {
-  .footer .contact-list {
+  .footer .contactList {
     position: absolute;
     bottom: 38px;
     flex-direction: row-reverse;
@@ -115,15 +115,15 @@
     margin-bottom: 0;
   }
 
-  .footer .contact-item:last-child,
-  .footer .contact-item:first-child {
+  .footer .contactItem:last-child,
+  .footer .contactItem:first-child {
     width: 163px;
     justify-content: flex-start;
   }
 }
 
 @media desktop {
-  .footer .contact-list {
+  .footer .contactList {
     column-gap: 492px;
     width: 945px;
   }

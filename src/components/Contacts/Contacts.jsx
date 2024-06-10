@@ -1,20 +1,22 @@
 import { contacts } from 'constants';
-
 import Icon from 'components/Icon';
 
 import css from './Contacts.module.css';
 
-export default function Contacts() {
-  return (
-    <ul className={css['contact-list']}>
-      {contacts.map(({ id, label, links }) => (
-        <li className={css['contact-item']} key={id}>
-          <span className={css['contact-label']}>{`${label}:`}</span>
+const Contacts = () => {
+  const { contactList, contactItem, contactLabel, contactLinks, contactLink } =
+    css;
 
-          <div className={css['contact-links']}>
+  return (
+    <ul className={contactList}>
+      {contacts.map(({ id, label, links }) => (
+        <li className={contactItem} key={id}>
+          <span className={contactLabel}>{`${label}:`}</span>
+
+          <div className={contactLinks}>
             {label.localeCompare('address')
               ? links.map(({ id, src, txt, icon }) => (
-                  <a href={src} className={css['contact-link']} key={id}>
+                  <a href={src} className={contactLink} key={id}>
                     <Icon icon={icon} />
                     {txt}
                   </a>
@@ -24,7 +26,7 @@ export default function Contacts() {
                     href={src}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className={css['contact-link']}
+                    className={contactLink}
                     key={id}
                   >
                     <Icon icon={icon} />
@@ -36,4 +38,6 @@ export default function Contacts() {
       ))}
     </ul>
   );
-}
+};
+
+export default Contacts;

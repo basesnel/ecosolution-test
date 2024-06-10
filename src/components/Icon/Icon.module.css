@@ -5,7 +5,7 @@
 @value card from "../Card/Card.module.css";
 @value menu-close, link-socnet from "../Menu/Menu.module.css";
 @value question, open from "../Questions/Questions.module.css";
-@value contact-item, contact-link from "../Contacts/Contacts.module.css";
+@value contactItem, contactLink from "../Contacts/Contacts.module.css";
 @value footer from "../FooterComponent/FooterComponent.module.css";
 @value round-btn, filled, link from "../RoundButton/RoundButton.module.css";
 @value slide from "../Slide/Slide.module.css";
@@ -158,19 +158,19 @@
 
 /* Icon-style for contacts (ContactUs-section) */
 
-.contact-link .icon {
+.contactLink .icon {
   fill: text-color;
   width: 24px;
   height: 24px;
   transition: ui-transition;
 }
 
-.contact-link:hover .icon {
+.contactLink:hover .icon {
   fill: ui-color;
 }
 
 /* ...and for footer-contacts */
 
-.footer .contact-item:not(:last-child) .icon {
+.footer .contactItem:not(:last-child) .icon {
   display: none;
 }

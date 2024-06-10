@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
-
 import Icon from 'components/Icon';
 
 import css from './Button.module.css';
 
-export default function Button({ caption, part = 'button', ...delegated }) {
+const Button = props => {
+  const { caption, part = 'button', ...delegated } = props;
+  const { btn, decor } = css;
+
   switch (part) {
     case 'button':
       return (
-        <button className={css.btn} {...delegated}>
+        <button className={btn} {...delegated}>
           {caption}
-          <span className={css.decor}>
+          <span className={decor}>
             <Icon icon="btn-arrow" />
           </span>
         </button>
@@ -18,9 +20,9 @@ export default function Button({ caption, part = 'button', ...delegated }) {
 
     case 'link':
       return (
-        <a className={css.btn} {...delegated}>
+        <a className={btn} {...delegated}>
           {caption}
-          <span className={css.decor}>
+          <span className={decor}>
             <Icon icon="btn-arrow" />
           </span>
         </a>
@@ -29,9 +31,17 @@ export default function Button({ caption, part = 'button', ...delegated }) {
     default:
       return null;
   }
-}
+};
 
 Button.propTypes = {
   caption: PropTypes.any.isRequired,
   part: PropTypes.string,
+  delegated: PropTypes.any,
 };
+
+Button.defaultProps = {
+  part: 'button',
+  delegated: null,
+};
+
+export default Button;
