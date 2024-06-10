@@ -6,7 +6,7 @@
 @value menu-close, link-socnet from "../Menu/Menu.module.css";
 @value question, open from "../Questions/Questions.module.css";
 @value contactItem, contactLink from "../Contacts/Contacts.module.css";
-@value footer from "../FooterComponent/FooterComponent.module.css";
+@value footerComponent from "../FooterComponent/FooterComponent.module.css";
 @value round-btn, filled, link from "../RoundButton/RoundButton.module.css";
 @value slide from "../Slide/Slide.module.css";
 @value btn from "../Button/Button.module.css";
@@ -16,7 +16,7 @@
 
 /* Icon-style for menu-button */
 
-.menu-btn .icon {
+.menu-btn .iconStyle {
   width: 16px;
   height: 17px;
   stroke: text-color;
@@ -24,20 +24,20 @@
 
 /* Icon-style for menu-links */
 
-.menu-link .icon {
+.menu-link .iconStyle {
   width: 16px;
   height: 16px;
   stroke: menu-item-color;
   transition: ui-transition;
 }
 
-.menu-item:hover .icon {
+.menu-item:hover .iconStyle {
   stroke: ui-color;
 }
 
 /* Icon-style for ContactUs-button */
 
-.contactBtn .icon {
+.contactBtn .iconStyle {
   width: 14px;
   height: 15px;
   stroke: text-color;
@@ -45,7 +45,7 @@
 
 /* Icon-style for button */
 
-.btn .icon {
+.btn .iconStyle {
   width: 16px;
   height: 17px;
   stroke: text-color;
@@ -53,40 +53,40 @@
 
 /* Icon-style for menu-close button */
 
-.menu-close .icon {
+.menu-close .iconStyle {
   width: 20px;
   height: 20px;
   stroke: menu-item-color;
   transition: ui-transition;
 }
 
-.menu-close:hover .icon {
+.menu-close:hover .iconStyle {
   stroke: ui-color;
 }
 
 /* Icon-style for social-links in menu */
 
-.link-socnet .icon {
+.link-socnet .iconStyle {
   width: 24px;
   height: 24px;
   fill: menu-item-color;
   transition: ui-transition;
 }
 
-.link-socnet:hover .icon {
+.link-socnet:hover .iconStyle {
   fill: ui-color;
 }
 
 /* Icon-style for card (Values-section) */
 
-.card .icon {
+.card .iconStyle {
   width: 16px;
   height: 16px;
   stroke: text-color;
 }
 
 @media desktop {
-  .card .icon {
+  .card .iconStyle {
     width: 24px;
     height: 24px;
   }
@@ -94,22 +94,22 @@
 
 /* Icon-style for buttons of slider (Cases-section) */
 
-.round-btn .icon {
+.round-btn .iconStyle {
   width: 36px;
   height: 36px;
   stroke: text-color;
   transition: ui-transition;
 }
 
-.round-btn:hover .icon {
+.round-btn:hover .iconStyle {
   stroke: ui-color;
 }
 
-.slide:hover .round-btn.filled .icon {
+.slide:hover .round-btn.filled .iconStyle {
   stroke: ui-color;
 }
 
-.link .icon {
+.link .iconStyle {
   width: 16px;
   height: 16px;
 }
@@ -128,7 +128,7 @@
 
 /* Icon-style for questions (Faq-section) */
 
-.question .icon {
+.question .iconStyle {
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -137,20 +137,20 @@
   transition: ui-transition;
 }
 
-.question:hover .icon {
+.question:hover .iconStyle {
   stroke: text-color;
 }
 
-.question.open .icon {
+.question.open .iconStyle {
   stroke: text-color;
 }
 
-.question.open:hover .icon {
+.question.open:hover .iconStyle {
   stroke: ui-color;
 }
 
 @media tablet {
-  .question .icon {
+  .question .iconStyle {
     width: 28px;
     height: 28px;
   }
@@ -158,19 +158,19 @@
 
 /* Icon-style for contacts (ContactUs-section) */
 
-.contactLink .icon {
+.contactLink .iconStyle {
   fill: text-color;
   width: 24px;
   height: 24px;
   transition: ui-transition;
 }
 
-.contactLink:hover .icon {
+.contactLink:hover .iconStyle {
   fill: ui-color;
 }
 
 /* ...and for footer-contacts */
 
-.footer .contactItem:not(:last-child) .icon {
+.footerComponent .contactItem:not(:last-child) .iconStyle {
   display: none;
 }

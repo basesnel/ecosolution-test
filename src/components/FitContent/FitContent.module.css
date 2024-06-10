@@ -1,7 +1,7 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 @value ui-color from "../../css-variables/colors.css";
 
-@value footer from "../FooterComponent/FooterComponent.module.css";
+@value footerComponent from "../FooterComponent/FooterComponent.module.css";
 
 @media tablet {
   .fitContent {
@@ -20,7 +20,7 @@
 
 /* fit content on footer */
 
-.footer .fitContent {
+.footerComponent .fitContent {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@
 }
 
 @media tablet {
-  .footer .fitContent {
+  .footerComponent .fitContent {
     row-gap: 16px;
     padding: 40px 0;
   }

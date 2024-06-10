@@ -4,7 +4,10 @@ import { imageSizes } from 'constants';
 
 import css from './HeroImage.module.css';
 
-export default function HeroImage({ isLazy }) {
+const HeroImage = props => {
+  const { isLazy } = props;
+  const { heroImage } = css;
+
   return (
     <picture>
       <source
@@ -71,11 +74,11 @@ export default function HeroImage({ isLazy }) {
         src={require(`../../assets/images/hero/hero-tablet-2x.jpg`)}
         alt="Wind turbine clean energy"
         sizes={imageSizes[0]}
-        className={css['hero-image']}
+        className={heroImage}
       />
     </picture>
   );
-}
+};
 
 HeroImage.propTypes = {
   isLazy: PropTypes.oneOf(['lazy']),
@@ -84,3 +87,5 @@ HeroImage.propTypes = {
 HeroImage.defaultProps = {
   isLazy: null,
 };
+
+export default HeroImage;

@@ -8,11 +8,11 @@
   border-bottom: 1px solid ui-color;
 }
 
-.field-label::before {
+.fieldLabel::before {
   content: '* ';
 }
 
-.field-label {
+.fieldLabel {
   color: text-color;
   text-align: justify;
   font-size: 16px;
@@ -20,7 +20,7 @@
   letter-spacing: -0.64px;
 }
 
-.field-input {
+.fieldInput {
   width: 100%;
   border: none;
   background-color: transparent;
@@ -31,15 +31,12 @@
   color: text-color;
 }
 
-.field-input::placeholder {
+.fieldInput::placeholder {
   color: placeholder-color;
 }
 
-@media tablet {
-}
-
 @media desktop {
-  .field-input {
+  .fieldInput {
     padding: 12px 0 8px;
     font-size: 20px;
   }

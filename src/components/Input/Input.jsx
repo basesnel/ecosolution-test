@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Input.module.css';
 
-export default function Input(props) {
+const Input = props => {
   const {
     disabled,
     type,
@@ -13,13 +13,14 @@ export default function Input(props) {
     onChange,
     autocomplete,
   } = props;
+  const { field, fieldLabel, fieldInput } = css;
 
   return (
-    <label className={css.field}>
-      {label && <span className={css['field-label']}>{label}</span>}
-      <div className={css['wrap-input']}>
+    <label className={field}>
+      {label && <span className={fieldLabel}>{label}</span>}
+      <div>
         <input
-          className={css['field-input']}
+          className={fieldInput}
           disabled={disabled}
           type={type}
           name={name}
@@ -31,15 +32,26 @@ export default function Input(props) {
       </div>
     </label>
   );
-}
+};
 
 Input.propTypes = {
   disabled: PropTypes.bool,
-  type: PropTypes.string,
-  name: PropTypes.string,
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   value: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
   onChange: PropTypes.func,
   autocomplete: PropTypes.string,
 };
+
+Input.defaultProps = {
+  disabled: null,
+  value: null,
+  label: null,
+  placeholder: null,
+  onChange: null,
+  autoComplete: null,
+};
+
+export default Input;

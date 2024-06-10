@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
-
 import icons from '../../assets/images/icons.svg';
 
 import css from './Icon.module.css';
 
-export default function Icon({ icon, label, width, height, direction = null }) {
-  const variation = direction ? `${css.icon} ${css[direction]}` : `${css.icon}`;
+const Icon = props => {
+  const { icon, label, width, height, direction } = props;
+  const { iconStyle } = css;
+
+  const variation = direction
+    ? `${iconStyle} ${css[direction]}`
+    : `${iconStyle}`;
 
   return (
     <svg
@@ -19,9 +23,21 @@ export default function Icon({ icon, label, width, height, direction = null }) {
       <use href={`${icons}#${icon}`}></use>
     </svg>
   );
-}
+};
 
 Icon.propTypes = {
   icon: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  width: PropTypes.number,
+  height: PropTypes.number,
   direction: PropTypes.string,
 };
+
+Icon.defaultProps = {
+  direction: null,
+  label: null,
+  with: null,
+  height: null,
+};
+
+export default Icon;
