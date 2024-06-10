@@ -1,12 +1,13 @@
 import { useState } from 'react';
-
 import Input from 'components/Input';
 import TextArea from 'components/TextArea';
 import Button from 'components/Button';
 
 import css from './Form.module.css';
 
-export default function Form() {
+const Form = () => {
+  const { form, fitSubmit } = css;
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -41,7 +42,7 @@ export default function Form() {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmitForm}>
+    <form className={form} onSubmit={handleSubmitForm}>
       <Input
         disabled={false}
         type="text"
@@ -78,13 +79,11 @@ export default function Form() {
         label="Message:"
         placeholder="Your Message"
       />
-      <div className={css['fit-submit']}>
+      <div className={fitSubmit}>
         <Button type="submit" caption="Send" />
       </div>
     </form>
   );
-}
+};
 
-// Form.propTypes = {
-//   children: PropTypes.node.isRequired,
-// };
+export default Form;

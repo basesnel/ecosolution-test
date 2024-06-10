@@ -4,7 +4,7 @@
 @value footer from "../FooterComponent/FooterComponent.module.css";
 
 @media tablet {
-  .fit-content {
+  .fitContent {
     display: flex;
     gap: 24px;
     flex-basis: 342px;
@@ -12,7 +12,7 @@
 }
 
 @media desktop {
-  .fit-content {
+  .fitContent {
     gap: 48px;
     flex-basis: 596px;
   }
@@ -20,7 +20,7 @@
 
 /* fit content on footer */
 
-.footer .fit-content {
+.footer .fitContent {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@
 }
 
 @media tablet {
-  .footer .fit-content {
+  .footer .fitContent {
     row-gap: 16px;
     padding: 40px 0;
   }

@@ -2,16 +2,25 @@ import PropTypes from 'prop-types';
 
 import css from './FitContent.module.css';
 
-export default function FitContent({ children, variant = null }) {
+const FitContent = props => {
+  const { children, variant } = props;
+  const { fitContent } = css;
+
   const variation = variant ? `${css[variant]}` : '';
   return (
-    <div role="presentation" className={`${css['fit-content']} ${variation}`}>
+    <div role="presentation" className={`${fitContent} ${variation}`}>
       {children}
     </div>
   );
-}
+};
 
 FitContent.propTypes = {
   children: PropTypes.node.isRequired,
   variant: PropTypes.string,
 };
+
+FitContent.defaultProps = {
+  variant: null,
+};
+
+export default FitContent;
