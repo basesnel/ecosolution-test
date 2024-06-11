@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecosolution-test/static/css/main.006c436d.css",
-    "main.js": "/ecosolution-test/static/js/main.e36a5151.js",
+    "main.css": "/ecosolution-test/static/css/main.ba528cdd.css",
+    "main.js": "/ecosolution-test/static/js/main.b14323a7.js",
     "static/media/hero-desktop-3x.jpg": "/ecosolution-test/static/media/hero-desktop-3x.102b67edf75372e79564.jpg",
     "static/media/hero-desktop-3x.webp": "/ecosolution-test/static/media/hero-desktop-3x.44e1be442fcbff4f065c.webp",
     "static/media/hero-desktop-2x.jpg": "/ecosolution-test/static/media/hero-desktop-2x.3e3193980032696036cb.jpg",
@@ -67,11 +67,11 @@
     "static/media/values-02-1x.webp": "/ecosolution-test/static/media/values-02-1x.2bd44a8bbd04adeff449.webp",
     "static/media/logo.svg": "/ecosolution-test/static/media/logo.ae29f58093dea618323d018981471c7b.svg",
     "index.html": "/ecosolution-test/index.html",
-    "main.006c436d.css.map": "/ecosolution-test/static/css/main.006c436d.css.map",
-    "main.e36a5151.js.map": "/ecosolution-test/static/js/main.e36a5151.js.map"
+    "main.ba528cdd.css.map": "/ecosolution-test/static/css/main.ba528cdd.css.map",
+    "main.b14323a7.js.map": "/ecosolution-test/static/js/main.b14323a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.006c436d.css",
-    "static/js/main.e36a5151.js"
+    "static/css/main.ba528cdd.css",
+    "static/js/main.b14323a7.js"
   ]
 }
