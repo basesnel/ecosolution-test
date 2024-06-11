@@ -7,19 +7,19 @@ import css from './Menu.module.css';
 const Menu = props => {
   const { onClose, onHide } = props;
   const {
-    backdrop,
+    menuBackdrop,
     menuBlock,
     menuClose,
     menuList,
     menuItem,
     menuLink,
     menuSocnet,
-    itemSocnet,
-    linkSocnet,
+    socnetItem,
+    socnetLink,
   } = css;
 
   return (
-    <div className={backdrop} onClick={onHide}>
+    <div className={menuBackdrop} onClick={onHide}>
       <div className={menuBlock}>
         <button
           className={menuClose}
@@ -45,18 +45,18 @@ const Menu = props => {
           ))}
         </ul>
         <ul className={menuSocnet}>
-          <li className={itemSocnet}>
+          <li className={socnetItem}>
             <a
-              className={linkSocnet}
+              className={socnetLink}
               href="https://www.facebook.com"
               aria-label="Go to Facebook page"
             >
               <Icon icon="menu-facebook" width={24} height={24} />
             </a>
           </li>
-          <li className={itemSocnet}>
+          <li className={socnetItem}>
             <a
-              className={linkSocnet}
+              className={socnetLink}
               href="https://www.instagram.com"
               aria-label="Go to Instagram page"
             >

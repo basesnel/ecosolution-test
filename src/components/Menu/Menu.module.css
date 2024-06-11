@@ -2,7 +2,7 @@
 @value back-drop, bg-menu, menu-item-color, ui-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
-.backdrop {
+.menuBackdrop {
   position: fixed;
   left: 0;
   top: 0;
@@ -83,13 +83,13 @@
   gap: 8px;
 }
 
-.itemSocnet {
+.socnetItem {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.linkSocnet {
+.socnetLink {
   display: block;
   width: 24px;
   height: 24px;

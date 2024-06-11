@@ -3,7 +3,7 @@
 @value ui-transition from "../../css-variables/transition.css";
 
 @value card from "../Card/Card.module.css";
-@value question, open from "../Questions/Questions.module.css";
+@value qaQuestion, open from "../Questions/Questions.module.css";
 @value contactItem, contactLink from "../Contacts/Contacts.module.css";
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
 @value round-btn, filled, link from "../RoundButton/RoundButton.module.css";
@@ -11,7 +11,7 @@
 @value btn from "../Button/Button.module.css";
 @value contactBtn from "../ContactUsLink/ContactUsLink.module.css";
 @value menuBtn from "../MenuButton/MenuButton.module.css";
-@value menuItem, menuLink, menuClose, linkSocnet from "../Menu/Menu.module.css";
+@value menuItem, menuLink, menuClose, socnetLink from "../Menu/Menu.module.css";
 
 /* Icon-style for menu-button */
 
@@ -65,14 +65,14 @@
 
 /* Icon-style for social-links in menu */
 
-.linkSocnet .iconStyle {
+.socnetLink .iconStyle {
   width: 24px;
   height: 24px;
   fill: menu-item-color;
   transition: ui-transition;
 }
 
-.linkSocnet:hover .iconStyle {
+.socnetLink:hover .iconStyle {
   fill: ui-color;
 }
 
@@ -127,7 +127,7 @@
 
 /* Icon-style for questions (Faq-section) */
 
-.question .iconStyle {
+.qaQuestion .iconStyle {
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -136,20 +136,20 @@
   transition: ui-transition;
 }
 
-.question:hover .iconStyle {
+.qaQuestion:hover .iconStyle {
   stroke: text-color;
 }
 
-.question.open .iconStyle {
+.qaQuestion.open .iconStyle {
   stroke: text-color;
 }
 
-.question.open:hover .iconStyle {
+.qaQuestion.open:hover .iconStyle {
   stroke: ui-color;
 }
 
 @media tablet {
-  .question .iconStyle {
+  .qaQuestion .iconStyle {
     width: 28px;
     height: 28px;
   }

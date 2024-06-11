@@ -4,79 +4,79 @@
 
 @value text from "../Text/Text.module.css";
 
-.q-list {
+.qaList {
   margin-bottom: 20px;
 }
 
-.q-item {
+.qaItem {
   border-top: 1px solid ui-color;
   padding: 16px 0;
 }
 
-.question {
+.qaQuestion {
   display: flex;
   align-items: center;
   gap: 8px;
   cursor: pointer;
 }
 
-.question .text {
+.qaQuestion .text {
   font-size: 18px;
   letter-spacing: -0.72px;
 }
 
-.answer {
+.qaAnswer {
   display: none;
   padding: 16px 0 0 24px;
 }
 
-.question.open + .answer {
+.qaQuestion.open + .qaAnswer {
   display: block;
 }
 
-.answer .text {
+.qaAnswer .text {
   font-size: 14px;
   letter-spacing: -0.56px;
 }
 
 @media tablet {
-  .q-list {
+  .qaList {
     width: 342px;
     margin-bottom: 0;
   }
 
-  .question {
+  .qaQuestion {
     gap: 16px;
   }
 
-  .answer {
+  .qaAnswer {
     padding: 16px 0 0 42px;
   }
 }
 
 @media desktop {
-  .q-list {
+  .qaList {
     width: 596px;
   }
 
-  .q-item {
+  .qaItem {
     padding: 24px 0;
   }
 
-  .question {
+  .qaQuestion {
     gap: 24px;
   }
 
-  .question .text {
+  .qaQuestion .text {
     font-size: 24px;
     letter-spacing: -0.96px;
   }
 
-  .answer {
+  .qaAnswer {
     padding: 24px 0 0 52px;
   }
 
-  .answer .text {
+  .qaAnswer .text {
     font-size: 16px;
     letter-spacing: -0.64px;
   }
