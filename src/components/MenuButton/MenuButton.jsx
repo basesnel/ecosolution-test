@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
-
 import Menu from 'components/Menu';
 import Icon from 'components/Icon';
 
 import css from './MenuButton.module.css';
 
-export default function MenuButton() {
+const MenuButton = () => {
+  const { menuBtn } = css;
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
-      <button className={css['menu-btn']} onClick={() => setIsMenuOpen(true)}>
+      <button className={menuBtn} onClick={() => setIsMenuOpen(true)}>
         <Icon icon="menu" width={16} height={17} label="Open menu" />
       </button>
       {isMenuOpen &&
@@ -26,4 +27,6 @@ export default function MenuButton() {
         )}
     </>
   );
-}
+};
+
+export default MenuButton;

@@ -4,7 +4,7 @@
 
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
 
-.logo {
+.esLogo {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -23,7 +23,7 @@
   transition: ui-transition;
 }
 
-.logo:hover .esName {
+.esLogo:hover .esName {
   color: ui-color;
 }
 
@@ -41,19 +41,20 @@
   letter-spacing: -0.4px;
 }
 
-.decor {
+.esDecor {
   color: ui-color;
 }
 
 /* Styled Logo on footer */
 
-.footerComponent .logo {
+.footerComponent .esLogo {
+  z-index: 100;
   padding: 0;
   margin-bottom: 24px;
 }
 
 @media tablet {
-  .footerComponent .logo {
+  .footerComponent .esLogo {
     margin-bottom: 0;
   }
 }

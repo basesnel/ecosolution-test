@@ -1,6 +1,6 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 
-.main-nav {
+.mainNav {
   display: flex;
   align-items: center;
   gap: 12px;

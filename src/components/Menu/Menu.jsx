@@ -1,29 +1,40 @@
 import PropTypes from 'prop-types';
-
 import { menu } from 'constants';
-
 import Icon from 'components/Icon';
 
 import css from './Menu.module.css';
 
-export default function Menu({ onClose, onHide }) {
+const Menu = props => {
+  const { onClose, onHide } = props;
+  const {
+    backdrop,
+    menuBlock,
+    menuClose,
+    menuList,
+    menuItem,
+    menuLink,
+    menuSocnet,
+    itemSocnet,
+    linkSocnet,
+  } = css;
+
   return (
-    <div className={css.backdrop} onClick={onHide}>
-      <div className={css.menu}>
+    <div className={backdrop} onClick={onHide}>
+      <div className={menuBlock}>
         <button
-          className={css['menu-close']}
+          className={menuClose}
           onClick={onClose}
           aeia-label="Close the menu"
         >
           <Icon icon="menu-close" width={20} height={20} />
           Close
         </button>
-        <ul className={css['menu-list']}>
+        <ul className={menuList}>
           {menu.map(({ id, item }) => (
-            <li key={id} className={css['menu-item']}>
+            <li key={id} className={menuItem}>
               <a
                 href={`#${id}`}
-                className={css['menu-link']}
+                className={menuLink}
                 onClick={onClose}
                 aria-label={`Go to section ${item}`}
               >
@@ -33,19 +44,19 @@ export default function Menu({ onClose, onHide }) {
             </li>
           ))}
         </ul>
-        <ul className={css['menu-socnet']}>
-          <li className={css['item-socnet']}>
+        <ul className={menuSocnet}>
+          <li className={itemSocnet}>
             <a
-              className={css['link-socnet']}
+              className={linkSocnet}
               href="https://www.facebook.com"
               aria-label="Go to Facebook page"
             >
               <Icon icon="menu-facebook" width={24} height={24} />
             </a>
           </li>
-          <li className={css['item-socnet']}>
+          <li className={itemSocnet}>
             <a
-              className={css['link-socnet']}
+              className={linkSocnet}
               href="https://www.instagram.com"
               aria-label="Go to Instagram page"
             >
@@ -56,9 +67,11 @@ export default function Menu({ onClose, onHide }) {
       </div>
     </div>
   );
-}
+};
 
 Menu.propTypes = {
   onHide: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
 };
+
+export default Menu;

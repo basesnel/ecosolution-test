@@ -3,7 +3,6 @@
 @value ui-transition from "../../css-variables/transition.css";
 
 @value card from "../Card/Card.module.css";
-@value menu-close, link-socnet from "../Menu/Menu.module.css";
 @value question, open from "../Questions/Questions.module.css";
 @value contactItem, contactLink from "../Contacts/Contacts.module.css";
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
@@ -11,12 +10,12 @@
 @value slide from "../Slide/Slide.module.css";
 @value btn from "../Button/Button.module.css";
 @value contactBtn from "../ContactUsLink/ContactUsLink.module.css";
-@value menu-btn from "../MenuButton/MenuButton.module.css";
-@value menu-item, menu-link from "../Menu/Menu.module.css";
+@value menuBtn from "../MenuButton/MenuButton.module.css";
+@value menuItem, menuLink, menuClose, linkSocnet from "../Menu/Menu.module.css";
 
 /* Icon-style for menu-button */
 
-.menu-btn .iconStyle {
+.menuBtn .iconStyle {
   width: 16px;
   height: 17px;
   stroke: text-color;
@@ -24,14 +23,14 @@
 
 /* Icon-style for menu-links */
 
-.menu-link .iconStyle {
+.menuLink .iconStyle {
   width: 16px;
   height: 16px;
   stroke: menu-item-color;
   transition: ui-transition;
 }
 
-.menu-item:hover .iconStyle {
+.menuItem:hover .iconStyle {
   stroke: ui-color;
 }
 
@@ -53,27 +52,27 @@
 
 /* Icon-style for menu-close button */
 
-.menu-close .iconStyle {
+.menuClose .iconStyle {
   width: 20px;
   height: 20px;
   stroke: menu-item-color;
   transition: ui-transition;
 }
 
-.menu-close:hover .iconStyle {
+.menuClose:hover .iconStyle {
   stroke: ui-color;
 }
 
 /* Icon-style for social-links in menu */
 
-.link-socnet .iconStyle {
+.linkSocnet .iconStyle {
   width: 24px;
   height: 24px;
   fill: menu-item-color;
   transition: ui-transition;
 }
 
-.link-socnet:hover .iconStyle {
+.linkSocnet:hover .iconStyle {
   fill: ui-color;
 }
 
