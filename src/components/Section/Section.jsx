@@ -2,16 +2,25 @@ import PropTypes from 'prop-types';
 
 import css from './Section.module.css';
 
-export default function Section({ children, part = null }) {
+const Section = props => {
+  const { children, part } = props;
+  const { section } = css;
+
   const variation = part ? `${css[part]}` : '';
   return (
-    <section className={`${css.section} ${variation}`} id={part}>
+    <section className={`${section} ${variation}`} id={part}>
       {children}
     </section>
   );
-}
+};
 
 Section.propTypes = {
   children: PropTypes.node.isRequired,
   part: PropTypes.string,
 };
+
+Section.defaultProps = {
+  part: null,
+};
+
+export default Section;
