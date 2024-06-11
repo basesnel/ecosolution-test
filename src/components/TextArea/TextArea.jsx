@@ -2,19 +2,16 @@ import PropTypes from 'prop-types';
 
 import css from './TextArea.module.css';
 
-export default function TextArea(props) {
+const TextArea = props => {
   const { disabled, name, label, placeholder, children } = props;
+  const { field, fieldLabel, fieldInput, noRequire } = css;
 
   return (
-    <label className={css.field}>
-      {label && (
-        <span className={`${css['field-label']} ${css['no-require']}`}>
-          {label}
-        </span>
-      )}
-      <div className={css['wrap-input']}>
+    <label className={field}>
+      {label && <span className={`${fieldLabel} ${noRequire}`}>{label}</span>}
+      <div>
         <textarea
-          className={css['field-input']}
+          className={fieldInput}
           disabled={disabled}
           name={name}
           placeholder={placeholder}
@@ -25,7 +22,7 @@ export default function TextArea(props) {
       </div>
     </label>
   );
-}
+};
 
 TextArea.propTypes = {
   disabled: PropTypes.bool,
@@ -34,3 +31,13 @@ TextArea.propTypes = {
   placeholder: PropTypes.string,
   children: PropTypes.string,
 };
+
+TextArea.defaultProps = {
+  disabled: null,
+  name: null,
+  label: null,
+  placeholder: null,
+  children: null,
+};
+
+export default TextArea;
