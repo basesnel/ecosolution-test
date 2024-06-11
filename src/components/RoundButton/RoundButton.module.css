@@ -5,7 +5,7 @@
 @value slide from "../Slide/Slide.module.css";
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
 
-.round-btn {
+.roundBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,27 +16,27 @@
   transition: ui-transition;
 }
 
-.round-btn.filled {
+.roundBtn.roundFilled {
   background-color: ui-color;
   border: none;
 }
 
-.slide:hover .round-btn.filled,
-.round-btn.filled:hover {
+.slide:hover .roundBtn.roundFilled,
+.roundBtn.roundFilled:hover {
   background-color: text-color;
   border: none;
 }
 
-.round-btn:hover {
+.roundBtn:hover {
   border: 1px solid ui-color;
 }
 
-.link {
+.roundLink {
   width: 32px;
   height: 32px;
 }
 
-.footerComponent .link {
+.footerComponent .roundLink {
   position: absolute;
   top: 28px;
   right: 0;
@@ -44,13 +44,13 @@
 }
 
 @media tablet {
-  .footerComponent .link {
+  .footerComponent .roundLink {
     top: 40px;
   }
 }
 
 @media desktop {
-  .round-btn:not(.filled) {
+  .roundLink:not(.roundFilled) {
     width: 84px;
     height: 84px;
   }
