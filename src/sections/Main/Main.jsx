@@ -1,19 +1,16 @@
-import Section from 'components/Section';
-import Container from 'components/Container';
-import Title from 'components/Title';
-import Text from 'components/Text';
-import Button from 'components/Button';
-import HeroImage from 'components/HeroImage';
+import { Section, Container, Title, Text, Button, HeroImage } from 'components';
 
 import css from './Main.module.css';
 
-export default function Main() {
+const Main = () => {
+  const { mainTitle, mainDescription } = css;
+
   return (
     <Section part="main">
       <Container>
-        <div role="presentation" className={css['main-title']}>
+        <div role="presentation" className={mainTitle}>
           <Title level={1} caption="renewable energy for any task" />
-          <div role="presentation" className={css['main-description']}>
+          <div role="presentation" className={mainDescription}>
             <Text>
               Development and implementation of renewable non-polluting energy
               sources, generating power generation using energy wind, sun,
@@ -37,4 +34,6 @@ export default function Main() {
       </Container>
     </Section>
   );
-}
+};
+
+export default Main;
