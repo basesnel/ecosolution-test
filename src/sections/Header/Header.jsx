@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 
-import Container from 'components/Container';
-import Logo from 'components/Logo';
-import MainNav from 'components/MainNav';
-import MenuButton from 'components/MenuButton';
-import ContactUsLink from 'components/ContactUsLink';
+import {
+  Container,
+  Logo,
+  MainNav,
+  MenuButton,
+  ContactUsLink,
+} from 'components';
 
 import css from './Header.module.css';
 
@@ -27,7 +29,7 @@ export default function Header() {
 
   return (
     <header className={header}>
-      <Container variant="nav-bar">
+      <Container variant="navBar">
         <Logo subLength={5} />
         <MainNav>
           <MenuButton />
