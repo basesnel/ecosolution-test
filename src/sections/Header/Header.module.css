@@ -1,7 +1,7 @@
 @value bg-color, header-onscroll from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
-.header {
+.headerStyle {
   position: fixed;
   z-index: 100;
   width: 100%;

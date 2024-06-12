@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import {
   Container,
   Logo,
@@ -10,14 +9,16 @@ import {
 
 import css from './Header.module.css';
 
-export default function Header() {
-  const [header, setHeader] = useState(`${css.header}`);
+const { headerStyle, filled } = css;
+
+const Header = () => {
+  const [header, setHeader] = useState(`${headerStyle}`);
 
   const listenerScrollEvent = e => {
     if (window.scrollY < 105) {
-      return setHeader(`${css.header}`);
+      return setHeader(`${headerStyle}`);
     } else {
-      return setHeader(`${css.header} ${css.filled}`);
+      return setHeader(`${headerStyle} ${filled}`);
     }
   };
 
@@ -38,4 +39,6 @@ export default function Header() {
       </Container>
     </header>
   );
-}
+};
+
+export default Header;
