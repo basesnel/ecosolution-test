@@ -1,7 +1,7 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 @value text-color, ui-color from "../../css-variables/colors.css";
 
-@value title-02, title-03 from "../../components/Title/Title.module.css";
+@value title02, title03 from "../../components/Title/Title.module.css";
 @value contactBtn from "../../components/ContactUsLink/ContactUsLink.module.css";
 
 .section {
@@ -45,14 +45,14 @@
     position: relative;
   }
 
-  .values .title-02 {
+  .values .title02 {
     width: 272px;
     margin-bottom: 143px;
   }
 }
 
 @media desktop {
-  .values .title-02 {
+  .values .title02 {
     width: 365px;
     margin-bottom: 124px;
   }
@@ -60,7 +60,7 @@
 
 /* Electricity-section styles */
 
-.electricity .title-02 {
+.electricity .title02 {
   position: relative;
   width: 286px;
   padding-bottom: 96px;
@@ -68,7 +68,7 @@
   text-align: center;
 }
 
-.electricity .title-02::after {
+.electricity .title02::after {
   content: '';
   position: absolute;
   bottom: 24px;
@@ -79,7 +79,7 @@
   background-color: ui-color;
 }
 
-.electricity .title-03 {
+.electricity .title03 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,16 +92,16 @@
 }
 
 @media tablet {
-  .electricity .title-02 {
+  .electricity .title02 {
     width: 368px;
     padding-bottom: 135px;
   }
 
-  .electricity .title-02::after {
+  .electricity .title02::after {
     height: 87px;
   }
 
-  .electricity .title-03 {
+  .electricity .title03 {
     gap: 24px;
     margin-bottom: 105px;
     font-size: 28px;
@@ -110,16 +110,16 @@
 }
 
 @media desktop {
-  .electricity .title-02 {
+  .electricity .title02 {
     width: 491px;
     padding-bottom: 120px;
   }
 
-  .electricity .title-02::after {
+  .electricity .title02::after {
     bottom: 17px;
   }
 
-  .electricity .title-03 {
+  .electricity .title03 {
     margin-bottom: 120px;
     font-size: 48px;
   }
@@ -127,7 +127,7 @@
 
 /* Cases-section styles */
 
-.cases .title-02 {
+.cases .title02 {
   width: 264px;
 }
 
@@ -136,17 +136,17 @@
     position: relative;
   }
 
-  .cases .title-02 {
+  .cases .title02 {
     margin-bottom: 38px;
   }
 }
 
 @media desktop {
-  .cases .title-02 {
+  .cases .title02 {
     width: 398px;
   }
 
-  .cases .title-02 {
+  .cases .title02 {
     margin-bottom: 120px;
   }
 }
@@ -162,7 +162,7 @@
     position: relative;
   }
 
-  .faq .title-02 {
+  .faq .title02 {
     position: absolute;
     top: -4px;
     left: 50%;
@@ -173,7 +173,7 @@
 }
 
 @media desktop {
-  .faq .title-02 {
+  .faq .title02 {
     width: 398px;
     transform: translateX(161px);
   }
@@ -181,18 +181,18 @@
 
 /* Contact-Us-section styles */
 
-.contacts .title-02 {
+.contacts .title02 {
   text-align: center;
 }
 
 @media tablet {
-  .contacts .title-02 {
+  .contacts .title02 {
     margin-bottom: 40px;
   }
 }
 
 @media desktop {
-  .contacts .title-02 {
+  .contacts .title02 {
     margin-bottom: 120px;
   }
 }
