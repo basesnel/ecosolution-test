@@ -1,22 +1,23 @@
 import { imageSizes } from 'constants';
-
-import Section from 'components/Section';
-import Container from 'components/Container';
-import Title from 'components/Title';
-import Text from 'components/Text';
-import Grid from 'components/Grid';
-import Card from 'components/Card';
-import CardImage from 'components/CardImage';
-import ResponsiveImage from 'components/ResponsiveImage';
+import {
+  Section,
+  Container,
+  Title,
+  Text,
+  Grid,
+  Card,
+  CardImage,
+  ResponsiveImage,
+} from 'components';
 
 import css from './Values.module.css';
 
-export default function Values() {
+const Values = () => {
   return (
     <Section part="values">
       <Container>
         <Title level={2} caption="main values of our company" />
-        <div role="presentation" className={css['text-wrap']}>
+        <div role="presentation" className={css.textWrap}>
           <Text>
             EcoSolution envisions a world where sustainable energy solutions
             power a brighter and cleaner future for all. We aspire to be at the
@@ -49,7 +50,7 @@ export default function Values() {
               image1500="values/values-01-3x"
               sizes={imageSizes[1]}
               alt="wind farms fields"
-              cssName={css['values-image']}
+              cssName={css.valuesImage}
             />
           </CardImage>
           <CardImage>
@@ -60,7 +61,7 @@ export default function Values() {
               image1500="values/values-02-3x"
               sizes={imageSizes[1]}
               alt="man worker firld by solar panels"
-              cssName={css['values-image']}
+              cssName={css.valuesImage}
             />
           </CardImage>
           <Card
@@ -81,4 +82,6 @@ export default function Values() {
       </Container>
     </Section>
   );
-}
+};
+
+export default Values;

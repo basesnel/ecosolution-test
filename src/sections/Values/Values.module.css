@@ -3,24 +3,24 @@
 
 @value control from "../Cases/Cases.module.css";
 
-.text-wrap {
+.textWrap {
   composes: control;
 }
 
-.values-image {
+.valuesImage {
   width: 100%;
   object-fit: cover;
 }
 
 @media tablet {
-  .values-image {
+  .valuesImage {
     height: 197px;
     object-position: bottom;
   }
 }
 
 @media desktop {
-  .values-image {
+  .valuesImage {
     height: 339px;
   }
 }
