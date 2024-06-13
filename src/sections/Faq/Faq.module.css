@@ -1,12 +1,12 @@
 @value mobile, smartphone, tablet, desktop from "../../css-variables/media.css";
 @value text from "../../components/Text/Text.module.css";
 
-.contact-us {
+.contactUs {
   text-align: center;
   flex-shrink: 0;
 }
 
-.contact-us .text {
+.contactUs .text {
   text-align: center;
   margin-bottom: 12px;
   font-size: 18px;
@@ -14,33 +14,33 @@
 }
 
 @media tablet {
-  .content-wrap {
+  .contentWrap {
     display: flex;
     align-items: flex-end;
     gap: 24px;
     flex-basis: 342px;
   }
 
-  .contact-us {
+  .contactUs {
     width: 342px;
   }
 
-  .contact-us .text {
+  .contactUs .text {
     text-align: left;
   }
 }
 
 @media desktop {
-  .content-wrap {
+  .contentWrap {
     gap: 48px;
   }
 
-  .contact-us {
+  .contactUs {
     width: 596px;
     text-align: center;
   }
 
-  .contact-us .text {
+  .contactUs .text {
     text-align: center;
     margin-bottom: 12px;
     font-size: 24px;

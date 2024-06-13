@@ -1,20 +1,22 @@
-import Section from 'components/Section';
-import Container from 'components/Container';
-import Title from 'components/Title';
-import Questions from 'components/Questions';
-import Text from 'components/Text';
-import ContactUsLink from 'components/ContactUsLink';
+import {
+  Section,
+  Container,
+  Title,
+  Questions,
+  Text,
+  ContactUsLink,
+} from 'components';
 
 import css from './Faq.module.css';
 
-export default function Faq() {
+const Faq = () => {
   return (
     <Section part="faq">
       <Container>
         <Title level={2} caption="frequently asked questions" />
-        <div role="presentation" className={css['content-wrap']}>
+        <div role="presentation" className={css.contentWrap}>
           <Questions />
-          <div className={css['contact-us']}>
+          <div className={css.contactUs}>
             <Text>Didn&apos;t find the answer to your question?</Text>
             <ContactUsLink caption="Contact Us" href="#contacts" />
           </div>
@@ -22,4 +24,6 @@ export default function Faq() {
       </Container>
     </Section>
   );
-}
+};
+
+export default Faq;
