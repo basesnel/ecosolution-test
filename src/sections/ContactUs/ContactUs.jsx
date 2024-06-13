@@ -1,11 +1,13 @@
-import Section from 'components/Section';
-import Container from 'components/Container';
-import Title from 'components/Title';
-import FitContent from 'components/FitContent';
-import Contacts from 'components/Contacts';
-import Form from 'components/Form';
+import {
+  Section,
+  Container,
+  Title,
+  FitContent,
+  Contacts,
+  Form,
+} from 'components';
 
-export default function Customers() {
+const ContactUs = () => {
   return (
     <Section part="contacts">
       <Container>
@@ -17,4 +19,6 @@ export default function Customers() {
       </Container>
     </Section>
   );
-}
+};
+
+export default ContactUs;
