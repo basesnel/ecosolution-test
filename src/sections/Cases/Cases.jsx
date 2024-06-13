@@ -1,21 +1,20 @@
 import { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
-
-import { slides } from 'constants';
-import { imageSizes } from 'constants';
-
-import Section from 'components/Section';
-import Container from 'components/Container';
-import Title from 'components/Title';
-import RoundButton from 'components/RoundButton';
-import Slider from 'components/Slider';
-import Slide from 'components/Slide';
-import ResponsiveImage from 'components/ResponsiveImage';
-import Text from 'components/Text';
+import { slides, imageSizes } from 'constants';
+import {
+  Section,
+  Container,
+  Title,
+  RoundButton,
+  Slider,
+  Slide,
+  ResponsiveImage,
+  Text,
+} from 'components';
 
 import css from './Cases.module.css';
 
-export default function Cases() {
+const Cases = () => {
   const [index, setIndex] = useState(0);
   const selectedRef = useRef(null);
 
@@ -73,7 +72,7 @@ export default function Cases() {
         <Slider>
           {slides.map(({ image, desc, place, enterprise, date }, i) => (
             <Slide key={image} itemRef={index === i ? selectedRef : null}>
-              <div className={css['case-thumb']}>
+              <div className={css.caseThumb}>
                 <ResponsiveImage
                   isLazy="lazy"
                   image500={`slider/${image}-1x`}
@@ -81,18 +80,18 @@ export default function Cases() {
                   image1500={`slider/${image}-3x`}
                   sizes={imageSizes[1]}
                   alt={desc}
-                  cssName={css['case-img']}
+                  cssName={css.caseImg}
                 />
               </div>
-              <div className={css['case-content']}>
-                <div className={css['case-fitcaption']}>
+              <div className={css.caseContent}>
+                <div className={css.caseFitcaption}>
                   <Text variant="caption">
-                    <span className={css['case-caption']}>{place}</span>
-                    <span className={css['case-caption']}>{enterprise}</span>
+                    <span className={css.caseCaption}>{place}</span>
+                    <span className={css.caseCaption}>{enterprise}</span>
                   </Text>
                   <RoundButton direction="right-up" filled={true} />
                 </div>
-                <div className={css['case-fitdesc']}>
+                <div className={css.caseFitdesc}>
                   <Text variant="small">{desc}</Text>
                   <Text variant="small">{date}</Text>
                 </div>
@@ -103,4 +102,6 @@ export default function Cases() {
       </Container>
     </Section>
   );
-}
+};
+
+export default Cases;
