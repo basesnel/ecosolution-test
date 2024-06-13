@@ -1,9 +1,6 @@
-import Section from 'components/Section';
-import Container from 'components/Container';
-import Title from 'components/Title';
-import Counter from 'components/Counter';
+import { Section, Container, Title, Counter } from 'components';
 
-export default function Electricity() {
+const Electricity = () => {
   return (
     <Section part="electricity">
       <Container>
@@ -12,4 +9,6 @@ export default function Electricity() {
       </Container>
     </Section>
   );
-}
+};
+
+export default Electricity;
