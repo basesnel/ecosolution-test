@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { menu } from 'constants';
-import Icon from 'components/Icon';
+import { Icon } from 'components';
 
 import css from './Menu.module.css';
 
