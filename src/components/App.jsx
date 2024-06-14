@@ -1,11 +1,13 @@
-import Header from 'sections/Header';
-import Main from 'sections/Main';
-import Values from 'sections/Values';
-import Electricity from 'sections/Electricity';
-import Cases from 'sections/Cases';
-import Faq from 'sections/Faq';
-import ContactUs from 'sections/ContactUs';
-import Footer from 'sections/Footer';
+import {
+  Header,
+  Main,
+  Values,
+  Electricity,
+  Cases,
+  Faq,
+  ContactUs,
+  Footer,
+} from 'sections';
 
 function App() {
   return (
