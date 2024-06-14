@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Icon from 'components/Icon';
+import { Icon } from 'components';
 
 import css from './RoundButton.module.css';
 

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
-import Menu from 'components/Menu';
-import Icon from 'components/Icon';
+import { Menu, Icon } from 'components';
 
 import css from './MenuButton.module.css';
 

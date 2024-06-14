@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { questions } from 'constants';
-import Text from 'components/Text';
-import Icon from 'components/Icon';
+import { Text, Icon } from 'components';
 
 import css from './Questions.module.css';
 
