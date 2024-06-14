@@ -1,12 +1,14 @@
-import FooterComponent from 'components/FooterComponent';
-import Container from 'components/Container';
-import FitContent from 'components/FitContent';
-import Logo from 'components/Logo';
-import RoundButton from 'components/RoundButton';
-import Contacts from 'components/Contacts';
-import Copyright from 'components/Copyright';
+import {
+  FooterComponent,
+  Container,
+  FitContent,
+  Logo,
+  RoundButton,
+  Contacts,
+  Copyright,
+} from 'components';
 
-export default function Footer() {
+const Footer = () => {
   return (
     <FooterComponent>
       <Container>
@@ -19,4 +21,6 @@ export default function Footer() {
       </Container>
     </FooterComponent>
   );
-}
+};
+
+export default Footer;

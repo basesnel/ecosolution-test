@@ -19,14 +19,14 @@ const Main = () => {
             <Button caption="Learn more" part="link" href="#cases" />
           </div>
         </div>
-        <ul className={css['main-contacts']}>
-          <li className={css['main-contact']}>
+        <ul className={css.mainContacts}>
+          <li className={css.mainContact}>
             <span>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</span>
           </li>
-          <li className={css['main-contact']}>
+          <li className={css.mainContact}>
             <span>office@ecosolution.com</span>
           </li>
-          <li className={css['main-contact']}>
+          <li className={css.mainContact}>
             <span>ecosolution &copy; 2023</span>
           </li>
         </ul>
