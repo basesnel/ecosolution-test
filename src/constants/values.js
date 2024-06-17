@@ -1,4 +1,4 @@
-export const values = [
+const values = [
   {
     id: 0,
     title: 'openness',
@@ -34,3 +34,5 @@ export const values = [
     text: 'we do not strive to be the first among others, but we want to be the best in our business',
   },
 ];
+
+export { values };

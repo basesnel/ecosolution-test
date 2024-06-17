@@ -1,4 +1,4 @@
-export const slides = [
+const slides = [
   {
     image: 'slide-01',
     desc: 'Wind Power for auto field irrigation',
@@ -35,3 +35,5 @@ export const slides = [
     date: 'May 2023',
   },
 ];
+
+export { slides };

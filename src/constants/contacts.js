@@ -1,4 +1,4 @@
-export const contacts = [
+const contacts = [
   {
     id: 0,
     label: 'phone',
@@ -61,13 +61,4 @@ export const contacts = [
   },
 ];
 
-// <li>
-//   <span>address:</span>
-//   <a
-//     href="https://maps.app.goo.gl/ch5Zc6Nrzai3HErQ6"
-//     target="_blank"
-//     rel="noopener noreferrer nofollow"
-//   >
-//     79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-//   </a>
-// </li>
+export { contacts };
