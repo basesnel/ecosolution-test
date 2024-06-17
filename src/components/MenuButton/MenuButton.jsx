@@ -11,7 +11,14 @@ const MenuButton = () => {
 
   return (
     <>
-      <button className={menuBtn} onClick={() => setIsMenuOpen(true)}>
+      <button
+        className={menuBtn}
+        onClick={() => {
+          setIsMenuOpen(true);
+          console.log(document.body.style);
+          document.body.style.overflow = 'hidden';
+        }}
+      >
         <Icon icon="menu" width={16} height={17} label="Open menu" />
       </button>
       {isMenuOpen &&
@@ -20,7 +27,10 @@ const MenuButton = () => {
             onHide={event => {
               if (event.target === event.currentTarget) setIsMenuOpen(false);
             }}
-            onClose={() => setIsMenuOpen(false)}
+            onClose={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
           />,
           document.body
         )}
