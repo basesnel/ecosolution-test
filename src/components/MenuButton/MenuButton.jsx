@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Menu, Icon } from 'components';
 
@@ -18,6 +18,20 @@ const MenuButton = () => {
     setIsMenuOpen(false);
     document.body.style.overflow = '';
   };
+
+  useEffect(() => {
+    const escFunction = event => {
+      if (event.key === 'Escape') {
+        isMenuOpen && closeMenu();
+      }
+    };
+
+    document.addEventListener('keydown', escFunction, false);
+
+    return () => {
+      document.removeEventListener('keydown', escFunction, false);
+    };
+  }, [isMenuOpen]);
 
   return (
     <>
