@@ -9,28 +9,28 @@ const MenuButton = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const openMenu = () => {
+    setIsMenuOpen(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    document.body.style.overflow = '';
+  };
+
   return (
     <>
-      <button
-        className={menuBtn}
-        onClick={() => {
-          setIsMenuOpen(true);
-          console.log(document.body.style);
-          document.body.style.overflow = 'hidden';
-        }}
-      >
+      <button className={menuBtn} onClick={openMenu}>
         <Icon icon="menu" width={16} height={17} label="Open menu" />
       </button>
       {isMenuOpen &&
         createPortal(
           <Menu
             onHide={event => {
-              if (event.target === event.currentTarget) setIsMenuOpen(false);
+              if (event.target === event.currentTarget) closeMenu();
             }}
-            onClose={() => {
-              setIsMenuOpen(false);
-              document.body.style.overflow = '';
-            }}
+            onClose={closeMenu}
           />,
           document.body
         )}
