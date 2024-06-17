@@ -1,4 +1,4 @@
-import { imageSizes } from 'constants';
+import { imageSizes, values } from 'constants';
 import {
   Section,
   Container,
@@ -27,57 +27,32 @@ const Values = () => {
           </Text>
         </div>
         <Grid>
-          <Card
-            title={<Title level={3} caption="openness" />}
-            icon="maximize-circle"
-          >
-            <Text>to the world, people, new ideas and projects</Text>
-          </Card>
-          <Card
-            title={<Title level={3} caption="responsibility" />}
-            icon="global-edit"
-          >
-            <Text>
-              we are aware that the results of our work have an impact on our
-              lives and the lives of future generations
-            </Text>
-          </Card>
-          <CardImage>
-            <ResponsiveImage
-              isLazy="lazy"
-              image500="values/values-01-1x"
-              image1000="values/values-01-2x"
-              image1500="values/values-01-3x"
-              sizes={imageSizes[1]}
-              alt="wind farms fields"
-              cssName={css.valuesImage}
-            />
-          </CardImage>
-          <CardImage>
-            <ResponsiveImage
-              isLazy="lazy"
-              image500="values/values-02-1x"
-              image1000="values/values-02-2x"
-              image1500="values/values-02-3x"
-              sizes={imageSizes[1]}
-              alt="man worker firld by solar panels"
-              cssName={css.valuesImage}
-            />
-          </CardImage>
-          <Card
-            title={<Title level={3} caption="innovation" />}
-            icon="cpu-charge"
-          >
-            <Text>
-              we use the latest technology to implement non-standard solutions
-            </Text>
-          </Card>
-          <Card title={<Title level={3} caption="quality" />} icon="ranking">
-            <Text>
-              we do not strive to be the first among others, but we want to be
-              the best in our business
-            </Text>
-          </Card>
+          {values.map(({ id, image, desc, title, icon, text }) => {
+            if (id === 2 || id === 3)
+              return (
+                <CardImage key={id}>
+                  <ResponsiveImage
+                    isLazy="lazy"
+                    image500={`values/${image}-1x`}
+                    image1000={`values/${image}-2x`}
+                    image1500={`values/${image}-3x`}
+                    sizes={imageSizes[1]}
+                    alt={desc}
+                    cssName={css.valuesImage}
+                  />
+                </CardImage>
+              );
+
+            return (
+              <Card
+                key={id}
+                title={<Title level={3} caption={title} />}
+                icon={icon}
+              >
+                <Text>{text}</Text>
+              </Card>
+            );
+          })}
         </Grid>
       </Container>
     </Section>
