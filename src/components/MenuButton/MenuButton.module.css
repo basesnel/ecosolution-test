@@ -13,6 +13,7 @@
   transition: ui-transition;
 }
 
-.menuBtn:hover {
+.menuBtn:hover,
+.menuBtn:focus {
   background-color: ui-color;
 }

@@ -22,12 +22,15 @@
 }
 
 .slide:hover .roundBtn.roundFilled,
-.roundBtn.roundFilled:hover {
+.slide:focus .roundBtn.roundFilled,
+.roundBtn.roundFilled:hover,
+.roundBtn.roundFilled:focus {
   background-color: text-color;
   border: none;
 }
 
-.roundBtn:hover {
+.roundBtn:hover,
+.roundBtn:focus {
   border: 1px solid ui-color;
 }
 

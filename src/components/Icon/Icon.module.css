@@ -100,11 +100,13 @@
   transition: ui-transition;
 }
 
-.roundBtn:hover .iconStyle {
+.roundBtn:hover .iconStyle,
+.roundBtn:focus .iconStyle {
   stroke: ui-color;
 }
 
-.slide:hover .roundBtn.roundFilled .iconStyle {
+.slide:hover .roundBtn.roundFilled .iconStyle,
+.slide:focus .roundBtn.roundFilled .iconStyle {
   stroke: ui-color;
 }
 
