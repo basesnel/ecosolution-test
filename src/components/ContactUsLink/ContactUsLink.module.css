@@ -21,7 +21,8 @@
   }
 }
 
-.contactBtn:hover {
+.contactBtn:hover,
+.contactBtn:focus {
   background-color: text-color;
   color: ui-color;
 }
@@ -45,6 +46,7 @@
   transition: ui-transition;
 }
 
-.contactBtn:hover .contactDecor {
+.contactBtn:hover .contactDecor,
+.contactBtn:focus .contactDecor {
   background-color: ui-color;
 }

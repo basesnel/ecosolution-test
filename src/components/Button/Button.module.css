@@ -20,7 +20,8 @@
   transition: ui-transition;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   border: 1px solid text-color;
   color: ui-color;
   background-color: text-color;
