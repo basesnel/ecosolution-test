@@ -64,17 +64,6 @@ select {
   font-size: inherit;
 }
 
-input:focus,
-input:active,
-select:focus,
-select:active,
-textarea:focus,
-textarea:active,
-button:focus,
-button:active {
-  outline: none;
-}
-
 a,
 button,
 input[type='checkbox'] {

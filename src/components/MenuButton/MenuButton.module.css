@@ -17,7 +17,3 @@
 .menuBtn:focus {
   background-color: ui-color;
 }
-
-.menuBtn:focus {
-  outline: auto;
-}
