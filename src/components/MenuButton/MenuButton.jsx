@@ -35,7 +35,7 @@ const MenuButton = () => {
 
   return (
     <>
-      <button className={menuBtn} onClick={openMenu}>
+      <button className={menuBtn} onClick={openMenu} type="button">
         <Icon icon="menu" width={16} height={17} label="Open menu" />
       </button>
       {isMenuOpen &&

@@ -23,7 +23,8 @@
   transition: ui-transition;
 }
 
-.esLogo:hover .esName {
+.esLogo:hover .esName,
+.esLogo:focus .esName {
   color: ui-color;
 }
 

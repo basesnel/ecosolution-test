@@ -34,6 +34,10 @@
   border: 1px solid ui-color;
 }
 
+.roundBtn:focus {
+  outline: auto;
+}
+
 .roundLink {
   width: 32px;
   height: 32px;
