@@ -1,5 +1,10 @@
 @value field, fieldLabel, fieldInput from "../Input/Input.module.css";
 
+.fieldTextarea {
+  composes: fieldInput;
+  resize: none;
+}
+
 .noRequire::before {
   content: none;
 }

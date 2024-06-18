@@ -4,14 +4,14 @@ import css from './TextArea.module.css';
 
 const TextArea = props => {
   const { disabled, name, label, placeholder, children } = props;
-  const { field, fieldLabel, fieldInput, noRequire } = css;
+  const { field, fieldLabel, fieldTextarea, noRequire } = css;
 
   return (
     <label className={field}>
       {label && <span className={`${fieldLabel} ${noRequire}`}>{label}</span>}
       <div>
         <textarea
-          className={fieldInput}
+          className={fieldTextarea}
           disabled={disabled}
           name={name}
           placeholder={placeholder}
