@@ -7,6 +7,11 @@ const Contacts = () => {
   const { contactList, contactItem, contactLabel, contactLinks, contactLink } =
     css;
 
+  const isLinkExternal = par => {
+    const parNormalize = par.toLowerCase();
+    return !(parNormalize.includes('tel') || parNormalize.includes('mailto'));
+  };
+
   return (
     <ul className={contactList}>
       {contacts.map(({ id, label, links }) => (
@@ -14,25 +19,20 @@ const Contacts = () => {
           <span className={contactLabel}>{`${label}:`}</span>
 
           <div className={contactLinks}>
-            {label.localeCompare('address')
-              ? links.map(({ id, src, txt, icon }) => (
-                  <a href={src} className={contactLink} key={id}>
-                    <Icon icon={icon} />
-                    {txt}
-                  </a>
-                ))
-              : links.map(({ id, src, txt, icon }) => (
-                  <a
-                    href={src}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className={contactLink}
-                    key={id}
-                  >
-                    <Icon icon={icon} />
-                    {txt}
-                  </a>
-                ))}
+            {links.map(({ id, src, txt, icon }) => (
+              <a
+                href={src}
+                {...(isLinkExternal(src) && {
+                  target: '_blank',
+                  rel: 'noopener noreferrer nofollow',
+                })}
+                className={contactLink}
+                key={id}
+              >
+                <Icon icon={icon} />
+                {txt}
+              </a>
+            ))}
           </div>
         </li>
       ))}
