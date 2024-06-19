@@ -12,6 +12,7 @@ const RoundButton = props => {
       return (
         <button
           className={filled ? `${roundBtn} ${roundFilled}` : `${roundBtn}`}
+          type="button"
           {...delegated}
         >
           <Icon icon="arrow-right" direction={direction} />
