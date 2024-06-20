@@ -18,7 +18,7 @@ const Faq = () => {
           <Questions />
           <div className={css.contactUs}>
             <Text>Didn&apos;t find the answer to your question?</Text>
-            <ContactUsLink caption="Contact Us" href="#contacts" />
+            <ContactUsLink caption="Contact Us" />
           </div>
         </div>
       </Container>

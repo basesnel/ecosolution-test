@@ -34,7 +34,7 @@ const Header = () => {
         <Logo subLength={5} />
         <MainNav>
           <MenuButton />
-          <ContactUsLink caption="Get in touch" href="#contacts" />
+          <ContactUsLink caption="Get in touch" />
         </MainNav>
       </Container>
     </header>
