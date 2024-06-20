@@ -33,15 +33,15 @@ const Menu = props => {
         <ul className={menuList}>
           {menu.map(({ id, item }) => (
             <li key={id} className={menuItem}>
-              <a
-                href={`#${id}`}
+              <Link
+                src={`#${id}`}
                 className={menuLink}
                 onClick={onClose}
                 aria-label={`Go to section ${item}`}
               >
                 {item}
                 <Icon icon="menu-arrow" width={16} height={16} />
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
