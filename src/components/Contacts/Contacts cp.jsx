@@ -1,11 +1,16 @@
 import { contacts } from 'constants';
-import { Icon, Link } from 'components';
+import { Icon } from 'components';
 
 import css from './Contacts.module.css';
 
 const Contacts = () => {
   const { contactList, contactItem, contactLabel, contactLinks, contactLink } =
     css;
+
+  const isLinkExternal = par =>
+    !(
+      par.toLowerCase().includes('tel') || par.toLowerCase().includes('mailto')
+    );
 
   return (
     <ul className={contactList}>
@@ -15,10 +20,18 @@ const Contacts = () => {
 
           <div className={contactLinks}>
             {links.map(({ id, src, txt, icon }) => (
-              <Link key={id} src={src} className={contactLink}>
+              <a
+                href={src}
+                {...(isLinkExternal(src) && {
+                  target: '_blank',
+                  rel: 'noopener noreferrer nofollow',
+                })}
+                className={contactLink}
+                key={id}
+              >
                 <Icon icon={icon} />
                 {txt}
-              </Link>
+              </a>
             ))}
           </div>
         </li>

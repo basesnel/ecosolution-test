@@ -13,6 +13,7 @@ import Grid from './Grid';
 import HeroImage from './HeroImage';
 import Icon from './Icon';
 import Input from './Input';
+import Link from './Link';
 import Logo from './Logo';
 import MainNav from './MainNav';
 import Menu from './Menu';
@@ -43,6 +44,7 @@ export {
   HeroImage,
   Icon,
   Input,
+  Link,
   Logo,
   MainNav,
   Menu,
