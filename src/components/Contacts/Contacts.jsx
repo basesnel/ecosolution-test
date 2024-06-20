@@ -7,10 +7,10 @@ const Contacts = () => {
   const { contactList, contactItem, contactLabel, contactLinks, contactLink } =
     css;
 
-  const isLinkExternal = par => {
-    const parNormalize = par.toLowerCase();
-    return !(parNormalize.includes('tel') || parNormalize.includes('mailto'));
-  };
+  const isLinkExternal = par =>
+    !(
+      par.toLowerCase().includes('tel') || par.toLowerCase().includes('mailto')
+    );
 
   return (
     <ul className={contactList}>

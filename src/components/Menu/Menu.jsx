@@ -50,6 +50,8 @@ const Menu = props => {
             <a
               className={socnetLink}
               href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
               aria-label="Go to Facebook page"
             >
               <Icon icon="menu-facebook" width={24} height={24} />
@@ -59,6 +61,8 @@ const Menu = props => {
             <a
               className={socnetLink}
               href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
               aria-label="Go to Instagram page"
             >
               <Icon icon="menu-instagram" width={24} height={24} />
