@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 const Link = props => {
   const { src, children, ...delegated } = props;
 
-  const isLinkExternal = par =>
-    !(
-      par.toLowerCase().includes('tel') || par.toLowerCase().includes('mailto')
-    );
+  const isLinkExternal = par => par.toLowerCase().match(/^http/);
 
   return (
     <a

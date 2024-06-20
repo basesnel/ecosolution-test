@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { menu } from 'constants';
-import { Icon } from 'components';
+import { Icon, Link } from 'components';
 
 import css from './Menu.module.css';
 
@@ -47,26 +47,22 @@ const Menu = props => {
         </ul>
         <ul className={menuSocnet}>
           <li className={socnetItem}>
-            <a
+            <Link
               className={socnetLink}
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
+              src="https://www.facebook.com"
               aria-label="Go to Facebook page"
             >
               <Icon icon="menu-facebook" width={24} height={24} />
-            </a>
+            </Link>
           </li>
           <li className={socnetItem}>
-            <a
+            <Link
               className={socnetLink}
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
+              src="https://www.instagram.com"
               aria-label="Go to Instagram page"
             >
               <Icon icon="menu-instagram" width={24} height={24} />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
