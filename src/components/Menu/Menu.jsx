@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import { menu } from 'constants';
 import { Icon, Link } from 'components';
 
+import { contacts } from 'constants';
+
 import css from './Menu.module.css';
 
 const Menu = props => {
@@ -17,6 +19,8 @@ const Menu = props => {
     socnetItem,
     socnetLink,
   } = css;
+
+  const socLinks = contacts[3].links;
 
   return (
     <div className={menuBackdrop} onClick={onHide}>
@@ -46,24 +50,18 @@ const Menu = props => {
           ))}
         </ul>
         <ul className={menuSocnet}>
-          <li className={socnetItem}>
-            <Link
-              className={socnetLink}
-              src="https://www.facebook.com"
-              aria-label="Go to Facebook page"
-            >
-              <Icon icon="menu-facebook" width={24} height={24} />
-            </Link>
-          </li>
-          <li className={socnetItem}>
-            <Link
-              className={socnetLink}
-              src="https://www.instagram.com"
-              aria-label="Go to Instagram page"
-            >
-              <Icon icon="menu-instagram" width={24} height={24} />
-            </Link>
-          </li>
+          {socLinks.map(({ id, src, txt, ariaLabel, icon }) => (
+            <li key={id} className={socnetItem}>
+              <Link
+                src={src}
+                txt={txt}
+                ariaLabel={ariaLabel}
+                className={socnetLink}
+              >
+                <Icon icon={icon} width={24} height={24} />
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

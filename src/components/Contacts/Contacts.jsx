@@ -17,9 +17,9 @@ const Contacts = () => {
             {links.map(({ id, src, txt, ariaLabel, icon }) => (
               <Link
                 key={id}
+                src={src}
                 txt={txt}
                 ariaLabel={ariaLabel}
-                src={src}
                 className={contactLink}
               >
                 <Icon icon={icon} />
