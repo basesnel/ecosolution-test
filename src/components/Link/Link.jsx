@@ -5,16 +5,16 @@ const Link = props => {
 
   const isLinkExternal = par => par.toLowerCase().match(/^http/);
 
+  const secureAttributes = {
+    ...(isLinkExternal(src) && {
+      target: '_blank',
+      rel: 'noopener noreferrer nofollow',
+    }),
+  };
+  const label = !txt ? ariaLabel : null;
+
   return (
-    <a
-      href={src}
-      {...(isLinkExternal(src) && {
-        target: '_blank',
-        rel: 'noopener noreferrer nofollow',
-      })}
-      aria-label={!txt ? ariaLabel : null}
-      {...delegated}
-    >
+    <a href={src} {...secureAttributes} aria-label={label} {...delegated}>
       {children}
     </a>
   );
@@ -22,11 +22,15 @@ const Link = props => {
 
 Link.propTypes = {
   src: PropTypes.string.isRequired,
+  txt: PropTypes.string,
+  ariaLabel: PropTypes.string,
   children: PropTypes.any,
   delegated: PropTypes.any,
 };
 
 Link.defaultProps = {
+  txt: null,
+  ariaLabel: null,
   children: null,
   delegated: null,
 };
