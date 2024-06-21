@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Link = props => {
-  const { src, children, ...delegated } = props;
+  const { src, txt, ariaLabel, children, ...delegated } = props;
 
   const isLinkExternal = par => par.toLowerCase().match(/^http/);
 
@@ -12,6 +12,7 @@ const Link = props => {
         target: '_blank',
         rel: 'noopener noreferrer nofollow',
       })}
+      aria-label={!txt ? ariaLabel : null}
       {...delegated}
     >
       {children}

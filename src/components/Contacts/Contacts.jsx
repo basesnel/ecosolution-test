@@ -14,8 +14,14 @@ const Contacts = () => {
           <span className={contactLabel}>{`${label}:`}</span>
 
           <div className={contactLinks}>
-            {links.map(({ id, src, txt, icon }) => (
-              <Link key={id} src={src} className={contactLink}>
+            {links.map(({ id, src, txt, ariaLabel, icon }) => (
+              <Link
+                key={id}
+                txt={txt}
+                ariaLabel={ariaLabel}
+                src={src}
+                className={contactLink}
+              >
                 <Icon icon={icon} />
                 {txt}
               </Link>
