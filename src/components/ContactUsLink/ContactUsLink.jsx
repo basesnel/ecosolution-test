@@ -8,7 +8,12 @@ const ContactUsLink = props => {
   const { contactBtn, contactCaption, contactDecor } = css;
 
   return (
-    <Link className={contactBtn} src="#contacts" {...delegated}>
+    <Link
+      src="#contacts"
+      ariaLabel="Go to Contacts section"
+      className={contactBtn}
+      {...delegated}
+    >
       <span className={contactCaption}>{caption}</span>
       <span className={contactDecor}>
         <Icon icon="link-arrow" />
