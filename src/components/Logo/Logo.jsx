@@ -11,7 +11,7 @@ const Logo = props => {
   const slogan = 'greenergy for life';
 
   return (
-    <Link src="#main" ariaLabel="Landing page logo" className={esLogo}>
+    <Link src="#main" ariaLabel="Ecosolution logo" className={esLogo}>
       <EcosolutionLogo />
       <span className={esName}>ecosolution</span>
       <p className={esSlogan}>
