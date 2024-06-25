@@ -35,8 +35,13 @@ const MenuButton = () => {
 
   return (
     <>
-      <button className={menuBtn} onClick={openMenu} type="button">
-        <Icon icon="menu" width={16} height={17} label="Open menu" />
+      <button
+        className={menuBtn}
+        onClick={openMenu}
+        type="button"
+        aria-label="Open menu"
+      >
+        <Icon icon="menu" width={16} height={17} />
       </button>
       {isMenuOpen &&
         createPortal(

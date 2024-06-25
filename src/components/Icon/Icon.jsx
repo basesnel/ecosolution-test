@@ -4,7 +4,7 @@ import icons from '../../assets/images/icons.svg';
 import css from './Icon.module.css';
 
 const Icon = props => {
-  const { icon, label, width, height, direction } = props;
+  const { icon, direction, width, height } = props;
   const { iconStyle } = css;
 
   const variation = direction
@@ -14,11 +14,11 @@ const Icon = props => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      role="img"
-      aria-label={label}
+      className={variation}
       width={width}
       height={height}
-      className={variation}
+      focusable="false"
+      aria-hidden={true}
     >
       <use href={`${icons}#${icon}`}></use>
     </svg>
@@ -27,15 +27,13 @@ const Icon = props => {
 
 Icon.propTypes = {
   icon: PropTypes.string.isRequired,
-  label: PropTypes.string,
+  direction: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  direction: PropTypes.string,
 };
 
 Icon.defaultProps = {
   direction: null,
-  label: null,
   with: null,
   height: null,
 };
