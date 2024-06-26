@@ -82,6 +82,17 @@
   color: ui-color;
 }
 
+.menuClose .iconStyle {
+  width: 20px;
+  height: 20px;
+  /* stroke: menu-item-color;
+  transition: ui-transition; */
+}
+
+/* .menuClose:hover .iconStyle {
+  stroke: ui-color;
+} */
+
 .menuSocnet {
   position: absolute;
   left: 24px;

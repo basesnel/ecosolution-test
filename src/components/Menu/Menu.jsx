@@ -32,7 +32,12 @@ const Menu = props => {
           type="button"
           aeia-label="Close the menu"
         >
-          <Icon icon="menu-close" width={20} height={20} />
+          <Icon
+            icon="menu-close"
+            width={20}
+            height={20}
+            className={iconStyle}
+          />
           Close
         </button>
         <ul className={menuList}>
