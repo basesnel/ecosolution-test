@@ -11,7 +11,8 @@
 @value btn from "../Button/Button.module.css";
 @value contactBtn from "../ContactUsLink/ContactUsLink.module.css";
 /* @value menuBtn from "../MenuButton/MenuButton.module.css"; */
-@value menuItem, menuLink, menuClose, socnetLink from "../Menu/Menu.module.css";
+/* @value menuItem, menuLink, menuClose, socnetLink from "../Menu/Menu.module.css"; */
+@value menuClose, socnetLink from "../Menu/Menu.module.css";
 
 /* Icon-style for menu-button */
 
@@ -23,7 +24,7 @@
 
 /* Icon-style for menu-links */
 
-.menuLink .iconStyle {
+/* .menuLink .iconStyle {
   width: 16px;
   height: 16px;
   stroke: menu-item-color;
@@ -32,7 +33,7 @@
 
 .menuItem:hover .iconStyle {
   stroke: ui-color;
-}
+} */
 
 /* Icon-style for ContactUs-button */
 

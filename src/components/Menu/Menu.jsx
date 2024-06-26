@@ -18,6 +18,7 @@ const Menu = props => {
     menuSocnet,
     socnetItem,
     socnetLink,
+    iconStyle,
   } = css;
 
   const socLinks = contacts[3].links;
@@ -44,7 +45,12 @@ const Menu = props => {
                 aria-label={`Go to section ${item}`}
               >
                 {item}
-                <Icon icon="menu-arrow" width={16} height={16} />
+                <Icon
+                  icon="menu-arrow"
+                  width={16}
+                  height={16}
+                  className={iconStyle}
+                />
               </Link>
             </li>
           ))}

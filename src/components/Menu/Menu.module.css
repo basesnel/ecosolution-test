@@ -71,6 +71,13 @@
   transition: ui-transition;
 }
 
+.iconStyle {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  transition: ui-transition;
+}
+
 .menuItem:hover .menuLink {
   color: ui-color;
 }
