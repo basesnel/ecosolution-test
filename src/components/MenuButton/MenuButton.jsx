@@ -5,7 +5,7 @@ import { Menu, Icon } from 'components';
 import css from './MenuButton.module.css';
 
 const MenuButton = () => {
-  const { menuBtn } = css;
+  const { menuBtn, iconStyle } = css;
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,7 +41,7 @@ const MenuButton = () => {
         type="button"
         aria-label="Open menu"
       >
-        <Icon icon="menu" width={16} height={17} />
+        <Icon icon="menu" width={16} height={17} className={iconStyle} />
       </button>
       {isMenuOpen &&
         createPortal(

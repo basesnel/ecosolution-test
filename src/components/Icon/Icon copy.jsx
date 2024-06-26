@@ -1,26 +1,24 @@
 import PropTypes from 'prop-types';
 import icons from '../../assets/images/icons.svg';
 
-// import css from './Icon.module.css';
+import css from './Icon.module.css';
 
 const Icon = props => {
-  const { icon, width, height, ...delegated } = props;
-  // const { iconStyle } = css;
+  const { icon, direction, width, height } = props;
+  const { iconStyle } = css;
 
-  // console.log(delegated);
-
-  // const variation = direction
-  //   ? `${iconStyle} ${css[direction]}`
-  //   : `${iconStyle}`;
+  const variation = direction
+    ? `${iconStyle} ${css[direction]}`
+    : `${iconStyle}`;
 
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      className={variation}
       width={width}
       height={height}
       focusable="false"
       aria-hidden={true}
-      {...delegated}
     >
       <use href={`${icons}#${icon}`}></use>
     </svg>
@@ -29,15 +27,15 @@ const Icon = props => {
 
 Icon.propTypes = {
   icon: PropTypes.string.isRequired,
+  direction: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
-  delegated: PropTypes.any,
 };
 
 Icon.defaultProps = {
+  direction: null,
   with: null,
   height: null,
-  delegated: null,
 };
 
 export default Icon;

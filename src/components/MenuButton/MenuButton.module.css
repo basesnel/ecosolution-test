@@ -1,4 +1,4 @@
-@value menu-button, ui-color from "../../css-variables/colors.css";
+@value menu-button, ui-color, text-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
 .menuBtn {
@@ -16,4 +16,10 @@
 .menuBtn:hover,
 .menuBtn:focus {
   background-color: ui-color;
+}
+
+.iconStyle {
+  width: 16px;
+  height: 17px;
+  stroke: text-color;
 }

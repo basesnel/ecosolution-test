@@ -10,16 +10,16 @@
 @value slide from "../Slide/Slide.module.css";
 @value btn from "../Button/Button.module.css";
 @value contactBtn from "../ContactUsLink/ContactUsLink.module.css";
-/* @value menuBtn from "../MenuButton/MenuButton.module.css"; */
+@value menuBtn from "../MenuButton/MenuButton.module.css";
 @value menuItem, menuLink, menuClose, socnetLink from "../Menu/Menu.module.css";
 
 /* Icon-style for menu-button */
 
-/* .menuBtn .iconStyle {
+.menuBtn .iconStyle {
   width: 16px;
   height: 17px;
   stroke: text-color;
-} */
+}
 
 /* Icon-style for menu-links */
 
