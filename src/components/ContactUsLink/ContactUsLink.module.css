@@ -50,3 +50,9 @@
 .contactBtn:focus .contactDecor {
   background-color: ui-color;
 }
+
+.iconStyle {
+  width: 14px;
+  height: 15px;
+  stroke: text-color;
+}

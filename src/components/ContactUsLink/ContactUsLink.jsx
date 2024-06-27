@@ -5,7 +5,7 @@ import css from './ContactUsLink.module.css';
 
 const ContactUsLink = props => {
   const { caption, ...delegated } = props;
-  const { contactBtn, contactCaption, contactDecor } = css;
+  const { contactBtn, contactCaption, contactDecor, iconStyle } = css;
 
   return (
     <Link
@@ -16,7 +16,7 @@ const ContactUsLink = props => {
     >
       <span className={contactCaption}>{caption}</span>
       <span className={contactDecor}>
-        <Icon icon="link-arrow" />
+        <Icon icon="link-arrow" width={14} height={15} className={iconStyle} />
       </span>
     </Link>
   );

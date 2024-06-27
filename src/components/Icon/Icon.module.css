@@ -9,7 +9,7 @@
 @value roundBtn, roundFilled, roundLink from "../RoundButton/RoundButton.module.css";
 @value slide from "../Slide/Slide.module.css";
 @value btn from "../Button/Button.module.css";
-@value contactBtn from "../ContactUsLink/ContactUsLink.module.css";
+/* @value contactBtn from "../ContactUsLink/ContactUsLink.module.css"; */
 /* @value menuBtn from "../MenuButton/MenuButton.module.css"; */
 /* @value menuItem, menuLink, menuClose, socnetLink from "../Menu/Menu.module.css"; */
 /* @value socnetLink from "../Menu/Menu.module.css"; */
@@ -37,11 +37,11 @@
 
 /* Icon-style for ContactUs-button */
 
-.contactBtn .iconStyle {
+/* .contactBtn .iconStyle {
   width: 14px;
   height: 15px;
   stroke: text-color;
-}
+} */
 
 /* Icon-style for button */
 
