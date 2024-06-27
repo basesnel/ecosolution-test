@@ -36,3 +36,9 @@
   border-radius: 50%;
   background: ui-color;
 }
+
+.iconStyle {
+  width: 16px;
+  height: 17px;
+  stroke: text-color;
+}

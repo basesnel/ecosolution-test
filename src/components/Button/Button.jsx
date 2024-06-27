@@ -5,7 +5,7 @@ import css from './Button.module.css';
 
 const Button = props => {
   const { caption, part = 'button', ...delegated } = props;
-  const { btn, decor } = css;
+  const { btn, decor, iconStyle } = css;
 
   switch (part) {
     case 'button':
@@ -13,7 +13,12 @@ const Button = props => {
         <button className={btn} {...delegated}>
           {caption}
           <span className={decor}>
-            <Icon icon="btn-arrow" />
+            <Icon
+              icon="btn-arrow"
+              width={16}
+              height={17}
+              className={iconStyle}
+            />
           </span>
         </button>
       );
@@ -23,7 +28,12 @@ const Button = props => {
         <a className={btn} {...delegated}>
           {caption}
           <span className={decor}>
-            <Icon icon="btn-arrow" />
+            <Icon
+              icon="btn-arrow"
+              width={16}
+              height={17}
+              className={iconStyle}
+            />
           </span>
         </a>
       );

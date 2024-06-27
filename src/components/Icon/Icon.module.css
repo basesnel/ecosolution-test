@@ -8,7 +8,7 @@
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
 @value roundBtn, roundFilled, roundLink from "../RoundButton/RoundButton.module.css";
 @value slide from "../Slide/Slide.module.css";
-@value btn from "../Button/Button.module.css";
+/* @value btn from "../Button/Button.module.css"; */
 /* @value contactBtn from "../ContactUsLink/ContactUsLink.module.css"; */
 /* @value menuBtn from "../MenuButton/MenuButton.module.css"; */
 /* @value menuItem, menuLink, menuClose, socnetLink from "../Menu/Menu.module.css"; */
@@ -45,11 +45,11 @@
 
 /* Icon-style for button */
 
-.btn .iconStyle {
+/* .btn .iconStyle {
   width: 16px;
   height: 17px;
   stroke: text-color;
-}
+} */
 
 /* Icon-style for menu-close button */
 
