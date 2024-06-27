@@ -12,7 +12,7 @@
 @value contactBtn from "../ContactUsLink/ContactUsLink.module.css";
 /* @value menuBtn from "../MenuButton/MenuButton.module.css"; */
 /* @value menuItem, menuLink, menuClose, socnetLink from "../Menu/Menu.module.css"; */
-@value socnetLink from "../Menu/Menu.module.css";
+/* @value socnetLink from "../Menu/Menu.module.css"; */
 
 /* Icon-style for menu-button */
 
@@ -66,7 +66,7 @@
 
 /* Icon-style for social-links in menu */
 
-.socnetLink .iconStyle {
+/* .socnetLink .iconStyle {
   width: 24px;
   height: 24px;
   fill: menu-item-color;
@@ -76,7 +76,7 @@
 .socnetLink:hover .iconStyle,
 .socnetLink:focus .iconStyle {
   fill: ui-color;
-}
+} */
 
 /* Icon-style for card (Values-section) */
 

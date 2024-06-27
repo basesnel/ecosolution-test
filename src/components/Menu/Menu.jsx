@@ -69,7 +69,12 @@ const Menu = props => {
                 ariaLabel={ariaLabel}
                 className={socnetLink}
               >
-                <Icon icon={icon} width={24} height={24} />
+                <Icon
+                  icon={icon}
+                  width={24}
+                  height={24}
+                  className={iconStyle}
+                />
               </Link>
             </li>
           ))}

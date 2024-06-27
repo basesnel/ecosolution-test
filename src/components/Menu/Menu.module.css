@@ -75,6 +75,7 @@
   width: 16px;
   height: 16px;
   stroke: currentColor;
+  fill: currentColor;
   transition: ui-transition;
 }
 
@@ -85,13 +86,7 @@
 .menuClose .iconStyle {
   width: 20px;
   height: 20px;
-  /* stroke: menu-item-color;
-  transition: ui-transition; */
 }
-
-/* .menuClose:hover .iconStyle {
-  stroke: ui-color;
-} */
 
 .menuSocnet {
   position: absolute;
@@ -111,6 +106,18 @@
   display: block;
   width: 24px;
   height: 24px;
+  color: menu-item-color;
+}
+
+.socnetLink .iconStyle {
+  width: 24px;
+  height: 24px;
+  stroke: none;
+}
+
+.socnetLink:hover,
+.socnetLink:focus {
+  color: ui-color;
 }
 
 @media tablet {
