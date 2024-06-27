@@ -5,12 +5,12 @@ import css from './Card.module.css';
 
 const Card = props => {
   const { title, icon, children } = props;
-  const { card, cardTitle } = css;
+  const { card, cardTitle, iconStyle } = css;
 
   return (
     <div className={card}>
       <div className={cardTitle}>
-        <Icon icon={icon} />
+        <Icon icon={icon} width={24} height={24} className={iconStyle} />
         {title}
       </div>
       {children}

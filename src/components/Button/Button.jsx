@@ -12,7 +12,7 @@ const Button = props => {
       return (
         <button className={btn} {...delegated}>
           {caption}
-          <span className={decor}>
+          <span className={decor} aria-hidden={true}>
             <Icon
               icon="btn-arrow"
               width={16}
@@ -27,7 +27,7 @@ const Button = props => {
       return (
         <a className={btn} {...delegated}>
           {caption}
-          <span className={decor}>
+          <span className={decor} aria-hidden={true}>
             <Icon
               icon="btn-arrow"
               width={16}

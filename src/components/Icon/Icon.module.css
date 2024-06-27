@@ -2,7 +2,7 @@
 @value menu-item-color, text-color, ui-color, card-color, placeholder-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
-@value card from "../Card/Card.module.css";
+/* @value card from "../Card/Card.module.css"; */
 @value qaQuestion, open from "../Questions/Questions.module.css";
 @value contactItem, contactLink from "../Contacts/Contacts.module.css";
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
@@ -80,7 +80,7 @@
 
 /* Icon-style for card (Values-section) */
 
-.card .iconStyle {
+/* .card .iconStyle {
   width: 16px;
   height: 16px;
   stroke: text-color;
@@ -91,7 +91,7 @@
     width: 24px;
     height: 24px;
   }
-}
+} */
 
 /* Icon-style for buttons of slider (Cases-section) */
 

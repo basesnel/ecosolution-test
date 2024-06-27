@@ -15,7 +15,7 @@ const ContactUsLink = props => {
       {...delegated}
     >
       <span className={contactCaption}>{caption}</span>
-      <span className={contactDecor}>
+      <span className={contactDecor} aria-hidden={true}>
         <Icon icon="link-arrow" width={14} height={15} className={iconStyle} />
       </span>
     </Link>
