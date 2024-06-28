@@ -1,17 +1,8 @@
 import PropTypes from 'prop-types';
 import icons from '../../assets/images/icons.svg';
 
-// import css from './Icon.module.css';
-
 const Icon = props => {
   const { icon, width, height, ...delegated } = props;
-  // const { iconStyle } = css;
-
-  // console.log(delegated);
-
-  // const variation = direction
-  //   ? `${iconStyle} ${css[direction]}`
-  //   : `${iconStyle}`;
 
   return (
     <svg
