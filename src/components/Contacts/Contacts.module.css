@@ -52,6 +52,18 @@
   padding: 12px;
 }
 
+.iconStyle {
+  fill: text-color;
+  width: 24px;
+  height: 24px;
+  transition: ui-transition;
+}
+
+.contactLink:hover .iconStyle,
+.contactLink:focus .iconStyle {
+  fill: ui-color;
+}
+
 @media tablet {
   .contactList {
     width: 342px;

@@ -4,7 +4,7 @@
 
 /* @value card from "../Card/Card.module.css"; */
 /* @value qaQuestion, open from "../Questions/Questions.module.css"; */
-@value contactItem, contactLink from "../Contacts/Contacts.module.css";
+/* @value contactItem, contactLink from "../Contacts/Contacts.module.css"; */
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
 /* @value roundBtn, roundFilled, roundLink from "../RoundButton/RoundButton.module.css"; */
 /* @value slide from "../Slide/Slide.module.css"; */
@@ -161,7 +161,7 @@
 
 /* Icon-style for contacts (ContactUs-section) */
 
-.contactLink .iconStyle {
+/* .contactLink .iconStyle {
   fill: text-color;
   width: 24px;
   height: 24px;
@@ -171,7 +171,7 @@
 .contactLink:hover .iconStyle,
 .contactLink:focus .iconStyle {
   fill: ui-color;
-}
+} */
 
 /* ...and for footer-contacts */
 

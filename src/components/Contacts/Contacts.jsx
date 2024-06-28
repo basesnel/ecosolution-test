@@ -4,8 +4,14 @@ import { Icon, Link } from 'components';
 import css from './Contacts.module.css';
 
 const Contacts = () => {
-  const { contactList, contactItem, contactLabel, contactLinks, contactLink } =
-    css;
+  const {
+    contactList,
+    contactItem,
+    contactLabel,
+    contactLinks,
+    contactLink,
+    iconStyle,
+  } = css;
 
   return (
     <ul className={contactList}>
@@ -22,7 +28,12 @@ const Contacts = () => {
                 ariaLabel={ariaLabel}
                 className={contactLink}
               >
-                <Icon icon={icon} />
+                <Icon
+                  icon={icon}
+                  width={24}
+                  height={24}
+                  className={iconStyle}
+                />
                 {txt}
               </Link>
             ))}
