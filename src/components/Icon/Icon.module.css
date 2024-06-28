@@ -6,8 +6,8 @@
 @value qaQuestion, open from "../Questions/Questions.module.css";
 @value contactItem, contactLink from "../Contacts/Contacts.module.css";
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
-@value roundBtn, roundFilled, roundLink from "../RoundButton/RoundButton.module.css";
-@value slide from "../Slide/Slide.module.css";
+/* @value roundBtn, roundFilled, roundLink from "../RoundButton/RoundButton.module.css"; */
+/* @value slide from "../Slide/Slide.module.css"; */
 /* @value btn from "../Button/Button.module.css"; */
 /* @value contactBtn from "../ContactUsLink/ContactUsLink.module.css"; */
 /* @value menuBtn from "../MenuButton/MenuButton.module.css"; */
@@ -95,7 +95,7 @@
 
 /* Icon-style for buttons of slider (Cases-section) */
 
-.roundBtn .iconStyle {
+/* .roundBtn .iconStyle {
   width: 36px;
   height: 36px;
   stroke: text-color;
@@ -127,7 +127,7 @@
 
 .up {
   transform: rotate(-90deg);
-}
+} */
 
 /* Icon-style for questions (Faq-section) */
 

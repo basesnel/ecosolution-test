@@ -13,6 +13,7 @@
   height: 66px;
   border: 1px solid text-color;
   border-radius: 50%;
+  color: text-color;
   transition: ui-transition;
 }
 
@@ -32,6 +33,7 @@
 .roundBtn:hover,
 .roundBtn:focus {
   border: 1px solid ui-color;
+  color: ui-color;
 }
 
 .roundLink {
@@ -44,6 +46,40 @@
   top: 28px;
   right: 0;
   z-index: 150;
+}
+
+.iconStyle {
+  width: 36px;
+  height: 36px;
+  stroke: currentColor;
+  transition: ui-transition;
+}
+
+/* .roundBtn:hover .iconStyle,
+.roundBtn:focus .iconStyle {
+  stroke: ui-color;
+} */
+
+.slide:hover .roundBtn.roundFilled .iconStyle,
+.slide:focus .roundBtn.roundFilled .iconStyle {
+  stroke: ui-color;
+}
+
+.roundLink .iconStyle {
+  width: 16px;
+  height: 16px;
+}
+
+.left {
+  transform: rotate(180deg);
+}
+
+.right-up {
+  transform: rotate(-45deg);
+}
+
+.up {
+  transform: rotate(-90deg);
 }
 
 @media tablet {

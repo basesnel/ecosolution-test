@@ -5,7 +5,11 @@ import css from './RoundButton.module.css';
 
 const RoundButton = props => {
   const { direction, filled, part, ...delegated } = props;
-  const { roundBtn, roundLink, roundFilled } = css;
+  const { roundBtn, roundLink, roundFilled, iconStyle } = css;
+
+  const variation = direction
+    ? `${iconStyle} ${css[direction]}`
+    : `${iconStyle}`;
 
   switch (part) {
     case 'button':
@@ -15,7 +19,12 @@ const RoundButton = props => {
           type="button"
           {...delegated}
         >
-          <Icon icon="arrow-right" direction={direction} />
+          <Icon
+            icon="arrow-right"
+            width={36}
+            height={36}
+            className={variation}
+          />
         </button>
       );
 
@@ -29,7 +38,12 @@ const RoundButton = props => {
           }
           {...delegated}
         >
-          <Icon icon="arrow-right" direction={direction} />
+          <Icon
+            icon="arrow-right"
+            width={16}
+            height={16}
+            className={variation}
+          />
         </a>
       );
 
