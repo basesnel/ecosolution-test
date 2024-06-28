@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ecosolution-test/static/css/main.7c432146.css",
+    "main.css": "/ecosolution-test/static/css/main.0b53843a.css",
     "main.js": "/ecosolution-test/static/js/main.5583d160.js",
     "static/media/hero-desktop-3x.jpg": "/ecosolution-test/static/media/hero-desktop-3x.102b67edf75372e79564.jpg",
     "static/media/hero-desktop-3x.webp": "/ecosolution-test/static/media/hero-desktop-3x.44e1be442fcbff4f065c.webp",
@@ -67,11 +67,11 @@
     "static/media/values-02-1x.webp": "/ecosolution-test/static/media/values-02-1x.2bd44a8bbd04adeff449.webp",
     "static/media/logo.svg": "/ecosolution-test/static/media/logo.3febe4fecb026aacb87226a347ce59d7.svg",
     "index.html": "/ecosolution-test/index.html",
-    "main.7c432146.css.map": "/ecosolution-test/static/css/main.7c432146.css.map",
+    "main.0b53843a.css.map": "/ecosolution-test/static/css/main.0b53843a.css.map",
     "main.5583d160.js.map": "/ecosolution-test/static/js/main.5583d160.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c432146.css",
+    "static/css/main.0b53843a.css",
     "static/js/main.5583d160.js"
   ]
 }
