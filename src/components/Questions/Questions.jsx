@@ -5,7 +5,7 @@ import { Text, Icon } from 'components';
 import css from './Questions.module.css';
 
 const Questions = () => {
-  const { qaList, qaItem, qaQuestion, open, qaAnswer } = css;
+  const { qaList, qaItem, qaQuestion, open, qaAnswer, iconStyle } = css;
 
   const [index, setIndex] = useState(0);
 
@@ -17,7 +17,12 @@ const Questions = () => {
             className={id === index ? `${qaQuestion} ${open}` : qaQuestion}
             onClick={() => setIndex(id)}
           >
-            {id === index ? <Icon icon="q-minus" /> : <Icon icon="q-plus" />}
+            <Icon
+              icon={id === index ? 'q-minus' : 'q-plus'}
+              width={28}
+              height={28}
+              className={iconStyle}
+            />
             <Text>{question}</Text>
           </div>
           <div className={qaAnswer}>

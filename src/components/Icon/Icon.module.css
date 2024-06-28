@@ -3,7 +3,7 @@
 @value ui-transition from "../../css-variables/transition.css";
 
 /* @value card from "../Card/Card.module.css"; */
-@value qaQuestion, open from "../Questions/Questions.module.css";
+/* @value qaQuestion, open from "../Questions/Questions.module.css"; */
 @value contactItem, contactLink from "../Contacts/Contacts.module.css";
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
 /* @value roundBtn, roundFilled, roundLink from "../RoundButton/RoundButton.module.css"; */
@@ -131,7 +131,7 @@
 
 /* Icon-style for questions (Faq-section) */
 
-.qaQuestion .iconStyle {
+/* .qaQuestion .iconStyle {
   display: block;
   flex-shrink: 0;
   width: 16px;
@@ -157,7 +157,7 @@
     width: 28px;
     height: 28px;
   }
-}
+} */
 
 /* Icon-style for contacts (ContactUs-section) */
 

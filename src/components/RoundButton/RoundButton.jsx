@@ -40,8 +40,8 @@ const RoundButton = props => {
         >
           <Icon
             icon="arrow-right"
-            width={16}
-            height={16}
+            width={36}
+            height={36}
             className={variation}
           />
         </a>

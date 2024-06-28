@@ -39,6 +39,27 @@
   letter-spacing: -0.56px;
 }
 
+.iconStyle {
+  display: block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  stroke: ui-color;
+  transition: ui-transition;
+}
+
+.qaQuestion:hover .iconStyle {
+  stroke: text-color;
+}
+
+.qaQuestion.open .iconStyle {
+  stroke: text-color;
+}
+
+.qaQuestion.open:hover .iconStyle {
+  stroke: ui-color;
+}
+
 @media tablet {
   .qaList {
     width: 342px;
@@ -51,6 +72,11 @@
 
   .qaAnswer {
     padding: 16px 0 0 42px;
+  }
+
+  .iconStyle {
+    width: 28px;
+    height: 28px;
   }
 }
 
