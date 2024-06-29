@@ -20,14 +20,12 @@ const Icon = props => {
 
 Icon.propTypes = {
   icon: PropTypes.string.isRequired,
-  width: PropTypes.number,
-  height: PropTypes.number,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
   delegated: PropTypes.any,
 };
 
 Icon.defaultProps = {
-  with: null,
-  height: null,
   delegated: null,
 };
 
