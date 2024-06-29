@@ -51,14 +51,13 @@
 .iconStyle {
   width: 36px;
   height: 36px;
-  stroke: text-color;
-  transition: ui-transition;
+  stroke: currentColor;
 }
 
-.roundBtn:hover .iconStyle,
+/* .roundBtn:hover .iconStyle,
 .roundBtn:focus .iconStyle {
   stroke: ui-color;
-}
+} */
 
 .slide:hover .roundBtn.roundFilled .iconStyle,
 .slide:focus .roundBtn.roundFilled .iconStyle {
