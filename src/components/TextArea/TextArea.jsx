@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import css from './TextArea.module.css';
 
 const TextArea = props => {
-  const { disabled, name, label, placeholder, children } = props;
+  const { disabled, name, label, placeholder, onChange, message } = props;
   const { field, fieldLabel, fieldTextarea, noRequire } = css;
 
   return (
@@ -14,11 +14,11 @@ const TextArea = props => {
           className={fieldTextarea}
           disabled={disabled}
           name={name}
+          value={message}
           placeholder={placeholder}
+          onChange={onChange}
           rows={5}
-        >
-          {children}
-        </textarea>
+        />
       </div>
     </label>
   );
@@ -29,7 +29,8 @@ TextArea.propTypes = {
   name: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
-  children: PropTypes.string,
+  onChange: PropTypes.func,
+  message: PropTypes.string,
 };
 
 TextArea.defaultProps = {
@@ -37,7 +38,8 @@ TextArea.defaultProps = {
   name: null,
   label: null,
   placeholder: null,
-  children: null,
+  onChange: null,
+  message: null,
 };
 
 export default TextArea;

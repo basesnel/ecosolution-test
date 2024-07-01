@@ -9,6 +9,7 @@ const Form = () => {
   const [name, setName] = useLocalStorage('name', '');
   const [email, setEmail] = useLocalStorage('email', '');
   const [phone, setPhone] = useLocalStorage('phone', '');
+  const [message, setMessage] = useLocalStorage('message', '');
 
   const handleChange = event => {
     const { name, value } = event.target;
@@ -24,6 +25,10 @@ const Form = () => {
 
       case 'phone':
         setPhone(value);
+        break;
+
+      case 'message':
+        setMessage(value);
         break;
 
       default:
@@ -74,8 +79,11 @@ const Form = () => {
       <TextArea
         disabled={false}
         name="message"
+        value={message}
         label="Message:"
         placeholder="Your Message"
+        onChange={handleChange}
+        message={message}
       />
       <div className={fitSubmit}>
         <Button type="submit" caption="Send" />
