@@ -39,6 +39,7 @@
   letter-spacing: -0.8px;
   color: menu-item-color;
   background: none;
+  transition: ui-transition;
 }
 
 .menuClose:hover {
@@ -76,7 +77,6 @@
   height: 16px;
   stroke: currentColor;
   fill: currentColor;
-  transition: ui-transition;
 }
 
 .menuItem:hover .menuLink {
@@ -107,6 +107,7 @@
   width: 24px;
   height: 24px;
   color: menu-item-color;
+  transition: ui-transition;
 }
 
 .socnetLink .iconStyle {
