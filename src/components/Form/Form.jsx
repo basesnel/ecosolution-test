@@ -1,14 +1,14 @@
-import { useState } from 'react';
 import { Input, TextArea, Button } from 'components';
+import { useLocalStorage } from 'hooks';
 
 import css from './Form.module.css';
 
 const Form = () => {
   const { form, fitSubmit } = css;
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [name, setName] = useLocalStorage('name', '');
+  const [email, setEmail] = useLocalStorage('email', '');
+  const [phone, setPhone] = useLocalStorage('phone', '');
 
   const handleChange = event => {
     const { name, value } = event.target;
