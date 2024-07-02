@@ -6,17 +6,27 @@ import { Input, TextArea, Button } from 'components';
 
 import css from './Form.module.css';
 
-// const validationSchema = yup.object({
+// const validationSchema = yup.object().shape({
 //   name: yup
-//     .string('Enter your name')
+//     .string()
+//     .min(2, 'Name showld be of minimum 3 characters length')
+//     .max(50, 'Too long')
+//     .required('Name is required'),
+//   email: yup.string().email().required('Email is required'),
+//   phone: yup.string().min(10, 'Too short').required('Phone is required'),
+// });
+
+// const validationSchema = yup.object().shape({
+//   name: yup
+//     .string()
 //     .matches(nameRegexp, 'Name showld be of minimum 3 characters length')
 //     .required('Name is required'),
 //   email: yup
-//     .string('Enter your email')
+//     .string()
 //     .matches(emailRegexp, 'Enter a valid email')
 //     .required('Email is required'),
 //   phone: yup
-//     .string('Enter your phone')
+//     .string()
 //     .matches(phoneRegexp, 'Enter a valid phone')
 //     .required('Phone is required'),
 // });
@@ -35,9 +45,9 @@ const Form = () => {
       email: email,
       phone: phone,
     },
-    // validationSchema: validationSchema,
+    // validationSchema: { validationSchema },
     onSubmit: values => {
-      console.log(values);
+      console.log(JSON.stringify(values, null, 2));
     },
   });
 
