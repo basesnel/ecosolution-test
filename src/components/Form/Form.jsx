@@ -1,25 +1,25 @@
-import * as yup from 'yup';
+// import * as yup from 'yup';
 import { useFormik } from 'formik';
 import { useLocalStorage } from 'hooks';
 import { Input, TextArea, Button } from 'components';
-import { nameRegexp, phoneRegexp, emailRegexp } from 'constants';
+// import { nameRegexp, phoneRegexp, emailRegexp } from 'constants';
 
 import css from './Form.module.css';
 
-const validationSchema = yup.object({
-  name: yup
-    .string('Enter your name')
-    .matches(nameRegexp, 'Name showld be of minimum 3 characters length')
-    .required('Name is required'),
-  email: yup
-    .string('Enter your email')
-    .matches(emailRegexp, 'Enter a valid email')
-    .required('Email is required'),
-  phone: yup
-    .string('Enter your phone')
-    .matches(phoneRegexp, 'Enter a valid phone')
-    .required('Phone is required'),
-});
+// const validationSchema = yup.object({
+//   name: yup
+//     .string('Enter your name')
+//     .matches(nameRegexp, 'Name showld be of minimum 3 characters length')
+//     .required('Name is required'),
+//   email: yup
+//     .string('Enter your email')
+//     .matches(emailRegexp, 'Enter a valid email')
+//     .required('Email is required'),
+//   phone: yup
+//     .string('Enter your phone')
+//     .matches(phoneRegexp, 'Enter a valid phone')
+//     .required('Phone is required'),
+// });
 
 const Form = () => {
   const { form, fitSubmit } = css;
@@ -35,10 +35,9 @@ const Form = () => {
       email: email,
       phone: phone,
     },
-    validationSchema: validationSchema,
-    onSubmit: (values, { resetForm }) => {
+    // validationSchema: validationSchema,
+    onSubmit: values => {
       console.log(values);
-      resetForm();
     },
   });
 
