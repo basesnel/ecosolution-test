@@ -24,16 +24,16 @@ const validationSchema = yup.object({
 const Form = () => {
   const { form, fitSubmit } = css;
 
-  const [name, setName] = useLocalStorage('name', '');
-  const [email, setEmail] = useLocalStorage('email', '');
-  const [phone, setPhone] = useLocalStorage('phone', '');
+  const name = useLocalStorage('name', '')[0];
+  const email = useLocalStorage('email', '')[0];
+  const phone = useLocalStorage('phone', '')[0];
   const [message, setMessage] = useLocalStorage('message', '');
 
   const formik = useFormik({
     initialValues: {
-      name: '',
-      email: '',
-      phone: '',
+      name: name,
+      email: email,
+      phone: phone,
     },
     validationSchema: validationSchema,
     onSubmit: (values, { resetForm }) => {
@@ -46,17 +46,17 @@ const Form = () => {
     const { name, value } = event.target;
 
     switch (name) {
-      case 'name':
-        setName(value);
-        break;
+      // case 'name':
+      //   setName(value);
+      //   break;
 
-      case 'email':
-        setEmail(value);
-        break;
+      // case 'email':
+      //   setEmail(value);
+      //   break;
 
-      case 'phone':
-        setPhone(value);
-        break;
+      // case 'phone':
+      //   setPhone(value);
+      //   break;
 
       case 'message':
         setMessage(value);
@@ -81,30 +81,30 @@ const Form = () => {
         disabled={false}
         type="text"
         name="name"
-        value={name}
+        value={formik.values.name}
         label="Full name:"
         placeholder="John Rosie"
-        onChange={handleChange}
+        onChange={formik.handleChange}
         autocomplete="off"
       />
       <Input
         disabled={false}
         type="email"
         name="email"
-        value={email}
+        value={formik.values.email}
         label="E-mail:"
         placeholder="johnrosie@gmail.com"
-        onChange={handleChange}
+        onChange={formik.handleChange}
         autocomplete="off"
       />
       <Input
         disabled={false}
         type="tel"
         name="phone"
-        value={phone}
+        value={formik.values.phone}
         label="Phone:"
         placeholder="380961234567"
-        onChange={handleChange}
+        onChange={formik.handleChange}
         autocomplete="off"
       />
       <TextArea
