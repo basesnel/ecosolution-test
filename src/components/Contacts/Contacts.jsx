@@ -1,38 +1,29 @@
 import { contacts } from 'constants';
 import { Icon, Link } from 'components';
 
-import css from './Contacts.module.css';
+import styles from './styles.module.css';
 
 const Contacts = () => {
-  const {
-    contactList,
-    contactItem,
-    contactLabel,
-    contactLinks,
-    contactLink,
-    iconStyle,
-  } = css;
-
   return (
-    <ul className={contactList}>
+    <ul className={styles.list}>
       {contacts.map(({ id, label, links }) => (
-        <li className={contactItem} key={id}>
-          <span className={contactLabel}>{`${label}:`}</span>
+        <li className={styles.item} key={id}>
+          <span className={styles.label}>{`${label}:`}</span>
 
-          <div className={contactLinks}>
+          <div className={styles.links}>
             {links.map(({ id, src, txt, ariaLabel, icon }) => (
               <Link
                 key={id}
                 src={src}
                 txt={txt}
                 ariaLabel={ariaLabel}
-                className={contactLink}
+                className={styles.link}
               >
                 <Icon
                   icon={icon}
                   width={24}
                   height={24}
-                  className={iconStyle}
+                  className={styles.icon}
                 />
                 {txt}
               </Link>

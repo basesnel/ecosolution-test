@@ -1,0 +1,6 @@
+@value card from "../../components/Card/styles.module.css";
+
+.cardImage {
+  composes: card;
+  padding: 0;
+}

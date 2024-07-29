@@ -4,7 +4,7 @@
 
 @value footerComponent from "../FooterComponent/FooterComponent.module.css";
 
-.contactList {
+.list {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -12,7 +12,7 @@
   margin-bottom: 36px;
 }
 
-.contactLabel {
+.label {
   text-transform: capitalize;
   text-align: justify;
   font-size: 16px;
@@ -20,25 +20,25 @@
   letter-spacing: -0.64px;
 }
 
-.contactItem {
+.item {
   display: flex;
   flex-direction: column;
   gap: 8px;
   color: text-color;
 }
 
-.contactLinks {
+.links {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.contactItem:last-child .contactLinks {
+.item:last-child .links {
   flex-direction: row;
   gap: 8px;
 }
 
-.contactLink {
+.link {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -48,78 +48,78 @@
   letter-spacing: -0.8px;
 }
 
-.contactItem:last-child .contactLink {
+.item:last-child .link {
   padding: 12px;
 }
 
-.iconStyle {
+.icon {
   fill: text-color;
   width: 24px;
   height: 24px;
   transition: ui-transition;
 }
 
-.contactLink:hover .iconStyle,
-.contactLink:focus .iconStyle {
+.link:hover .icon,
+.link:focus .icon {
   fill: ui-color;
 }
 
 @media tablet {
-  .contactList {
+  .list {
     width: 342px;
   }
 }
 
 @media desktop {
-  .contactList {
+  .list {
     width: 596px;
     gap: 32px;
   }
 
-  .contactItem {
+  .item {
     gap: 16px;
   }
 
-  .contactLink {
+  .link {
     font-size: 24px;
   }
 }
 
 /* Contacts on footer */
 
-.footerComponent .contactList {
+.footerComponent .list {
   flex-direction: column-reverse;
   margin-bottom: 24px;
 }
 
-.footerComponent .contactItem {
+.footerComponent .item {
   flex-direction: row;
   justify-content: space-around;
 }
 
-.footerComponent .contactItem:first-child {
+.footerComponent .item:first-child {
   display: none;
 }
 
-.footerComponent .contactLabel {
+.footerComponent .label {
   display: none;
 }
 
-.footerComponent .contactItem:last-child .contactLink {
+.footerComponent .item:last-child .link {
   padding: 0;
 }
 
-.footerComponent .contactLink {
+.footerComponent .link {
   font-size: 16px;
   letter-spacing: -0.64px;
 }
 
-.footerComponent .contactItem:not(:last-child) .iconStyle {
+.footerComponent .item:not(:last-child) .icon {
   display: none;
 }
 
 @media tablet {
-  .footerComponent .contactList {
+  .footerComponent .list {
     position: absolute;
     bottom: 38px;
     flex-direction: row-reverse;
@@ -131,15 +131,15 @@
     margin-bottom: 0;
   }
 
-  .footerComponent .contactItem:last-child,
-  .footerComponent .contactItem:first-child {
+  .footerComponent .item:last-child,
+  .footerComponent .item:first-child {
     width: 163px;
     justify-content: flex-start;
   }
 }
 
 @media desktop {
-  .footerComponent .contactList {
+  .footerComponent .list {
     column-gap: 492px;
     width: 945px;
   }

@@ -1,23 +1,22 @@
 import PropTypes from 'prop-types';
 import { Icon } from 'components';
 
-import css from './Button.module.css';
+import styles from './styles.module.css';
 
 const Button = props => {
   const { caption, part = 'button', ...delegated } = props;
-  const { btn, decor, iconStyle } = css;
 
   switch (part) {
     case 'button':
       return (
-        <button className={btn} {...delegated}>
+        <button className={styles.btn} {...delegated}>
           {caption}
-          <span className={decor} aria-hidden={true}>
+          <span className={styles.decor} aria-hidden={true}>
             <Icon
               icon="btn-arrow"
               width={16}
               height={17}
-              className={iconStyle}
+              className={styles.icon}
             />
           </span>
         </button>
@@ -25,14 +24,14 @@ const Button = props => {
 
     case 'link':
       return (
-        <a className={btn} {...delegated}>
+        <a className={styles.btn} {...delegated}>
           {caption}
-          <span className={decor} aria-hidden={true}>
+          <span className={styles.decor} aria-hidden={true}>
             <Icon
               icon="btn-arrow"
               width={16}
               height={17}
-              className={iconStyle}
+              className={styles.icon}
             />
           </span>
         </a>

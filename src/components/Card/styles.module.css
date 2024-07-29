@@ -14,7 +14,7 @@
   display: none;
 }
 
-.cardTitle {
+.title {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -28,7 +28,7 @@
   letter-spacing: -0.56px;
 }
 
-.iconStyle {
+.icon {
   width: 16px;
   height: 16px;
   stroke: text-color;
@@ -45,7 +45,7 @@
     grid-column: 1 / 3;
   }
 
-  .cardTitle {
+  .title {
     padding-bottom: 51px;
   }
 }
@@ -55,7 +55,7 @@
     padding: 48px 24px;
   }
 
-  .cardTitle {
+  .title {
     padding-bottom: 94px;
   }
 
@@ -65,7 +65,7 @@
     letter-spacing: -0.64px;
   }
 
-  .iconStyle {
+  .icon {
     width: 24px;
     height: 24px;
   }
