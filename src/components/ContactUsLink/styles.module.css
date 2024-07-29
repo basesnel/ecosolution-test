@@ -2,7 +2,7 @@
 @value text-color, ui-color from "../../css-variables/colors.css";
 @value ui-transition from "../../css-variables/transition.css";
 
-.contactBtn {
+.btn {
   display: none;
   padding: 10px 16px;
   justify-content: center;
@@ -16,18 +16,18 @@
 }
 
 @media tablet {
-  .contactBtn {
+  .btn {
     display: inline-flex;
   }
 }
 
-.contactBtn:hover,
-.contactBtn:focus {
+.btn:hover,
+.btn:focus {
   background-color: text-color;
   color: ui-color;
 }
 
-.contactCaption {
+.caption {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -35,7 +35,7 @@
   letter-spacing: -0.64px;
 }
 
-.contactDecor {
+.decor {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,12 +46,12 @@
   transition: ui-transition;
 }
 
-.contactBtn:hover .contactDecor,
-.contactBtn:focus .contactDecor {
+.btn:hover .decor,
+.btn:focus .decor {
   background-color: ui-color;
 }
 
-.iconStyle {
+.icon {
   width: 14px;
   height: 15px;
   stroke: text-color;

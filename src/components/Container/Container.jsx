@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
 
-import css from './Container.module.css';
+import styles from './styles.module.css';
 
 const Container = props => {
   const { children, variant } = props;
-  const { container } = css;
 
-  const variation = variant ? `${css[variant]}` : '';
+  const variation = variant ? `${styles[variant]}` : '';
   return (
-    <div role="presentation" className={`${container} ${variation}`}>
+    <div role="presentation" className={`${styles.container} ${variation}`}>
       {children}
     </div>
   );
